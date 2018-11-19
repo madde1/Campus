@@ -17,11 +17,18 @@
     <title>Header</title>
 </head>
 <body>
-
+<header>
 <?php
 include 'includes/header.php';
 ?>
+</header>
+<main>
 
+    <?php
+    /** Inkluderar aktuellt delen på sidan. /madde */
+    include 'includes/aktuellt.php';
+    ?>
+</main>
 
 <script type="text/javascript" src="java/jquery-3.2.1.min.js"></script>
 <script src="java/js.js" type="text/javascript"></script>
