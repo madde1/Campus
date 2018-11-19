@@ -1,0 +1,109 @@
+body, #slider, .wrap, .slide-content{
+  margin-top:0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  height: 500px;
+  overflow-x: hidden;
+
+}
+
+.wrap{
+  position: relative;
+  margin-top: 75px;
+
+
+}
+
+.slide{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.slide1{background-image: url('../bildSpel/bilder/bild1.jpg')}
+.slide2{background-image: url('../bildSpel/bilder/bild2.jpg')}
+.slide3{background-image: url('../bildSpel/bilder/bild3.jpg')}
+
+.slide-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.slide-content span{
+  font-size: 5rem;
+  color: white;
+
+}
+
+.arrow{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: -30px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  opacity: 0.25;
+  transition: opacity 0.4s linear;
+  z-index: 1;
+}
+
+#arrow-left{
+  border-width: 30px 40px 30px 0;
+  border-color: transparent white transparent transparent;
+  left: 0;
+  margin-left: 30px;
+  opacity: 0.4;
+
+
+}
+
+#arrow-right{
+  border-width: 30px 0 30px 40px;
+  border-color: transparent transparent transparent white;
+  right: 0;
+  margin-right: 30px;
+  opacity: 0.4;
+
+
+}
+
+#arrow-left:hover{
+  opacity:1;
+}
+
+#arrow-right:hover{
+  opacity:1;
+}
+
+#arrow-left{
+  border-width: 30px 40px 30px 0;
+  border-color: transparent white transparent transparent;
+  left: 0;
+  margin-left: 30px;
+  opacity: 0.4;
+
+
+}
+
+#arrow-right{
+  border-width: 30px 0 30px 40px;
+  border-color: transparent transparent transparent white;
+  right: 0;
+  margin-right: 30px;
+  opacity: 0.4;
+
+
+}
+
+#arrow-left:hover{
+  opacity:1;
+}
+
+#arrow-right:hover{
+  opacity:1;
+}
