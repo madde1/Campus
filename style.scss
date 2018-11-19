@@ -1,6 +1,12 @@
 $max: 100%;
 $bodycolor: grey;
 
+@media (max-width: 400px) {
+  .desktopbuttons{
+    display: none;
+  }
+}
+
 
 body {
   width: $max;
@@ -10,12 +16,21 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 
 }
+
+
 header{
   width: 100%;
   height: 75px;
   position: fixed;
   top: 0;
   background-color: #202020;
+
+}
+
+a, a:visited {
+  color: grey;
+  text-decoration: none;
+
 }
 
 /* .icons håller ikonerna och paddingen centrerar dem vertikalt */
@@ -85,7 +100,136 @@ input[type=text], [type=password], [type=email]{
   height: 50px;
   position: fixed;
   top: 75px;
+  background-color: #202020;
 }
 
+
+.header-nav{
+  position: fixed;
+  top: 75px;
+  width: 100%;
+  text-align: left;
+  padding: 20px 0 20px 10px;
+  background-color: #202020;
+  color: grey;
+
+
+}
+
+#utbildningar-click, #studenttjänster-click, #vägledning-click, #kontakt-click{
+  cursor: pointer;
+}
+
+#utbildningar-dropdown, #studenttjänster-dropdown, #vägledning-dropdown, #kontakt-dropdown{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  padding: 10px 0 10px 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 800px) {
+
+  #menu{
+    display: none;
+  }
+
+  .desktopbuttons{
+    height: 50px;
+    width: 60%;
+    float: left;
+    margin-top: 12.5px;
+
+  }
+
+  .desktopbuttons li{
+    display: inline;
+    color: grey;
+    padding-right: 30px;
+    float: left;
+    cursor: pointer;
+  }
+
+  .desktoputbildningar{
+    width: 400px;
+    position: fixed;
+    top: 75px;
+    z-index: 10;
+    background-color: #202020;
+    color: grey;
+    left: 0;
+    right: auto;
+
+  }
+
+  .desktoputbildningar p{
+    text-align: left;
+    padding-left: 40px;
+  }
+
+  a:hover{
+    color: white;
+  }
+
+  .searchfield{
+    width: 400px;
+    height: 50px;
+    position: fixed;
+    top: 75px;
+    z-index: 10;
+    background-color: #202020;
+    left: auto;
+    right: 0;
+  }
+
+  .logout{
+    width: 400px;
+    height: 50px;
+    position: fixed;
+    top: 75px;
+    z-index: 10;
+    background-color: #202020;
+    left: auto;
+    right: 0;
+
+  }
+
+  .login{
+    width: 400px;
+    height: 170px;
+    position: fixed;
+    top: 75px;
+    z-index: 10;
+    background-color: #202020;
+    left: auto;
+    right: 0;
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+}
 
 
