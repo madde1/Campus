@@ -22,9 +22,38 @@
 include 'includes/header.php';
 ?>
 
+<!-- bildspel (Simon) -->
 
-<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+
+    <div class="wrap">
+        <div id="arrow-left" class="arrow"></div>
+        <div class="slider">
+            <div class="slide slide1">
+                <div class="slide-content">
+                </div>
+            </div>
+            <div class="slide slide2">
+                <div class="slide-content">
+                </div>
+            </div>
+            <div class="slide slide3">
+                <div class="slide-content">
+                </div>
+            </div>
+        </div>
+        <div id="arrow-right" class="arrow"></div>
+
+    </div>
+
+
+
+
+<!-- bildspel slut (Simon) -->
+
+<script src="java/jquery-3.2.1.min.js"></script>
 <script src="java/js.js" type="text/javascript"></script>
+
+
 </body>
 </html>
 

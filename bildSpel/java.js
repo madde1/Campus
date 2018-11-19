@@ -1,18 +1,3 @@
-$('.login').hide();
-
-$('#usericon').click(function(){
-    $('.login').slideToggle(500);
-});
-
-$('.searchfield').hide();
-
-$('#searchicon').click(function(){
-    $('.searchfield').slideToggle(500);
-});
-
-
-
-// Bildspel (Simon)
 let sliderImages = document.querySelectorAll('.slide'),
     arrowLeft = document.querySelector('#arrow-left'),
     arrowRight = document.querySelector('#arrow-right'),
@@ -59,4 +44,3 @@ arrowRight.addEventListener('click', function(){
     slideRight();
 });
 startSlide();
-// Bildspel (Simon) slut
