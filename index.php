@@ -23,25 +23,26 @@ include 'includes/header.php';
 ?>
 </header>
 
-<div class="wrap">
-    <div id="arrow-left" class="arrow"></div>
-    <div class="slider">
-        <div class="slide slide1">
-            <div class="slide-content">
-            </div>
-        </div>
-        <div class="slide slide2">
-            <div class="slide-content">
-            </div>
-        </div>
-        <div class="slide slide3">
-            <div class="slide-content">
-            </div>
-        </div>
-    </div>
-    <div id="arrow-right" class="arrow"></div>
+
 
 <main>
+    <div class="wrap">
+        <div id="arrow-left" class="arrow"></div>
+        <div class="slider">
+            <div class="slide slide1">
+                <div class="slide-content">
+                </div>
+            </div>
+            <div class="slide slide2">
+                <div class="slide-content">
+                </div>
+            </div>
+            <div class="slide slide3">
+                <div class="slide-content">
+                </div>
+            </div>
+        </div>
+        <div id="arrow-right" class="arrow"></div>
 
     <?php
     /** Inkluderar aktuellt delen på sidan. /madde */
