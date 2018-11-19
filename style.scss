@@ -1,6 +1,7 @@
 @import "scss/aktuellt";
 @import "scss/bildspel";
 @charset "UTF-8";
+
 @media (max-width: 400px) {
   .desktopbuttons {
     display: none;
@@ -23,6 +24,7 @@ header {
   position: fixed;
   top: 0;
   background-color: #202020;
+  z-index: 10;
 }
 
 a, a:visited {
@@ -102,6 +104,7 @@ input[type=text], [type=password], [type=email] {
   padding: 20px 0 20px 10px;
   background-color: #202020;
   color: grey;
+
 }
 
 #utbildningar-click, #studenttjänster-click, #vägledning-click, #kontakt-click {
@@ -113,26 +116,28 @@ input[type=text], [type=password], [type=email] {
   height: auto;
   overflow: hidden;
   padding: 10px 0 10px 15px;
+
 }
 
-@media (min-width: 800px) {
+@include desktop{
   #menu {
     display: none;
   }
 
   .desktopbuttons {
-    height: 50px;
-    width: 60%;
-    float: left;
-    margin-top: 12.5px;
+      height: 50px;
+      width: 60%;
+      float: left;
+      margin-top: 12.5px;
+
   }
 
   .desktopbuttons li {
-    display: inline;
-    color: grey;
-    padding-right: 30px;
-    float: left;
-    cursor: pointer;
+      display: inline;
+      color: grey;
+      padding-right: 30px;
+      float: left;
+      cursor: pointer;
   }
 
   .desktoputbildningar {

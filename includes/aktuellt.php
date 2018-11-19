@@ -4,7 +4,7 @@
 <h2>Aktuellt</h2>
 <section class="contentAktuellt">
     <div class="item1">
-    <img id="akutelltBild1" src="../img/aktuellt1.jpg" >
+    <a href="aktuelltBlogg.php" <img id="akutelltBild1" src="../img/aktuellt1.jpg" ></a>
     <h3>Hur blir man en attraktiv arbetsgivare?</h3>
     <p>Igår var det en halvdagsworkshop på Campus Mölndal där flera av våra samarbetsföretag
         inom vårt IT-nätverk deltog. Vi hade bjudit in en föreläsare och flera företag från vårt nätverk.
