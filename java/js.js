@@ -339,7 +339,12 @@ $('#menukon').click(function(){
     }
 
 
+<<<<<<< HEAD
 });
+=======
+
+
+>>>>>>> 6a1e4948b73a075c11ba8c7ce0e95b3ec17f0ed6
 
 // Döljer och visar dropdown
 $('.desktoputbildningar').hide();
@@ -453,6 +458,8 @@ function reset(){
     }
 }
 
+setInterval(slideLeft)
+
 //init slider
 function startSlide(){
     reset();
@@ -464,6 +471,8 @@ function slideLeft(){
     reset();
     sliderImages[current - 1].style.display = 'block';
     current--;
+
+
 }
 // show next
 function slideRight(){
@@ -488,6 +497,7 @@ arrowRight.addEventListener('click', function(){
 });
 startSlide();
 
+<<<<<<< HEAD
 $(document.body).click( function() {
     if (url == "http://localhost/skolprojekt/user%20story%205/index.php"){
         $('#menukon').css('color', 'white');
@@ -498,4 +508,7 @@ $(document.body).click( function() {
 
 
 
+=======
+//Bildspel slut
+>>>>>>> 6a1e4948b73a075c11ba8c7ce0e95b3ec17f0ed6
 

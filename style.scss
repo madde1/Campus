@@ -1,13 +1,43 @@
 @import "scss/aktuellt";
 @import "scss/bildspel";
 @charset "UTF-8";
+<<<<<<< HEAD
 @media (max-width: 799px) {
   .desktopbuttons, .desktoputbildningar, .desktopvagledning, .desktopkontakt, .desktopstudent{
+=======
+
+/*MOBIL*/
+@media (max-width: 400px) {
+  .desktopbuttons {
+>>>>>>> 6a1e4948b73a075c11ba8c7ce0e95b3ec17f0ed6
     display: none;
   }
 
   body, #slider, .wrap, .slide-content{
     height: 200px;
+  }
+  .footer{
+    margin-top: 15px;
+    margin-bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    left: 0;
+    right: 0;
+    text-align: center;
+
+    /*använder denna för att länkarna inte ska bli formaterade*/
+    .linkFooter{
+      color: white;
+    }
+    /*flexar content*/
+    .item1{}
+    .item2{}
+    .item3{}
+    .item4{}
+  }
+  .footerIcons{
+    font-size: 40px;
   }
 }
 
@@ -17,6 +47,7 @@ body {
   margin: 0 auto;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
+
 }
 
 header {
@@ -153,6 +184,7 @@ input[type=text], [type=password], [type=email] {
   }
 }
 
+<<<<<<< HEAD
 .mobmenu1{
   height: 35px;
   border-top: 1px solid #404040;
@@ -176,6 +208,9 @@ input[type=text], [type=password], [type=email] {
 
 
 
+=======
+/*DESKTOP*/
+>>>>>>> 6a1e4948b73a075c11ba8c7ce0e95b3ec17f0ed6
 @media (min-width: 800px) {
   #menu {
     display: none;
@@ -315,6 +350,7 @@ input[type=text], [type=password], [type=email] {
     left: auto;
     right: 0;
   }
+<<<<<<< HEAD
 
   .buttonshelper{
 
@@ -329,3 +365,47 @@ input[type=text], [type=password], [type=email] {
     }
   }
 }
+=======
+  .footer{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    left: 0;
+    right: 0;
+    text-align: center;
+
+    /*använder denna för att länkarna inte ska bli formaterade*/
+    .linkFooter{
+      color: white;
+    }
+    /*campus mölndal ikon*/
+    .item1{
+      margin-top: 50px;
+      margin-left: 125px;
+      margin-bottom: 50px;
+
+    }
+    /*kontakt*/
+    .item2{
+      margin-top: 50px;
+      margin-left: 125px;
+      margin-bottom: 50px;
+    }
+    /*Sociala medier*/
+    .item3{
+      margin-top: 50px;
+      margin-left: 125px;
+      margin-bottom: 50px;
+      margin-right: 125px;
+    }
+
+  }
+  /*storleken på SM ikonerna*/
+  .footerIcons{
+    font-size: 50px;
+  }
+}
+>>>>>>> 6a1e4948b73a075c11ba8c7ce0e95b3ec17f0ed6

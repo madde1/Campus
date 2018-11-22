@@ -199,6 +199,8 @@ body, #slider, .wrap, .slide-content {
   opacity: 1;
 }
 
+
+/*MOBIL*/
 @media (max-width: 400px) {
   .desktopbuttons {
     display: none;
@@ -206,6 +208,25 @@ body, #slider, .wrap, .slide-content {
 
   body, #slider, .wrap, .slide-content {
     height: 200px;
+  }
+
+  .footer {
+    margin-top: 15px;
+    margin-bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    left: 0;
+    right: 0;
+    text-align: center;
+    /*använder denna för att länkarna inte ska bli formaterade*/
+    /*flexar content*/
+  }
+  .footer .linkFooter {
+    color: white;
+  }
+  .footerIcons {
+    font-size: 40px;
   }
 }
 body {
@@ -316,6 +337,7 @@ input[type=text], [type=password], [type=email] {
   padding: 10px 0 10px 15px;
 }
 
+/*DESKTOP*/
 @media (min-width: 800px) {
   #menu {
     display: none;
@@ -387,6 +409,46 @@ input[type=text], [type=password], [type=email] {
     background-color: #202020;
     left: auto;
     right: 0;
+  }
+
+  .footer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    left: 0;
+    right: 0;
+    text-align: center;
+    /*använder denna för att länkarna inte ska bli formaterade*/
+    /*campus mölndal ikon*/
+    /*kontakt*/
+    /*Sociala medier*/
+  }
+  .footer .linkFooter {
+    color: white;
+  }
+  .footer .item1 {
+    margin-top: 50px;
+    margin-left: 125px;
+    margin-bottom: 50px;
+  }
+  .footer .item2 {
+    margin-top: 50px;
+    margin-left: 125px;
+    margin-bottom: 50px;
+  }
+  .footer .item3 {
+    margin-top: 50px;
+    margin-left: 125px;
+    margin-bottom: 50px;
+    margin-right: 125px;
+  }
+
+  /*storleken på SM ikonerna*/
+  .footerIcons {
+    font-size: 50px;
   }
 }
 
