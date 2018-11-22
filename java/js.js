@@ -163,14 +163,6 @@ $('#menuutb').click(function(){
     }
 });
 
-
-
-
-
-
-
-
-
 // Döljer och visar dropdown
 $('.desktoputbildningar').hide();
 
@@ -179,6 +171,24 @@ $('#menuutb').click(function(){
 });
 
 //bildspel
+
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("slide");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    slides[slideIndex-1].style.display = "block";
+    setTimeout(showSlides, 6000); // Change image every 6 seconds
+}
+
+
+
 let sliderImages = document.querySelectorAll('.slide'),
     arrowLeft = document.querySelector('#arrow-left'),
     arrowRight = document.querySelector('#arrow-right'),
@@ -191,7 +201,6 @@ function reset(){
     }
 }
 
-setInterval(slideLeft)
 
 //init slider
 function startSlide(){
