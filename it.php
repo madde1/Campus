@@ -46,8 +46,8 @@ include 'includes/header.php';
     </section>
 </main>
 
-<script type="text/javascript" src="java/jquery-3.2.1.min.js"></script>
-<script src="java/js.js" type="text/javascript"></script>
-<script src="bildSpel/java.js"></script>
+<?php
+include "includes/footer.php"
+?>
 </body>
 </html>
