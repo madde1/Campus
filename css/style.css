@@ -333,145 +333,231 @@ body, #slider, .wrap, .slide-content {
   background-image: url("../img/headerIt.jpg");
 }
 
-@media (max-width: 400px) {
-  .desktopbuttons {
+@media (max-width: 799px) {
+  .desktopbuttons, .desktoputbildningar, .desktopvagledning, .desktopkontakt, .desktopstudent {
+    /*MOBIL*/
+    /*DESKTOP*/
+    /*storleken på SM ikonerna*/
+  }
+}
+@media (max-width: 799px) and (max-width: 400px) {
+  .desktopbuttons .desktopbuttons, .desktoputbildningar .desktopbuttons, .desktopvagledning .desktopbuttons, .desktopkontakt .desktopbuttons, .desktopstudent .desktopbuttons {
     display: none;
   }
-
-  body, #slider, .wrap, .slide-content {
+  .desktopbuttons body, .desktopbuttons #slider, .desktopbuttons .wrap, .desktopbuttons .slide-content, .desktoputbildningar body, .desktoputbildningar #slider, .desktoputbildningar .wrap, .desktoputbildningar .slide-content, .desktopvagledning body, .desktopvagledning #slider, .desktopvagledning .wrap, .desktopvagledning .slide-content, .desktopkontakt body, .desktopkontakt #slider, .desktopkontakt .wrap, .desktopkontakt .slide-content, .desktopstudent body, .desktopstudent #slider, .desktopstudent .wrap, .desktopstudent .slide-content {
     height: 200px;
   }
+  .desktopbuttons .footer, .desktoputbildningar .footer, .desktopvagledning .footer, .desktopkontakt .footer, .desktopstudent .footer {
+    margin-top: 15px;
+    margin-bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    left: 0;
+    right: 0;
+    text-align: center;
+    /*använder denna för att länkarna inte ska bli formaterade*/
+    /*flexar content*/
+  }
+  .desktopbuttons .footer .linkFooter, .desktoputbildningar .footer .linkFooter, .desktopvagledning .footer .linkFooter, .desktopkontakt .footer .linkFooter, .desktopstudent .footer .linkFooter {
+    color: white;
+  }
+  .desktopbuttons .footerIcons, .desktoputbildningar .footerIcons, .desktopvagledning .footerIcons, .desktopkontakt .footerIcons, .desktopstudent .footerIcons {
+    font-size: 40px;
+  }
 }
-body {
-  width: 100%;
-  background-color: grey;
-  margin: 0 auto;
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
+@media (max-width: 799px) {
+  .desktopbuttons body, .desktoputbildningar body, .desktopvagledning body, .desktopkontakt body, .desktopstudent body {
+    width: 100%;
+    background-color: grey;
+    margin: 0 auto;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
 }
-
-header {
-  width: 100%;
-  height: 75px;
-  position: fixed;
-  top: 0;
-  background-color: #202020;
+@media (max-width: 799px) {
+  .desktopbuttons header, .desktoputbildningar header, .desktopvagledning header, .desktopkontakt header, .desktopstudent header {
+    width: 100%;
+    height: 75px;
+    position: fixed;
+    top: 0;
+    background-color: #400c0c;
+    -background-color: #202020;
+    z-index: 10;
+  }
 }
-
-a, a:visited {
-  color: grey;
-  text-decoration: none;
+@media (max-width: 799px) {
+  .desktopbuttons hr, .desktoputbildningar hr, .desktopvagledning hr, .desktopkontakt hr, .desktopstudent hr {
+    width: 40%;
+    border-color: grey;
+  }
 }
-
-/* .icons håller ikonerna och paddingen centrerar dem vertikalt */
-.icons {
-  padding-top: 20px;
+@media (max-width: 799px) {
+  .desktopbuttons a, .desktopbuttons a:visited, .desktoputbildningar a, .desktoputbildningar a:visited, .desktopvagledning a, .desktopvagledning a:visited, .desktopkontakt a, .desktopkontakt a:visited, .desktopstudent a, .desktopstudent a:visited {
+    color: grey;
+    text-decoration: none;
+  }
 }
-
-.icons .headericon {
-  width: 35px;
-  height: 35px;
-  color: grey;
-  float: right;
-  padding-right: 20px;
-  cursor: pointer;
+@media (max-width: 799px) {
+  .desktopbuttons .icons, .desktoputbildningar .icons, .desktopvagledning .icons, .desktopkontakt .icons, .desktopstudent .icons {
+    padding-top: 20px;
+  }
 }
-
-.icons .menu {
-  color: white;
-  width: 35px;
-  height: 35px;
-  padding-left: 20px;
-  float: left;
-  cursor: pointer;
+@media (max-width: 799px) {
+  .desktopbuttons .icons .headericon, .desktoputbildningar .icons .headericon, .desktopvagledning .icons .headericon, .desktopkontakt .icons .headericon, .desktopstudent .icons .headericon {
+    width: 35px;
+    height: 35px;
+    color: grey;
+    float: right;
+    padding-right: 20px;
+    cursor: pointer;
+  }
 }
-
-.login {
-  position: fixed;
-  top: 75px;
-  width: 100%;
-  height: 170px;
-  background-color: #202020;
+@media (max-width: 799px) {
+  .desktopbuttons .icons .menu, .desktoputbildningar .icons .menu, .desktopvagledning .icons .menu, .desktopkontakt .icons .menu, .desktopstudent .icons .menu {
+    color: white;
+    width: 35px;
+    height: 35px;
+    padding-left: 20px;
+    float: left;
+    cursor: pointer;
+  }
 }
-
-/* stylar även kommande inputfält som email */
-input[type=text], [type=password], [type=email] {
-  width: 90%;
-  height: 28px;
-  border: 1px solid black;
-  border-radius: 5px;
-  padding: 5px;
+@media (max-width: 799px) {
+  .desktopbuttons .login, .desktoputbildningar .login, .desktopvagledning .login, .desktopkontakt .login, .desktopstudent .login {
+    position: fixed;
+    top: 75px;
+    width: 100%;
+    height: 170px;
+    background-color: #400c0c;
+  }
 }
-
-.loginbutton {
-  border: 1px solid #303030;
-  background-color: orange;
-  color: #303030;
-  padding: 12px 20px;
-  border-radius: 4px;
-  cursor: pointer;
+@media (max-width: 799px) {
+  .desktopbuttons input[type=text], .desktopbuttons [type=password], .desktopbuttons [type=email], .desktoputbildningar input[type=text], .desktoputbildningar [type=password], .desktoputbildningar [type=email], .desktopvagledning input[type=text], .desktopvagledning [type=password], .desktopvagledning [type=email], .desktopkontakt input[type=text], .desktopkontakt [type=password], .desktopkontakt [type=email], .desktopstudent input[type=text], .desktopstudent [type=password], .desktopstudent [type=email] {
+    width: 90%;
+    height: 28px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+  }
 }
-
-.registerbutton {
-  border: 1px solid #303030;
-  background-color: black;
-  color: white;
-  padding: 12px 20px;
-  border-radius: 4px;
-  cursor: pointer;
+@media (max-width: 799px) {
+  .desktopbuttons .loginbutton, .desktoputbildningar .loginbutton, .desktopvagledning .loginbutton, .desktopkontakt .loginbutton, .desktopstudent .loginbutton {
+    border: 1px solid #303030;
+    background-color: orange;
+    color: #303030;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
 }
-
-.searchfield {
-  width: 100%;
-  height: 50px;
-  position: fixed;
-  top: 75px;
-  background-color: #202020;
+@media (max-width: 799px) {
+  .desktopbuttons .registerbutton, .desktoputbildningar .registerbutton, .desktopvagledning .registerbutton, .desktopkontakt .registerbutton, .desktopstudent .registerbutton {
+    border: 1px solid #303030;
+    background-color: black;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
 }
-
-.header-nav {
-  position: fixed;
-  top: 75px;
-  width: 100%;
-  text-align: left;
-  padding: 20px 0 20px 10px;
-  background-color: #202020;
-  color: grey;
+@media (max-width: 799px) {
+  .desktopbuttons .searchfield, .desktoputbildningar .searchfield, .desktopvagledning .searchfield, .desktopkontakt .searchfield, .desktopstudent .searchfield {
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 75px;
+    background-color: #400c0c;
+  }
 }
-
-#utbildningar-click, #studenttjänster-click, #vägledning-click, #kontakt-click {
-  cursor: pointer;
+@media (max-width: 799px) {
+  .desktopbuttons .header-nav, .desktoputbildningar .header-nav, .desktopvagledning .header-nav, .desktopkontakt .header-nav, .desktopstudent .header-nav {
+    position: fixed;
+    top: 75px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    -padding: 20px 0 20px 10px;
+    padding: 20px 0 20px 0;
+    background-color: #400c0c;
+    color: grey;
+    line-height: 25px;
+  }
 }
-
-#utbildningar-dropdown, #studenttjänster-dropdown, #vägledning-dropdown, #kontakt-dropdown {
-  width: 100%;
-  height: auto;
-  overflow: hidden;
-  padding: 10px 0 10px 15px;
+@media (max-width: 799px) {
+  .desktopbuttons #utbildningar-click, .desktopbuttons #studenttjänster-click, .desktopbuttons #vägledning-click, .desktopbuttons #kontakt-click, .desktoputbildningar #utbildningar-click, .desktoputbildningar #studenttjänster-click, .desktoputbildningar #vägledning-click, .desktoputbildningar #kontakt-click, .desktopvagledning #utbildningar-click, .desktopvagledning #studenttjänster-click, .desktopvagledning #vägledning-click, .desktopvagledning #kontakt-click, .desktopkontakt #utbildningar-click, .desktopkontakt #studenttjänster-click, .desktopkontakt #vägledning-click, .desktopkontakt #kontakt-click, .desktopstudent #utbildningar-click, .desktopstudent #studenttjänster-click, .desktopstudent #vägledning-click, .desktopstudent #kontakt-click {
+    cursor: pointer;
+  }
 }
-
-@media (min-width: 800px) {
-  #menu {
+@media (max-width: 799px) {
+  .desktopbuttons #utbildningar-dropdown, .desktopbuttons #studenttjänster-dropdown, .desktopbuttons #vägledning-dropdown, .desktopbuttons #kontakt-dropdown, .desktoputbildningar #utbildningar-dropdown, .desktoputbildningar #studenttjänster-dropdown, .desktoputbildningar #vägledning-dropdown, .desktoputbildningar #kontakt-dropdown, .desktopvagledning #utbildningar-dropdown, .desktopvagledning #studenttjänster-dropdown, .desktopvagledning #vägledning-dropdown, .desktopvagledning #kontakt-dropdown, .desktopkontakt #utbildningar-dropdown, .desktopkontakt #studenttjänster-dropdown, .desktopkontakt #vägledning-dropdown, .desktopkontakt #kontakt-dropdown, .desktopstudent #utbildningar-dropdown, .desktopstudent #studenttjänster-dropdown, .desktopstudent #vägledning-dropdown, .desktopstudent #kontakt-dropdown {
+    width: 100%;
+    height: auto;
+    -overflow: hidden;
+    -padding: 10px 0 10px 15px;
+    padding: 10px 0 10px 0;
+  }
+  .desktopbuttons #utbildningar-dropdown a:active, .desktopbuttons #studenttjänster-dropdown a:active, .desktopbuttons #vägledning-dropdown a:active, .desktopbuttons #kontakt-dropdown a:active, .desktoputbildningar #utbildningar-dropdown a:active, .desktoputbildningar #studenttjänster-dropdown a:active, .desktoputbildningar #vägledning-dropdown a:active, .desktoputbildningar #kontakt-dropdown a:active, .desktopvagledning #utbildningar-dropdown a:active, .desktopvagledning #studenttjänster-dropdown a:active, .desktopvagledning #vägledning-dropdown a:active, .desktopvagledning #kontakt-dropdown a:active, .desktopkontakt #utbildningar-dropdown a:active, .desktopkontakt #studenttjänster-dropdown a:active, .desktopkontakt #vägledning-dropdown a:active, .desktopkontakt #kontakt-dropdown a:active, .desktopstudent #utbildningar-dropdown a:active, .desktopstudent #studenttjänster-dropdown a:active, .desktopstudent #vägledning-dropdown a:active, .desktopstudent #kontakt-dropdown a:active {
+    color: white;
+  }
+}
+@media (max-width: 799px) {
+  .desktopbuttons .buttonshelper, .desktoputbildningar .buttonshelper, .desktopvagledning .buttonshelper, .desktopkontakt .buttonshelper, .desktopstudent .buttonshelper {
+    width: -webkit-calc(90% + 11px);
+    margin: 0 auto;
+  }
+  .desktopbuttons .buttonshelper .loginbutton, .desktoputbildningar .buttonshelper .loginbutton, .desktopvagledning .buttonshelper .loginbutton, .desktopkontakt .buttonshelper .loginbutton, .desktopstudent .buttonshelper .loginbutton {
+    float: left;
+  }
+  .desktopbuttons .buttonshelper .registerbutton, .desktoputbildningar .buttonshelper .registerbutton, .desktopvagledning .buttonshelper .registerbutton, .desktopkontakt .buttonshelper .registerbutton, .desktopstudent .buttonshelper .registerbutton {
+    float: left;
+    margin-left: 10px;
+  }
+}
+@media (max-width: 799px) {
+  .desktopbuttons .mobmenu1, .desktoputbildningar .mobmenu1, .desktopvagledning .mobmenu1, .desktopkontakt .mobmenu1, .desktopstudent .mobmenu1 {
+    height: 35px;
+    border-top: 1px solid #404040;
+  }
+}
+@media (max-width: 799px) {
+  .desktopbuttons .mobmenu2, .desktoputbildningar .mobmenu2, .desktopvagledning .mobmenu2, .desktopkontakt .mobmenu2, .desktopstudent .mobmenu2 {
+    margin-top: 15px;
+    height: 35px;
+    border-top: 1px solid #404040;
+  }
+}
+@media (max-width: 799px) {
+  .desktopbuttons .mobmenu3, .desktoputbildningar .mobmenu3, .desktopvagledning .mobmenu3, .desktopkontakt .mobmenu3, .desktopstudent .mobmenu3 {
+    margin-top: 15px;
+    padding-bottom: 15px;
+    height: 35px;
+    border-top: 1px solid #404040;
+    border-bottom: 1px solid #404040;
+  }
+}
+@media (max-width: 799px) and (min-width: 800px) {
+  .desktopbuttons #menu, .desktoputbildningar #menu, .desktopvagledning #menu, .desktopkontakt #menu, .desktopstudent #menu {
     display: none;
   }
-
-  .desktopbuttons {
+  .desktopbuttons header-nav, .desktoputbildningar header-nav, .desktopvagledning header-nav, .desktopkontakt header-nav, .desktopstudent header-nav {
+    display: none;
+  }
+  .desktopbuttons .desktopbuttons, .desktoputbildningar .desktopbuttons, .desktopvagledning .desktopbuttons, .desktopkontakt .desktopbuttons, .desktopstudent .desktopbuttons {
     height: 50px;
     width: 60%;
     float: left;
     margin-top: 12.5px;
   }
-
-  .desktopbuttons li {
+  .desktopbuttons .desktopbuttons li, .desktoputbildningar .desktopbuttons li, .desktopvagledning .desktopbuttons li, .desktopkontakt .desktopbuttons li, .desktopstudent .desktopbuttons li {
     display: inline;
     color: grey;
     padding-right: 30px;
     float: left;
     cursor: pointer;
   }
-
-  .desktoputbildningar {
-    width: 400px;
+  .desktopbuttons .desktoputbildningar, .desktoputbildningar .desktoputbildningar, .desktopvagledning .desktoputbildningar, .desktopkontakt .desktoputbildningar, .desktopstudent .desktoputbildningar {
+    width: 350px;
     position: fixed;
     top: 75px;
     z-index: 10;
@@ -480,17 +566,69 @@ input[type=text], [type=password], [type=email] {
     left: 0;
     right: auto;
   }
-
-  .desktoputbildningar p {
+  .desktopbuttons .desktoputbildningar p, .desktoputbildningar .desktoputbildningar p, .desktopvagledning .desktoputbildningar p, .desktopkontakt .desktoputbildningar p, .desktopstudent .desktoputbildningar p {
     text-align: left;
     padding-left: 40px;
+    cursor: pointer;
   }
-
-  a:hover {
+  .desktopbuttons .desktopstudent, .desktoputbildningar .desktopstudent, .desktopvagledning .desktopstudent, .desktopkontakt .desktopstudent, .desktopstudent .desktopstudent {
+    width: 300px;
+    position: fixed;
+    top: 75px;
+    z-index: 10;
+    background-color: #202020;
+    color: grey;
+    left: 115px;
+    right: auto;
+  }
+  .desktopbuttons .desktopstudent p, .desktoputbildningar .desktopstudent p, .desktopvagledning .desktopstudent p, .desktopkontakt .desktopstudent p, .desktopstudent .desktopstudent p {
+    text-align: left;
+    padding-left: 40px;
+    cursor: pointer;
+  }
+  .desktopbuttons .desktopvagledning, .desktoputbildningar .desktopvagledning, .desktopvagledning .desktopvagledning, .desktopkontakt .desktopvagledning, .desktopstudent .desktopvagledning {
+    width: 300px;
+    position: fixed;
+    top: 75px;
+    z-index: 10;
+    background-color: #202020;
+    color: grey;
+    left: 255px;
+    right: auto;
+  }
+  .desktopbuttons .desktopvagledning p, .desktoputbildningar .desktopvagledning p, .desktopvagledning .desktopvagledning p, .desktopkontakt .desktopvagledning p, .desktopstudent .desktopvagledning p {
+    text-align: left;
+    padding-left: 40px;
+    cursor: pointer;
+  }
+  .desktopbuttons .desktopkontakt, .desktoputbildningar .desktopkontakt, .desktopvagledning .desktopkontakt, .desktopkontakt .desktopkontakt, .desktopstudent .desktopkontakt {
+    text-align: left;
+    padding-left: 40px;
+    cursor: pointer;
+    width: 300px;
+    position: fixed;
+    top: 75px;
+    z-index: 10;
+    background-color: #202020;
+    color: grey;
+    left: 363px;
+    right: auto;
+  }
+  .desktopbuttons a:hover, .desktoputbildningar a:hover, .desktopvagledning a:hover, .desktopkontakt a:hover, .desktopstudent a:hover {
     color: white;
   }
-
-  .searchfield {
+  .desktopbuttons .searchfield, .desktoputbildningar .searchfield, .desktopvagledning .searchfield, .desktopkontakt .searchfield, .desktopstudent .searchfield {
+    width: 400px;
+    height: 50px;
+    position: fixed;
+    top: 75px;
+    z-index: 10;
+    background-color: #400c0c;
+    padding-top: 8.5px;
+    left: auto;
+    right: 0;
+  }
+  .desktopbuttons .logout, .desktoputbildningar .logout, .desktopvagledning .logout, .desktopkontakt .logout, .desktopstudent .logout {
     width: 400px;
     height: 50px;
     position: fixed;
@@ -500,27 +638,68 @@ input[type=text], [type=password], [type=email] {
     left: auto;
     right: 0;
   }
-
-  .logout {
-    width: 400px;
-    height: 50px;
-    position: fixed;
-    top: 75px;
-    z-index: 10;
-    background-color: #202020;
-    left: auto;
-    right: 0;
-  }
-
-  .login {
+  .desktopbuttons .login, .desktoputbildningar .login, .desktopvagledning .login, .desktopkontakt .login, .desktopstudent .login {
     width: 400px;
     height: 170px;
     position: fixed;
     top: 75px;
     z-index: 10;
-    background-color: #202020;
+    background-color: #400c0c;
+    padding-top: 8.5px;
     left: auto;
     right: 0;
+  }
+  .desktopbuttons .buttonshelper, .desktoputbildningar .buttonshelper, .desktopvagledning .buttonshelper, .desktopkontakt .buttonshelper, .desktopstudent .buttonshelper {
+    width: -webkit-calc(90% + 11px);
+    margin: 0 auto;
+  }
+  .desktopbuttons .buttonshelper .loginbutton, .desktoputbildningar .buttonshelper .loginbutton, .desktopvagledning .buttonshelper .loginbutton, .desktopkontakt .buttonshelper .loginbutton, .desktopstudent .buttonshelper .loginbutton {
+    float: left;
+  }
+  .desktopbuttons .buttonshelper .registerbutton, .desktoputbildningar .buttonshelper .registerbutton, .desktopvagledning .buttonshelper .registerbutton, .desktopkontakt .buttonshelper .registerbutton, .desktopstudent .buttonshelper .registerbutton {
+    float: left;
+    margin-left: 10px;
+  }
+}
+@media (max-width: 799px) {
+  .desktopbuttons .footer, .desktoputbildningar .footer, .desktopvagledning .footer, .desktopkontakt .footer, .desktopstudent .footer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    left: 0;
+    right: 0;
+    text-align: center;
+    /*använder denna för att länkarna inte ska bli formaterade*/
+    /*campus mölndal ikon*/
+    /*kontakt*/
+    /*Sociala medier*/
+  }
+  .desktopbuttons .footer .linkFooter, .desktoputbildningar .footer .linkFooter, .desktopvagledning .footer .linkFooter, .desktopkontakt .footer .linkFooter, .desktopstudent .footer .linkFooter {
+    color: white;
+  }
+  .desktopbuttons .footer .item1, .desktoputbildningar .footer .item1, .desktopvagledning .footer .item1, .desktopkontakt .footer .item1, .desktopstudent .footer .item1 {
+    margin-top: 50px;
+    margin-left: 125px;
+    margin-bottom: 50px;
+  }
+  .desktopbuttons .footer .item2, .desktoputbildningar .footer .item2, .desktopvagledning .footer .item2, .desktopkontakt .footer .item2, .desktopstudent .footer .item2 {
+    margin-top: 50px;
+    margin-left: 125px;
+    margin-bottom: 50px;
+  }
+  .desktopbuttons .footer .item3, .desktoputbildningar .footer .item3, .desktopvagledning .footer .item3, .desktopkontakt .footer .item3, .desktopstudent .footer .item3 {
+    margin-top: 50px;
+    margin-left: 125px;
+    margin-bottom: 50px;
+    margin-right: 125px;
+  }
+}
+@media (max-width: 799px) {
+  .desktopbuttons .footerIcons, .desktoputbildningar .footerIcons, .desktopvagledning .footerIcons, .desktopkontakt .footerIcons, .desktopstudent .footerIcons {
+    font-size: 50px;
   }
 }
 
