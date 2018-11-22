@@ -5,10 +5,10 @@
   }
 }
 $desktop : 800px;
-$colorBgAktuellt: White;
+$colorBg: White;
 
 .aktuellt{
-  background-color: $colorBgAktuellt;
+  background-color: $colorBg;
   h2{
     margin-top: 20px;
     padding: 10px;
