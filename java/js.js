@@ -169,7 +169,7 @@ $('#menuutb').click(function(){
 
 
 
-// Desktop
+
 
 // Döljer och visar dropdown
 $('.desktoputbildningar').hide();
@@ -191,6 +191,8 @@ function reset(){
     }
 }
 
+setInterval(slideLeft)
+
 //init slider
 function startSlide(){
     reset();
@@ -202,6 +204,8 @@ function slideLeft(){
     reset();
     sliderImages[current - 1].style.display = 'block';
     current--;
+
+
 }
 // show next
 function slideRight(){
@@ -225,3 +229,6 @@ arrowRight.addEventListener('click', function(){
     slideRight();
 });
 startSlide();
+
+//Bildspel slut
+
