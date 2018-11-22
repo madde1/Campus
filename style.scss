@@ -1,21 +1,56 @@
 @import "scss/aktuellt";
 @import "scss/bildspel";
 @charset "UTF-8";
+<<<<<<< HEAD
 
+=======
+@media (max-width: 799px) {
+  .desktopbuttons, .desktoputbildningar, .desktopvagledning, .desktopkontakt, .desktopstudent{
+
+
+/*MOBIL*/
+>>>>>>> develop
 @media (max-width: 400px) {
   .desktopbuttons {
+
     display: none;
   }
+
   body, #slider, .wrap, .slide-content{
     height: 200px;
   }
+  .footer{
+    margin-top: 15px;
+    margin-bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    left: 0;
+    right: 0;
+    text-align: center;
+
+    /*använder denna för att länkarna inte ska bli formaterade*/
+    .linkFooter{
+      color: white;
+    }
+    /*flexar content*/
+    .item1{}
+    .item2{}
+    .item3{}
+    .item4{}
+  }
+  .footerIcons{
+    font-size: 40px;
+  }
 }
+
 body {
   width: 100%;
   background-color: grey;
   margin: 0 auto;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
+
 }
 
 header {
@@ -23,16 +58,30 @@ header {
   height: 75px;
   position: fixed;
   top: 0;
+<<<<<<< HEAD
   background-color: #202020;
   z-index: 10;
+=======
+  background-color: #400c0c;
+
+  -background-color: #202020;
+  z-index: 10;
 }
+
+hr {
+
+  width: 40%;
+  border-color: grey;
+>>>>>>> develop
+}
+
+
 
 a, a:visited {
   color: grey;
   text-decoration: none;
 }
 
-/* .icons håller ikonerna och paddingen centrerar dem vertikalt */
 .icons {
   padding-top: 20px;
 }
@@ -58,10 +107,11 @@ a, a:visited {
   top: 75px;
   width: 100%;
   height: 170px;
-  background-color: #202020;
+  background-color: #400c0c;
 }
 
-/* stylar även kommande inputfält som email */
+
+
 input[type=text], [type=password], [type=email] {
   width: 90%;
   height: 28px;
@@ -93,17 +143,26 @@ input[type=text], [type=password], [type=email] {
   height: 50px;
   position: fixed;
   top: 75px;
-  background-color: #202020;
+  background-color: #400c0c;
 }
 
 .header-nav {
+
   position: fixed;
   top: 75px;
   width: 100%;
-  text-align: left;
-  padding: 20px 0 20px 10px;
-  background-color: #202020;
+  height: auto;
+  text-align: center;
+  -padding: 20px 0 20px 10px; // left
+  padding: 20px 0 20px 0; // center
+
+  background-color: #400c0c;
   color: grey;
+<<<<<<< HEAD
+=======
+  line-height: 25px;
+
+>>>>>>> develop
 
 }
 
@@ -114,22 +173,86 @@ input[type=text], [type=password], [type=email] {
 #utbildningar-dropdown, #studenttjänster-dropdown, #vägledning-dropdown, #kontakt-dropdown {
   width: 100%;
   height: auto;
+<<<<<<< HEAD
   overflow: hidden;
   padding: 10px 0 10px 15px;
 
 }
 
 @include desktop{
+=======
+  -overflow: hidden;
+  -padding: 10px 0 10px 15px; // left
+  padding: 10px 0 10px 0; //center
+  a:active{
+    color: white;
+  }
+
+}
+
+.buttonshelper{
+
+  width: -webkit-calc(90% + 11px);
+  margin: 0 auto;
+  .loginbutton{
+    float: left;
+  }
+  .registerbutton{
+    float: left;
+    margin-left: 10px;
+  }
+}
+
+
+.mobmenu1{
+  height: 35px;
+  border-top: 1px solid #404040;
+}
+
+.mobmenu2{
+
+  margin-top: 15px;
+  height: 35px;
+  border-top: 1px solid #404040;
+}
+
+.mobmenu3{
+
+  margin-top: 15px;
+  padding-bottom: 15px;
+  height: 35px;
+  border-top: 1px solid #404040;
+  border-bottom: 1px solid #404040;
+}
+
+
+
+
+/*DESKTOP*/
+
+@media (min-width: 800px) {
+>>>>>>> develop
   #menu {
+    display: none;
+  }
+  header-nav{
     display: none;
   }
 
   .desktopbuttons {
+<<<<<<< HEAD
       height: 50px;
       width: 60%;
       float: left;
       margin-top: 12.5px;
 
+=======
+
+    height: 50px;
+    width: 60%;
+    float: left;
+    margin-top: 12.5px;
+>>>>>>> develop
   }
 
   .desktopbuttons li {
@@ -141,7 +264,13 @@ input[type=text], [type=password], [type=email] {
   }
 
   .desktoputbildningar {
-    width: 400px;
+    p{
+      text-align: left;
+      padding-left: 40px;
+      cursor: pointer;
+
+    }
+    width: 350px;
     position: fixed;
     top: 75px;
     z-index: 10;
@@ -151,9 +280,62 @@ input[type=text], [type=password], [type=email] {
     right: auto;
   }
 
-  .desktoputbildningar p {
+
+  .desktopstudent{
+
+    p{
+      text-align: left;
+      padding-left: 40px;
+      cursor: pointer;
+
+
+    }
+    width: 300px;
+    position: fixed;
+    top: 75px;
+    z-index: 10;
+    background-color: #202020;
+    color: grey;
+    left: 115px;
+    right: auto;
+
+  }
+
+  .desktopvagledning{
+    p{
+      text-align: left;
+      padding-left: 40px;
+      cursor: pointer;
+
+    }
+    width: 300px;
+    position: fixed;
+    top: 75px;
+    z-index: 10;
+    background-color: #202020;
+    color: grey;
+    left: 255px;
+    right: auto;
+
+  }
+
+  .desktopkontakt{
+
     text-align: left;
     padding-left: 40px;
+    cursor: pointer;
+    p{
+
+    }
+    width: 300px;
+    position: fixed;
+    top: 75px;
+    z-index: 10;
+    background-color: #202020;
+    color: grey;
+    left: 363px;
+    right: auto;
+
   }
 
   a:hover {
@@ -166,7 +348,9 @@ input[type=text], [type=password], [type=email] {
     position: fixed;
     top: 75px;
     z-index: 10;
-    background-color: #202020;
+    // background-color: #202020;
+    background-color: #400c0c;
+    padding-top: 8.5px;
     left: auto;
     right: 0;
   }
@@ -188,8 +372,68 @@ input[type=text], [type=password], [type=email] {
     position: fixed;
     top: 75px;
     z-index: 10;
-    background-color: #202020;
+    // background-color: #202020;
+    background-color: #400c0c;
+    padding-top: 8.5px;
     left: auto;
     right: 0;
   }
+
+
+  .buttonshelper{
+
+    width: -webkit-calc(90% + 11px);
+    margin: 0 auto;
+    .loginbutton{
+      float: left;
+    }
+    .registerbutton{
+      float: left;
+      margin-left: 10px;
+    }
+  }
+}
+
+  .footer{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    left: 0;
+    right: 0;
+    text-align: center;
+
+    /*använder denna för att länkarna inte ska bli formaterade*/
+    .linkFooter{
+      color: white;
+    }
+    /*campus mölndal ikon*/
+    .item1{
+      margin-top: 50px;
+      margin-left: 125px;
+      margin-bottom: 50px;
+
+    }
+    /*kontakt*/
+    .item2{
+      margin-top: 50px;
+      margin-left: 125px;
+      margin-bottom: 50px;
+    }
+    /*Sociala medier*/
+    .item3{
+      margin-top: 50px;
+      margin-left: 125px;
+      margin-bottom: 50px;
+      margin-right: 125px;
+    }
+
+  }
+  /*storleken på SM ikonerna*/
+  .footerIcons{
+    font-size: 50px;
+  }
+}
 }
