@@ -123,6 +123,7 @@ body, #slider, .wrap, .slide-content {
 
 .slide3 {
   background-image: url("../bildSpel/bilder/bild3.jpg");
+
 }
 
 .slide-content {
@@ -131,6 +132,7 @@ body, #slider, .wrap, .slide-content {
   justify-content: center;
   align-items: center;
   text-align: center;
+
 }
 
 .slide-content span {
@@ -198,7 +200,6 @@ body, #slider, .wrap, .slide-content {
 #arrow-right:hover {
   opacity: 1;
 }
-
 
 /*MOBIL*/
 @media (max-width: 400px) {
@@ -450,6 +451,23 @@ input[type=text], [type=password], [type=email] {
   .footerIcons {
     font-size: 50px;
   }
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 3s;
+  animation-name: fade;
+  animation-duration: 3s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
 
 /*# sourceMappingURL=style.css.map */
