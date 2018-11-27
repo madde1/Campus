@@ -83,34 +83,34 @@ $colorBgAktuellt: White;
       }
     }
   }
-//Css för bilderna på startsidan aktuellt delen
-img {
-  margin: 15px 10px 10px 10px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  padding: 5px;
-  width: 90%;
-  height: auto;
-  @include desktop {
-    margin: 15px;
+  //Css för bilderna på startsidan aktuellt delen
+  img {
+    margin: 15px 10px 10px 10px;
     border: 1px solid #ddd;
     border-radius: 4px;
     padding: 5px;
-    width: 350px;
-    cursor: pointer;
-  }
+    width: 90%;
+    height: auto;
+    @include desktop {
+      margin: 15px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      padding: 5px;
+      width: 350px;
+      cursor: pointer;
+    }
 
-}
+  }
   //Gör så att bilderna spegelvänds vid hover
-img:hover {
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-}
+  img:hover {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
 }
 //Wrap runt hela innehållet på aktuelltPostSidan
 .akutelltWrap {
   background-color: $colorBgAktuellt;
- @include desktop{
+  @include desktop{
     background-color: white;
     display: grid;
     grid-template-columns: auto auto;
@@ -130,9 +130,9 @@ img:hover {
     }
   }
   //Wrap för att kunna få bort knapparna vid mobilläge.
-.aktuelltSideMenu{@include mobile{display: none;}}
+  .aktuelltSideMenu{@include mobile{display: none;}}
 
-//Wrapen runt knapparna.
+  //Wrapen runt knapparna.
   tab {
     display: none;
     background-color: white;
@@ -177,7 +177,7 @@ img:hover {
       background-color: #ccc;
     }
   }
-//
+  //
   /* Css för Tab content */
   .tabcontent {
     @include desktop {
@@ -188,8 +188,8 @@ img:hover {
       height: auto;
     }
   }
-//Css för knapparna
-.btn {
+  //Css för knapparna
+  .btn {
     border: 1px solid #303030;
     background-color: orange;
     color: #303030;
@@ -201,35 +201,35 @@ img:hover {
     text-align: center;
   }
   //Css för bilderna på aktuelltPost.php
-.aktuelltImg{
-  @include mobile {
-    width: 300px;
-    height: auto;
-  }
-  @include desktop {
-    img {
-      margin: 30px 5px 30px 5px;
-      border: 1px solid #ddd;
-      border-radius: 4px;
-      padding: 5px;
+  .aktuelltImg{
+    @include mobile {
+      width: 300px;
+      height: auto;
     }
-    img:hover {
-      -webkit-transform: scaleX(-1);
-      transform: scaleX(-1);
+    @include desktop {
+      img {
+        margin: 30px 5px 30px 5px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 5px;
+      }
+      img:hover {
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+      }
     }
   }
-}
   //Css för text delen på aktuelltPost.php
   .aktuelltText{
     width: 100%;
-      margin: 15px 0 30px 0;
-  @include desktop{
-    width: 100%;
-    margin: 15px 0 30px 60px;
-  }
-    .text{display: none;}
+    margin: 15px 0 30px 0;
+    @include desktop{
+      width: 100%;
+      margin: 15px 0 30px 60px;
     }
+    .text{display: none;}
   }
+}
 
 
 //Css för Skapa inlägg
@@ -257,11 +257,10 @@ img:hover {
     text-align: center;
   }
   p:hover{
-color:black!important;
+    color:black!important;
   }
 }
 .DeleteAktuellt{
   margin-top: 75px;
   text-align: center;
 }
-//Slut på aktuellt delen/madde

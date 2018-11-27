@@ -455,8 +455,6 @@ function reset(){
     }
 }
 
-setInterval(slideLeft)
-
 //init slider
 function startSlide(){
     reset();
@@ -494,11 +492,7 @@ arrowRight.addEventListener('click', function(){
 });
 startSlide();
 
-$(document.body).click( function() {
-    if (url == "http://localhost/skolprojekt/user%20story%205/index.php"){
-        $('#menukon').css('color', 'white');
-    }
-});
+
 
 
 

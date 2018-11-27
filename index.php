@@ -1,28 +1,7 @@
-<?php
 
-?>
-
-<!doctype html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
-
-<body>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://unpkg.com/ionicons@4.2.2/dist/ionicons.js"></script>
-    <link href="https://unpkg.com/ionicons@4.2.2/dist/css/ionicons.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Campus Mölndal</title>
-</head>
 <?php
 include 'includes/header.php';
 ?>
-
-
 
 <main>
     <section class="bildspel">
@@ -45,13 +24,21 @@ include 'includes/header.php';
         <div id="arrow-right" class="arrow"></div>
     </div>
     </section>
+    <section>
+        <h1>CAMPUS MÖLNDAL</h1>
+        <p>Campus Mölndal är en samlingsplats för all vuxenutbildning inom Mölndals stad.
+            Hos oss kan du studera på alla nivåer - från kurser motsvarande grundskola,
+            till eftergymnasial nivå i form av yrkeshögskola.
+            Du kan också få råd, information och stöd i planering av dina studier av våra studie-
+            och yrkesvägledare.</p>
+    </section>
 <section class="aktuellt">
     <?php
     /** Inkluderar aktuellt delen på sidan. /madde */
     include 'includes/aktuellt.php';
     ?>
 </section>
-
+</main>
     <?php
     include 'includes/footer.php';
     ?>

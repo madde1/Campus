@@ -4,7 +4,7 @@
 <body>
 
 <?php
-include '../includes/header.php';
+include 'includes/header.php';
 ?>
 <link type="text/css" href="/css/reg.css" rel="stylesheet">
 <main>
@@ -22,5 +22,6 @@ include '../includes/header.php';
     </div>
 </main>
 
-</body>
-</html>
+<?php
+include 'includes/footer.php';
+?>
