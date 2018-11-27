@@ -5,7 +5,7 @@
 $servername = "localhost";
 $dBUsername = "root";
 $dBPassword = "";
-$dBName = "campus";
+$dBName = "CampusDB";
 
 
 //Anslutningen till Databasen Campus

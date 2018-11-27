@@ -12,7 +12,14 @@ session_start();
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://unpkg.com/ionicons@4.2.2/dist/ionicons.js"></script>
     <link href="https://unpkg.com/ionicons@4.2.2/dist/css/ionicons.min.css" rel="stylesheet">
+<<<<<<< HEAD
     <link rel="stylesheet" type="text/css" href="/css/style.css">
+=======
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/regform.css">
+
+
+>>>>>>> develop
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Campus Mölndal</title>
 </head>
@@ -36,7 +43,7 @@ session_start();
                 <a href="index.php"><ion-icon class="headericon" id="homeicon" name="home"></ion-icon></a>
             </div>
             <div class="login">
-                <form action="login.inc.php" method="post">
+                <form action="includes/login.inc.php" method="post">
                     <!--<input type="hidden" name="isnew" id="isnew" value="1">-->
                     <input type="text" name="mailuid" placeholder="E-mail/Username...">
                     <p><input type="password" name="pwd" placeholder="Password"></p>
@@ -44,7 +51,7 @@ session_start();
 
                     <div class="buttonshelper">
                         <input type="submit" name="login-submit" value="Logga in" class="loginbutton">
-                        <a href="../signup.php"><input type="button" value="Registrera" class="registerbutton"></a>
+                        <a href="signup.php"><input type="button" value="Registrera" class="registerbutton"></a>
                     </span>
             </div>
                 </form>

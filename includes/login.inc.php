@@ -7,6 +7,7 @@ if (isset($_POST['login-submit'])) {
     $mailuid = $_POST['mailuid'];
     $password = $_POST['pwd'];
 
+
     if (empty($mailuid) || empty($password)) {
         header("Location: ../index.php?error=emptyfields");
         exit();
@@ -33,6 +34,7 @@ if (isset($_POST['login-submit'])) {
                    session_start();
                    $_SESSION['userId'] = $row['idUsers'];
                    $_SESSION['userUid'] = $row['uidUsers'];
+                    $_SESSION['user'] = $mailuid;
 
                     header("Location: ../index.php?login=success");
                     exit();

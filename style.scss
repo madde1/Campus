@@ -5,16 +5,17 @@
 
 =======
 @media (max-width: 799px) {
-  .desktopbuttons, .desktoputbildningar, .desktopvagledning, .desktopkontakt, .desktopstudent{
-
-
+  .desktopbuttons, .desktoputbildningar, .desktopvagledning, .desktopkontakt, .desktopstudent {
+    display: none;
+  }
+}
 /*MOBIL*/
 >>>>>>> develop
 @media (max-width: 400px) {
   .desktopbuttons {
-
     display: none;
   }
+
 
   body, #slider, .wrap, .slide-content{
     height: 200px;
@@ -43,6 +44,22 @@
     font-size: 40px;
   }
 }
+
+input[type=text], [type=password], [type=email] {
+  width: 90%;
+  height: 28px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.wrapper-main{
+  width: 90%;
+  margin: 0 auto;
+
+}
+
+
 
 body {
   width: 100%;
@@ -112,13 +129,7 @@ a, a:visited {
 
 
 
-input[type=text], [type=password], [type=email] {
-  width: 90%;
-  height: 28px;
-  border: 1px solid black;
-  border-radius: 5px;
-  padding: 5px;
-}
+
 
 .loginbutton {
   border: 1px solid #303030;
@@ -155,15 +166,17 @@ input[type=text], [type=password], [type=email] {
   text-align: center;
   -padding: 20px 0 20px 10px; // left
   padding: 20px 0 20px 0; // center
-
   background-color: #400c0c;
   color: grey;
 <<<<<<< HEAD
 =======
   line-height: 25px;
 
+<<<<<<< HEAD
 >>>>>>> develop
 
+=======
+>>>>>>> develop
 }
 
 #utbildningar-click, #studenttjänster-click, #vägledning-click, #kontakt-click {
@@ -203,7 +216,6 @@ input[type=text], [type=password], [type=email] {
   }
 }
 
-
 .mobmenu1{
   height: 35px;
   border-top: 1px solid #404040;
@@ -227,9 +239,7 @@ input[type=text], [type=password], [type=email] {
 
 
 
-
 /*DESKTOP*/
-
 @media (min-width: 800px) {
 >>>>>>> develop
   #menu {
@@ -379,7 +389,6 @@ input[type=text], [type=password], [type=email] {
     right: 0;
   }
 
-
   .buttonshelper{
 
     width: -webkit-calc(90% + 11px);
@@ -393,8 +402,7 @@ input[type=text], [type=password], [type=email] {
     }
   }
 }
-
-  .footer{
+  .footer {
     display: flex;
     align-items: center;
     margin-bottom: 0;
@@ -404,6 +412,7 @@ input[type=text], [type=password], [type=email] {
     left: 0;
     right: 0;
     text-align: center;
+
 
     /*använder denna för att länkarna inte ska bli formaterade*/
     .linkFooter{
@@ -435,5 +444,4 @@ input[type=text], [type=password], [type=email] {
   .footerIcons{
     font-size: 50px;
   }
-}
-}
+

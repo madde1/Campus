@@ -1,9 +1,15 @@
+/*
 * {box-sizing: border-box}
-
+*/
 
 .wrapper-main {
+    margin: 75px auto;
     padding: 5px;
+    width: 90%;
+
+
 }
+
 
 .wrapper-main img{
     padding-top: 20px;
@@ -12,6 +18,7 @@ h1 {
     color: white;
 }
 
+/*
 #reginput{
     width: 100%;
     padding: 15px;
@@ -26,13 +33,11 @@ input[type=text]:focus, input[type=password]:focus {
     background-color: #ddd;
     outline: none;
 }
-
-
+*/
 hr {
     border: 1px solid #f1f1f1;
     margin-bottom: 25px;
 }
-
 
 .regbtn {
     background-color: #4CAF50;
@@ -58,6 +63,14 @@ hr {
     color: greenyellow;
     font-size: 20px;
 }
+
+
+@media (min-width: 800px) {
+    .wrapper-main {
+        width: 30%;
+    }
+}
+
 
 
 
