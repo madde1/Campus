@@ -4,9 +4,6 @@ session_start();
 
 ?>
 
-<<<<<<< HEAD
-=======
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -15,11 +12,11 @@ session_start();
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://unpkg.com/ionicons@4.2.2/dist/ionicons.js"></script>
     <link href="https://unpkg.com/ionicons@4.2.2/dist/css/ionicons.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Header</title>
+    <title>Campus Mölndal</title>
 </head>
->>>>>>> develop
+
 <header>
     <div class="headersticky">
         <div class="header">
