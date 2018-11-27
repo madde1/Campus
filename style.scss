@@ -147,7 +147,6 @@ a, a:visited {
 }
 
 .header-nav {
-
   position: fixed;
   top: 75px;
   width: 100%;
@@ -157,15 +156,7 @@ a, a:visited {
   padding: 20px 0 20px 0; // center
   background-color: #400c0c;
   color: grey;
-<<<<<<< HEAD
-=======
   line-height: 25px;
-
-<<<<<<< HEAD
->>>>>>> develop
-
-=======
->>>>>>> develop
 }
 
 #utbildningar-click, #studenttjänster-click, #vägledning-click, #kontakt-click {
@@ -175,16 +166,13 @@ a, a:visited {
 #utbildningar-dropdown, #studenttjänster-dropdown, #vägledning-dropdown, #kontakt-dropdown {
   width: 100%;
   height: auto;
-<<<<<<< HEAD
   overflow: hidden;
   padding: 10px 0 10px 15px;
-
 }
 
 @include desktop{
-=======
-  -overflow: hidden;
-  -padding: 10px 0 10px 15px; // left
+  overflow: hidden;
+  padding: 10px 0 10px 15px; // left
   padding: 10px 0 10px 0; //center
   a:active{
     color: white;
