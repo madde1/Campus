@@ -260,19 +260,13 @@ header {
   height: 75px;
   position: fixed;
   top: 0;
-<<<<<<< HEAD
-  background-color: #202020;
-  z-index: 10;
-=======
   background-color: #400c0c;
-  -background-color: #202020;
   z-index: 10;
 }
 
 hr {
   width: 40%;
   border-color: grey;
->>>>>>> develop
 }
 
 a, a:visited {
@@ -395,12 +389,9 @@ a, a:visited {
   border-bottom: 1px solid #404040;
 }
 
-<<<<<<< HEAD
-@media screen and (min-width: 800px) {
-=======
+
 /*DESKTOP*/
 @media (min-width: 800px) {
->>>>>>> develop
   #menu {
     display: none;
   }

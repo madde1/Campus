@@ -1,16 +1,13 @@
+@charset "UTF-8";
 @import "scss/aktuellt";
 @import "scss/bildspel";
-@charset "UTF-8";
-<<<<<<< HEAD
 
-=======
 @media (max-width: 799px) {
   .desktopbuttons, .desktoputbildningar, .desktopvagledning, .desktopkontakt, .desktopstudent {
     display: none;
   }
 }
 /*MOBIL*/
->>>>>>> develop
 @media (max-width: 400px) {
   .desktopbuttons {
     display: none;
@@ -75,21 +72,13 @@ header {
   height: 75px;
   position: fixed;
   top: 0;
-<<<<<<< HEAD
   background-color: #202020;
-  z-index: 10;
-=======
-  background-color: #400c0c;
-
-  -background-color: #202020;
   z-index: 10;
 }
 
 hr {
-
   width: 40%;
   border-color: grey;
->>>>>>> develop
 }
 
 
@@ -241,28 +230,17 @@ a, a:visited {
 
 /*DESKTOP*/
 @media (min-width: 800px) {
->>>>>>> develop
   #menu {
     display: none;
   }
   header-nav{
     display: none;
   }
-
   .desktopbuttons {
-<<<<<<< HEAD
       height: 50px;
       width: 60%;
       float: left;
       margin-top: 12.5px;
-
-=======
-
-    height: 50px;
-    width: 60%;
-    float: left;
-    margin-top: 12.5px;
->>>>>>> develop
   }
 
   .desktopbuttons li {
