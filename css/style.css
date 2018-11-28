@@ -7,6 +7,7 @@
   font-size: 50px;
   padding: 10px;
   color: black;
+  font-family: "Roboto Slab", serif;
 }
 .aktuellt .contentAktuellt {
   display: grid;
@@ -57,18 +58,22 @@
   font-size: 20px;
   text-decoration: none;
   margin: 15px;
+  font-family: "Roboto", sans-serif;
 }
 @media screen and (min-width: 801px) {
   .aktuellt .contentAktuellt p {
-    font-size: 14px;
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
   }
 }
 .aktuellt .contentAktuellt h3 {
   font-size: 30px;
+  font-family: "Roboto Slab", serif;
 }
 @media screen and (min-width: 801px) {
   .aktuellt .contentAktuellt h3 {
-    font-size: 18px;
+    font-size: 25px;
+    font-family: "Roboto Slab", serif;
   }
 }
 .aktuellt img {
@@ -499,6 +504,15 @@ body, #slider, .wrap, .slide-content {
   background-image: url("../img/headerJava.jpg");
 }
 
+p {
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+h1, h2, h3, h4, h4, h6 {
+  font-family: "Roboto Slab", serif;
+}
+
 @media (max-width: 799px) {
   .desktopbuttons, .desktoputbildningar, .desktopvagledning, .desktopkontakt, .desktopstudent {
     display: none;
@@ -573,7 +587,7 @@ body {
   color: white;
   margin: 0 auto;
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 header {
@@ -923,6 +937,36 @@ a, a:visited {
       opacity: 1;
     }
   }
+}
+.contentStart {
+  display: grid;
+  grid-template-columns: auto;
+}
+@media screen and (min-width: 800px) {
+  .contentStart {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+}
+.contentStart .sItem1 h1 {
+  font-size: 50px;
+  padding: 10px;
+  color: white;
+  font-family: "Roboto Slab", serif;
+}
+.contentStart .sItem2 h2 {
+  font-size: 40px;
+  padding: 10px;
+  color: white;
+  font-family: "Roboto Slab", serif;
+}
+.contentStart .sItem2 h4 {
+  font-size: 25px;
+  color: white;
+  font-family: "Roboto Slab", serif;
+}
+.contentStart .sItem2 p {
+  font-size: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

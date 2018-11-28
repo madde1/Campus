@@ -15,6 +15,7 @@ session_start();
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <link rel="stylesheet" type="text/css" href="/css/regform.css">
     <link rel="stylesheet" href="../css/reg.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab" rel="stylesheet">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Campus Mölndal</title>

@@ -10,6 +10,11 @@ $textheader:lighten(#1E4363, 70%);
 $bg:lighten(#1E4363, 20%);
 $text:white;
 $btn:#FFB00D;
+p{
+  font-size: 20px;
+  font-family: $fontText;
+}
+h1,h2,h3,h4,h4,h6{  font-family: $fontHeading;}
 
 @media (max-width: 799px) {
   .desktopbuttons, .desktoputbildningar, .desktopvagledning, .desktopkontakt, .desktopstudent {
@@ -85,7 +90,7 @@ body {
   color:$text;
   margin: 0 auto;
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family:$fontText;
 
 }
 header {
@@ -435,5 +440,38 @@ a, a:visited {
   @keyframes fade {
     from{opacity: .4}
     to{opacity: 1}
+  }
+
+}
+.contentStart{
+  display: grid;
+  grid-template-columns: auto;
+  @include desktop{
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+.sItem1 {
+  h1 {
+    font-size: 50px;
+    padding: 10px;
+    color: $text;
+    font-family: $fontHeading;
+  }
+}
+  .sItem2{
+    h2 {
+      font-size: 40px;
+      padding: 10px;
+      color: $text;
+      font-family: $fontHeading;
+    }
+    h4{
+      font-size: 25px;
+      color: $text;
+      font-family: $fontHeading;
+    }
+    p{
+     font-size: 20px;
+    }
   }
 }
