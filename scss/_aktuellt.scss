@@ -11,8 +11,10 @@
     @content;
   }
 }
+
 $desktop : 801px;
-$colorBgAktuellt: White;
+$colorBgAktuellt:lighten(#1E4363, 70%);
+$textAktuellt:black;
 //Css wrapen som finns i index.php filen.
 .aktuellt{
   background-color: $colorBgAktuellt;
@@ -26,6 +28,8 @@ $colorBgAktuellt: White;
     display: grid;
     grid-template-rows: auto;
     grid-gap: 2px;
+    color:$textAktuellt;
+    background-color: $colorBgAktuellt;
     @include desktop {
       display: grid;
       grid-template-columns: auto auto auto;
@@ -110,6 +114,7 @@ $colorBgAktuellt: White;
 //Wrap runt hela innehållet på aktuelltPostSidan
 .akutelltWrap {
   background-color: $colorBgAktuellt;
+  color:$textAktuellt;
   @include desktop{
     background-color: white;
     display: grid;
@@ -223,6 +228,7 @@ $colorBgAktuellt: White;
   .aktuelltText{
     width: 100%;
     margin: 15px 0 30px 0;
+    color:$textAktuellt;
     @include desktop{
       width: 100%;
       margin: 15px 0 30px 60px;
