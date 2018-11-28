@@ -372,6 +372,7 @@ body, #slider, .wrap, .slide-content {
 /*Används för att kunna skriva det som ska vara i desktop läge. */
 .itInfo {
   background-color: #edf3f9;
+  color: black;
 }
 .itInfo h2 {
   margin-top: 20px;
@@ -410,6 +411,7 @@ body, #slider, .wrap, .slide-content {
 @media screen and (min-width: 800px) {
   .itInfo .contentit p {
     font-size: 16px;
+    color: black;
   }
 }
 .itInfo .contentit img {
@@ -439,6 +441,7 @@ body, #slider, .wrap, .slide-content {
 /*Används för att kunna skriva det som ska vara i desktop läge. */
 .javaInfo {
   background-color: #edf3f9;
+  color: black;
 }
 .javaInfo h2 {
   margin-top: 20px;
@@ -478,6 +481,7 @@ body, #slider, .wrap, .slide-content {
 @media screen and (min-width: 800px) {
   .javaInfo .contentJava p {
     font-size: 16px;
+    colort: black;
   }
 }
 .javaInfo .contentJava img {
@@ -504,7 +508,6 @@ body, #slider, .wrap, .slide-content {
   background-image: url("../img/headerJava.jpg");
 }
 
-<<<<<<< HEAD
 .applybild {
   width: 100%;
   height: 200px;
@@ -619,7 +622,6 @@ body, #slider, .wrap, .slide-content {
     margin-bottom: 30px;
   }
 }
-=======
 p {
   font-size: 20px;
   font-family: "Roboto", sans-serif;
@@ -629,7 +631,6 @@ h1, h2, h3, h4, h4, h6 {
   font-family: "Roboto Slab", serif;
 }
 
->>>>>>> 37b7c9727542874e9eecf6f66c60d6c8af9f8945
 @media (max-width: 799px) {
   .desktopbuttons, .desktoputbildningar, .desktopvagledning, .desktopkontakt, .desktopstudent {
     display: none;

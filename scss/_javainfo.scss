@@ -9,6 +9,7 @@ $colorBg:lighten(#1E4363, 70%);
 $textfärg:black;
 .javaInfo {
   background-color: $colorBg;
+  color:$textfärg;
   h2 {
     margin-top: 20px;
     padding: 10px;
@@ -42,6 +43,7 @@ $textfärg:black;
       color:$textfärg;
       @include desktop{
         font-size: 16px;
+        colort:$textfärg;
       }
     }
 
