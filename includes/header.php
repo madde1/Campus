@@ -12,6 +12,12 @@ session_start();
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://unpkg.com/ionicons@4.2.2/dist/ionicons.js"></script>
     <link href="https://unpkg.com/ionicons@4.2.2/dist/css/ionicons.min.css" rel="stylesheet">
+<<<<<<< HEAD
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/regform.css">
+    <link rel="stylesheet" href="css/reg.css">
+
+=======
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <link rel="stylesheet" type="text/css" href="/css/regform.css">
     <link rel="stylesheet" href="../css/reg.css">
@@ -25,6 +31,7 @@ session_start();
     <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
+>>>>>>> 37b7c9727542874e9eecf6f66c60d6c8af9f8945
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Campus Mölndal</title>
@@ -45,11 +52,11 @@ session_start();
                 <ion-icon class="menu" id="menu" name="menu"></ion-icon>
                 <ion-icon class="headericon" id="searchicon" name="search"></ion-icon>
                 <ion-icon class="headericon" id="usericon" name="person"></ion-icon>
-                <ion-icon class="headericon" id="schoolicon" name="school"></ion-icon>
+                <a href="apply.php"><ion-icon class="headericon2" id="schoolicon" name="school"></ion-icon></a>
                 <a href="index.php"><ion-icon class="headericon" id="homeicon" name="home"></ion-icon></a>
             </div>
             <div class="login">
-                <form action="includes/login.inc.php" method="post">
+                <form action="includes/login.inc.php" method="post" autocomplete="off" >
                     <!--<input type="hidden" name="isnew" id="isnew" value="1">-->
                     <input class="field" type="text" name="mailuid" placeholder="E-mail/Username...">
                     <p><input class="field"  type="password" name="pwd" placeholder="Password"></p>
@@ -104,9 +111,9 @@ session_start();
                <p id="utbildningar-click">Utbildningar</p>
 
                 <div id="utbildningar-dropdown">
-                    <a href="java.php"><p>Java- och webbutvecklare</p></a>
+                    <a href="javaStart.php"><p>Java- och webbutvecklare</p></a>
                     <p>IT- och virtualiseringsspecialist</p>
-                    <a href="IT.php"><p>IT-projektledare</p></a>
+                    <a href="it.php"><p>IT-projektledare</p></a>
                     <p>Aktiveringspedagog inom LSS</p>
                     <p>Specialiserad studiehandledare</p>
                     <p>Information</p>

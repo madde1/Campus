@@ -30,6 +30,8 @@ include 'includes/header.php';
     <section class="AnsokanJava">
         <div class="ansokanKontaktJava">
             <h3>Ansökan</h3>
+            <button class="applybutton" id="edu-java" type="button" onclick="addJava()" name="java" value="1">Ansök</button>
+
             <p>
                 Ansökan för start HT2018 är stängd.
             </p>
