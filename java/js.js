@@ -559,7 +559,7 @@ function changecolor() {
 function noColor(){
     console.log("Kör nocolor!");
 
-    $('#schoolicon').css('color', '#b3b3b3');
+    $('#schoolicon').css('color', '#EDF3F9');
 }
 
 function removeIT(){
