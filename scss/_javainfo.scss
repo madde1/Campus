@@ -5,8 +5,8 @@
   }
 }
 $desktop : 800px;
-$colorBg: lightgrey;
-
+$colorBg:lighten(#1E4363, 70%);
+$textfärg:black;
 .javaInfo {
   background-color: $colorBg;
   h2 {
@@ -20,6 +20,7 @@ $colorBg: lightgrey;
     grid-gap: 2px;
     text-align: left;
     width: 500px;
+
 
     @include desktop {
       display: grid;
@@ -38,6 +39,7 @@ $colorBg: lightgrey;
       font-size: 20px;
       text-decoration: none;
       margin: 15px;
+      color:$textfärg;
       @include desktop{
         font-size: 16px;
       }
