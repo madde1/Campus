@@ -15,13 +15,16 @@
 $desktop : 801px;
 $colorBgAktuellt:lighten(#1E4363, 70%);
 $textAktuellt:black;
+$fontHeading: 'Roboto Slab', serif;
+$fontText:'Roboto', sans-serif;
 //Css wrapen som finns i index.php filen.
 .aktuellt{
   background-color: $colorBgAktuellt;
   h2{
     font-size: 50px;
     padding: 10px;
-    color:black;
+    color:$textAktuellt;
+    font-family: $fontHeading;
   }
   //Wrap runt allt innehåll på aktuellt delen.
   .contentAktuellt {
@@ -75,15 +78,19 @@ $textAktuellt:black;
       font-size: 20px;
       text-decoration: none;
       margin: 15px;
+      font-family: $fontText;
       @include desktop {
-        font-size: 14px;
+        font-size: 20px;
+        font-family: $fontText;
       }
     }
     //Css för rubrikerna på aktuellt delen på startsidan
     h3 {
       font-size: 30px;
+      font-family: $fontHeading;
       @include desktop {
-        font-size: 18px;
+        font-size: 25px;
+        font-family: $fontHeading;
       }
     }
   }

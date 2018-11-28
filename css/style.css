@@ -7,6 +7,7 @@
   font-size: 50px;
   padding: 10px;
   color: black;
+  font-family: "Roboto Slab", serif;
 }
 .aktuellt .contentAktuellt {
   display: grid;
@@ -57,18 +58,22 @@
   font-size: 20px;
   text-decoration: none;
   margin: 15px;
+  font-family: "Roboto", sans-serif;
 }
 @media screen and (min-width: 801px) {
   .aktuellt .contentAktuellt p {
-    font-size: 14px;
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
   }
 }
 .aktuellt .contentAktuellt h3 {
   font-size: 30px;
+  font-family: "Roboto Slab", serif;
 }
 @media screen and (min-width: 801px) {
   .aktuellt .contentAktuellt h3 {
-    font-size: 18px;
+    font-size: 25px;
+    font-family: "Roboto Slab", serif;
   }
 }
 .aktuellt img {
@@ -260,7 +265,6 @@
 body, #slider, .wrap, .slide-content {
   margin-top: 0;
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
   width: 100%;
   height: 500px;
   overflow-x: hidden;
@@ -345,6 +349,7 @@ body, #slider, .wrap, .slide-content {
   left: 0;
   margin-left: 30px;
   opacity: 0.4;
+  z-index: 1;
 }
 
 #arrow-right {
@@ -365,7 +370,7 @@ body, #slider, .wrap, .slide-content {
 
 /*Används för att kunna skriva det som ska vara i desktop läge. */
 .itInfo {
-  background-color: lightgrey;
+  background-color: #edf3f9;
 }
 .itInfo h2 {
   margin-top: 20px;
@@ -432,7 +437,7 @@ body, #slider, .wrap, .slide-content {
 
 /*Används för att kunna skriva det som ska vara i desktop läge. */
 .javaInfo {
-  background-color: lightgrey;
+  background-color: #edf3f9;
 }
 .javaInfo h2 {
   margin-top: 20px;
@@ -467,6 +472,7 @@ body, #slider, .wrap, .slide-content {
   font-size: 20px;
   text-decoration: none;
   margin: 15px;
+  color: black;
 }
 @media screen and (min-width: 800px) {
   .javaInfo .contentJava p {
@@ -497,6 +503,7 @@ body, #slider, .wrap, .slide-content {
   background-image: url("../img/headerJava.jpg");
 }
 
+<<<<<<< HEAD
 .applybild {
   width: 100%;
   height: 200px;
@@ -611,6 +618,17 @@ body, #slider, .wrap, .slide-content {
     margin-bottom: 30px;
   }
 }
+=======
+p {
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+h1, h2, h3, h4, h4, h6 {
+  font-family: "Roboto Slab", serif;
+}
+
+>>>>>>> 37b7c9727542874e9eecf6f66c60d6c8af9f8945
 @media (max-width: 799px) {
   .desktopbuttons, .desktoputbildningar, .desktopvagledning, .desktopkontakt, .desktopstudent {
     display: none;
@@ -626,6 +644,29 @@ body, #slider, .wrap, .slide-content {
     height: 200px;
   }
 
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 3s;
+    animation-name: fade;
+    animation-duration: 3s;
+  }
+
+  @-webkit-keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
   .footer {
     display: grid;
     grid-template-columns: auto;
@@ -685,7 +726,7 @@ body {
   color: white;
   margin: 0 auto;
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 header {
@@ -703,7 +744,7 @@ hr {
 }
 
 a, a:visited {
-  color: grey;
+  color: #edf3f9;
   text-decoration: none;
 }
 
@@ -729,7 +770,7 @@ a, a:visited {
 }
 
 .icons .menu {
-  color: white;
+  color: #FFB00D;
   width: 35px;
   height: 35px;
   padding-left: 20px;
@@ -757,7 +798,7 @@ a, a:visited {
 .registerbutton {
   border: 1px solid #303030;
   background-color: black;
-  color: white;
+  color: #FFB00D;
   padding: 12px 20px;
   border-radius: 4px;
   cursor: pointer;
@@ -900,7 +941,7 @@ a, a:visited {
     position: fixed;
     top: 75px;
     z-index: 10;
-    background-color: #202020;
+    background-color: #1E4363;
     color: #edf3f9;
     left: 255px;
     right: auto;
@@ -919,13 +960,13 @@ a, a:visited {
     position: fixed;
     top: 75px;
     z-index: 10;
-    background-color: #202020;
+    background-color: #1E4363;
     color: #edf3f9;
     left: 363px;
     right: auto;
   }
   a:hover {
-    color: white;
+    color: #FFB00D;
   }
 
   .searchfield {
@@ -946,7 +987,7 @@ a, a:visited {
     position: fixed;
     top: 75px;
     z-index: 10;
-    background-color: #202020;
+    background-color: #1E4363;
     left: auto;
     right: 0;
   }
@@ -1019,6 +1060,60 @@ a, a:visited {
   .footerIcons {
     font-size: 50px;
   }
+
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 3s;
+    animation-name: fade;
+    animation-duration: 3s;
+  }
+
+  @-webkit-keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
+.contentStart {
+  display: grid;
+  grid-template-columns: auto;
+}
+@media screen and (min-width: 800px) {
+  .contentStart {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+}
+.contentStart .sItem1 h1 {
+  font-size: 50px;
+  padding: 10px;
+  color: white;
+  font-family: "Roboto Slab", serif;
+}
+.contentStart .sItem2 h2 {
+  font-size: 40px;
+  padding: 10px;
+  color: white;
+  font-family: "Roboto Slab", serif;
+}
+.contentStart .sItem2 h4 {
+  font-size: 25px;
+  color: white;
+  font-family: "Roboto Slab", serif;
+}
+.contentStart .sItem2 p {
+  font-size: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

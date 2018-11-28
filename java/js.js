@@ -43,13 +43,13 @@ function closeDropdowns(){
 
     $('.header-nav').hide();
     $('#utbildningar-dropdown').hide();
-    $('#utbildningar-click').css('color', 'grey');
+    $('#utbildningar-click').css('color', 'lighten(#1E4363, 70%)');
     $('#studenttjänster-dropdown').hide();
-    $('#studenttjänster-click').css('color', 'grey');
+    $('#studenttjänster-click').css('color', 'lighten(#1E4363, 70%)');
     $('#vägledning-dropdown').hide();
-    $('#vägledning-click').css('color', 'grey');
+    $('#vägledning-click').css('color', 'lighten(#1E4363, 70%)');
     $('#kontakt-dropdown').hide();
-    $('#kontakt-click').css('color', 'grey');
+    $('#kontakt-click').css('color', 'lighten(#1E4363, 70%)');
 
 
 
@@ -57,17 +57,17 @@ function closeDropdowns(){
 
 
     $('.login').hide();
-    $('#usericon').css('color', 'grey');
+    $('#usericon').css('color', 'lighten(#1E4363, 70%)');
     $('.searchfield').hide();
-    $('#searchicon').css('color', 'grey');
+    $('#searchicon').css('color', 'lighten(#1E4363, 70%)');
     $('.desktoputbildningar').hide();
-    $('#menuutb').css('color', 'grey');
+    $('#menuutb').css('color', 'lighten(#1E4363, 70%)');
     $('.desktopstudent').hide();
-    $('#menustu').css('color', 'grey');
+    $('#menustu').css('color', 'lighten(#1E4363, 70%)');
     $('.desktopvagledning').hide();
-    $('#menuvag').css('color', 'grey');
+    $('#menuvag').css('color', 'lighten(#1E4363, 70%)');
     $('.desktopkontakt').hide();
-    $('#menukon').css('color', 'grey');
+    $('#menukon').css('color', 'lighten(#1E4363, 70%)');
 
 }
 
@@ -104,10 +104,10 @@ $('.header-nav').hide();
 
 $('#menu').click(function() {
     $('.searchfield').hide();
-    $('#searchicon').css('color', 'grey');
+    $('#searchicon').css('color', 'lighten(#1E4363, 70%)');
 
     $('.login').hide();
-    $('#usericon').css('color', 'grey');
+    $('#usericon').css('color', 'lighten(#1E4363, 70%)');
 
     $('.header-nav').toggle();
 
@@ -120,20 +120,20 @@ $('#usericon').click(function(){
     $('.searchfield').hide();
 
     $('.desktoputbildningar').hide();
-    $('#menuutb').css('color', 'grey');
+    $('#menuutb').css('color', 'lighten(#1E4363, 70%)');
 
     $('.desktopstudent').hide();
-    $('#menustu').css('color', 'grey');
+    $('#menustu').css('color', 'lighten(#1E4363, 70%)');
 
     $('.desktopvagledning').hide();
-    $('#menuvag').css('color', 'grey');
+    $('#menuvag').css('color', 'lighten(#1E4363, 70%)');
 
     $('.desktopkontakt').hide();
-    $('#menukon').css('color', 'grey');
+    $('#menukon').css('color', 'lighten(#1E4363, 70%)');
 
     $('.header-nav').hide();
 
-    $('#searchicon').css('color', 'grey');
+    $('#searchicon').css('color', 'lighten(#1E4363, 70%)');
 
     $('.login').toggle();
 });
@@ -144,19 +144,19 @@ $('.searchfield').hide();
 $('#searchicon').click(function(){
 
     $('.login').hide();
-    $('#usericon').css('color', 'grey');
+    $('#usericon').css('color', 'lighten(#1E4363, 70%)');
 
     $('.desktoputbildningar').hide();
-    $('#menuutb').css('color', 'grey');
+    $('#menuutb').css('color', 'lighten(#1E4363, 70%)');
 
     $('.desktopstudent').hide();
-    $('#menustu').css('color', 'grey');
+    $('#menustu').css('color', 'lighten(#1E4363, 70%)');
 
     $('.desktopvagledning').hide();
-    $('#menuvag').css('color', 'grey');
+    $('#menuvag').css('color', 'lighten(#1E4363, 70%)');
 
     $('.desktopkontakt').hide();
-    $('#menukon').css('color', 'grey');
+    $('#menukon').css('color', 'lighten(#1E4363, 70%)');
 
     $('.header-nav').hide();
 
@@ -213,62 +213,62 @@ $('#kontakt-click').click(function(){
 
 $('#utbildningar-click').click(function(){
 
-    $('#studenttjänster-click').css('color', 'grey');
-    $('#vägledning-click').css('color', 'grey');
-    $('#kontakt-click').css('color', 'grey');
+    $('#studenttjänster-click').css('color', 'lighten(#1E4363, 70%)');
+    $('#vägledning-click').css('color', 'lighten(#1E4363, 70%)');
+    $('#kontakt-click').css('color', 'lighten(#1E4363, 70%)');
 
 
-    var color = $('#utbildningar-click').css('color');
-    if (color == 'rgb(128, 128, 128)' || color == 'grey'){
-        $('#utbildningar-click').css('color', 'white');
+    var color = $('#utbildningar-click').css('lighten(#1E4363, 70%)');
+    if (color == 'rgb(237, 243, 249)' || color == 'lighten(#1E4363, 70%)'){
+        $('#utbildningar-click').css('color', '#FFB00D');
     }
-    if (color == 'rgb(255, 255, 255)' || color == 'white'){
-        $('#utbildningar-click').css('color', 'grey');
+    if (color == 'rgb(255, 176, 13)' || color == '#FFB00D'){
+        $('#utbildningar-click').css('color', 'lighten(#1E4363, 70%)');
     }
 });
 
 $('#studenttjänster-click').click(function(){
 
-    $('#utbildningar-click').css('color', 'grey');
-    $('#vägledning-click').css('color', 'grey');
-    $('#kontakt-click').css('color', 'grey');
+    $('#utbildningar-click').css('color', 'lighten(#1E4363, 70%)');
+    $('#vägledning-click').css('color', 'lighten(#1E4363, 70%)');
+    $('#kontakt-click').css('color', 'lighten(#1E4363, 70%)');
 
     var color = $('#studenttjänster-click').css('color');
-    if (color == 'rgb(128, 128, 128)' || color == 'grey'){
-        $('#studenttjänster-click').css('color', 'white');
+    if (color == 'rgb(237, 243, 249)' || color == 'lighten(#1E4363, 70%)'){
+        $('#studenttjänster-click').css('color', '#FFB00D');
     }
-    if (color == 'rgb(255, 255, 255)' || color == 'white'){
-        $('#studenttjänster-click').css('color', 'grey');
+    if (color == 'rgb(255, 176, 13)' || color == '#FFB00D'){
+        $('#studenttjänster-click').css('color', 'lighten(#1E4363, 70%)');
     }
 });
 
 $('#vägledning-click').click(function(){
 
-    $('#utbildningar-click').css('color', 'grey');
-    $('#studenttjänster-click').css('color', 'grey');
-    $('#kontakt-click').css('color', 'grey');
+    $('#utbildningar-click').css('color', 'lighten(#1E4363, 70%)');
+    $('#studenttjänster-click').css('color', 'lighten(#1E4363, 70%)');
+    $('#kontakt-click').css('color', 'lighten(#1E4363, 70%)');
 
     var color = $('#vägledning-click').css('color');
-    if (color == 'rgb(128, 128, 128)' || color == 'grey'){
-        $('#vägledning-click').css('color', 'white');
+    if (color == 'rgb(237, 243, 249)' || color == 'lighten(#1E4363, 70%)'){
+        $('#vägledning-click').css('color', '#FFB00D');
     }
-    if (color == 'rgb(255, 255, 255)' || color == 'white'){
-        $('#vägledning-click').css('color', 'grey');
+    if (color == 'rgb(255, 176, 13)' || color == '#FFB00D'){
+        $('#vägledning-click').css('color', 'lighten(#1E4363, 70%)');
     }
 });
 
 $('#kontakt-click').click(function(){
 
-    $('#utbildningar-click').css('color', 'grey');
-    $('#vägledning-click').css('color', 'grey');
-    $('#studenttjänster-click').css('color', 'grey');
+    $('#utbildningar-click').css('color', 'lighten(#1E4363, 70%)');
+    $('#vägledning-click').css('color', 'lighten(#1E4363, 70%)');
+    $('#studenttjänster-click').css('color', 'lighten(#1E4363, 70%)');
 
     var color = $('#kontakt-click').css('color');
-    if (color == 'rgb(128, 128, 128)' || color == 'grey'){
-        $('#kontakt-click').css('color', 'white');
+    if (color == 'rgb(237, 243, 249)' || color == 'lighten(#1E4363, 70%)'){
+        $('#kontakt-click').css('color', '#FFB00D');
     }
-    if (color == 'rgb(255, 255, 255)' || color == 'white'){
-        $('#kontakt-click').css('color', 'grey');
+    if (color == 'rgb(255, 176, 13)' || color == '#FFB00D'){
+        $('#kontakt-click').css('color', 'lighten(#1E4363, 70%)');
     }
 });
 
@@ -281,11 +281,11 @@ $('#kontakt-click').click(function(){
 $('#searchicon').click(function(){
 
     var color = $('#searchicon').css('color');
-    if (color == 'rgb(128, 128, 128)' || color == 'grey'){
-        $('#searchicon').css('color', 'white');
+    if (color == 'rgb(237, 243, 249)' || color == 'lighten(#1E4363, 70%)'){
+        $('#searchicon').css('color', '#FFB00D');
     }
-    if (color == 'rgb(255, 255, 255)' || color == 'white'){
-        $('#searchicon').css('color', 'grey');
+    if (color == 'rgb(255, 176, 13)' || color == '#FFB00D'){
+        $('#searchicon').css('color', 'lighten(#1E4363, 70%)');
     }
 });
 
@@ -293,11 +293,11 @@ $('#searchicon').click(function(){
 
 $('#usericon').click(function(){
     var color = $('#usericon').css('color');
-    if (color == 'rgb(128, 128, 128)' || color == 'grey'){
-        $('#usericon').css('color', 'white');
+    if (color == 'rgb(237, 243, 249))' || color == 'lighten(#1E4363, 70%)'){
+        $('#usericon').css('color', '#FFB00D');
     }
-    if (color == 'rgb(255, 255, 255)' || color == 'white'){
-        $('#usericon').css('color', 'grey');
+    if (color == 'rgb(255, 176, 13)' || color == '#FFB00D'){
+        $('#usericon').css('color', 'lighten(#1E4363, 70%)');
     }
 });
 
@@ -305,42 +305,42 @@ $('#usericon').click(function(){
 
 $('#menuutb').click(function(){
     var color = $('#menuutb').css('color');
-    if (color == 'rgb(128, 128, 128)' || color == 'grey'){
-        $('#menuutb').css('color', 'white');
+    if (color == 'rgb(237, 243, 249)' || color == 'lighten(#1E4363, 70%)'){
+        $('#menuutb').css('color', '#FFB00D');
     }
-    if (color == 'rgb(255, 255, 255)' || color == 'white'){
-        $('#menuutb').css('color', 'grey');
+    if (color == 'rgb(255, 176, 13)' || color == '#FFB00D'){
+        $('#menuutb').css('color', 'lighten(#1E4363, 70%)');
     }
 });
 
 $('#menustu').click(function(){
     var color = $('#menustu').css('color');
-    if (color == 'rgb(128, 128, 128)' || color == 'grey'){
-        $('#menustu').css('color', 'white');
+    if (color == 'rgb(237, 243, 249)' || color == 'lighten(#1E4363, 70%)'){
+        $('#menustu').css('color', '#FFB00D');
     }
-    if (color == 'rgb(255, 255, 255)' || color == 'white'){
-        $('#menustu').css('color', 'grey');
+    if (color == 'rgb(255, 176, 13)' || color == '#FFB00D'){
+        $('#menustu').css('color', 'lighten(#1E4363, 70%)');
     }
 });
 
 $('#menuvag').click(function(){
     var color = $('#menuvag').css('color');
-    if (color == 'rgb(128, 128, 128)' || color == 'grey'){
-        $('#menuvag').css('color', 'white');
+    if (color == 'rgb(237, 243, 249)' || color == 'lighten(#1E4363, 70%)'){
+        $('#menuvag').css('color', '#FFB00D');
     }
-    if (color == 'rgb(255, 255, 255)' || color == 'white'){
-        $('#menuvag').css('color', 'grey');
+    if (color == 'rgb(255, 176, 13)' || color == '#FFB00D'){
+        $('#menuvag').css('color', 'lighten(#1E4363, 70%)');
     }
 
 });
 
 $('#menukon').click(function(){
     var color = $('#menukon').css('color');
-    if (color == 'rgb(128, 128, 128)' || color == 'grey'){
-        $('#menukon').css('color', 'white');
+    if (color == 'rgb(237, 243, 249)' || color == 'lighten(#1E4363, 70%)'){
+        $('#menukon').css('color', '#FFB00D');
     }
-    if (color == 'rgb(255, 255, 255)' || color == 'white'){
-        $('#menukon').css('color', 'grey');
+    if (color == 'rgb(255, 176, 13)' || color == '#FFB00D'){
+        $('#menukon').css('color', 'lighten(#1E4363, 70%)');
     }
 
 
@@ -353,19 +353,19 @@ $('.desktoputbildningar').hide();
 
 $('#menuutb').click(function(){
     $('.searchfield').hide();
-    $('#searchicon').css('color', 'grey');
+    $('#searchicon').css('color', 'lighten(#1E4363, 70%)');
 
     $('.login').hide();
-    $('#usericon').css('color', 'grey');
+    $('#usericon').css('color', 'lighten(#1E4363, 70%)');
 
     $('.desktopstudent').hide();
-    $('#menustu').css('color', 'grey');
+    $('#menustu').css('color', 'lighten(#1E4363, 70%)');
 
     $('.desktopvagledning').hide();
-    $('#menuvag').css('color', 'grey');
+    $('#menuvag').css('color', 'lighten(#1E4363, 70%)');
 
     $('.desktopkontakt').hide();
-    $('#menukon').css('color', 'grey');
+    $('#menukon').css('color', 'lighten(#1E4363, 70%)');
 
     $('.desktoputbildningar').toggle();
 });
@@ -376,20 +376,20 @@ $('.desktopstudent').hide();
 $('#menustu').click(function(){
 
     $('.searchfield').hide();
-    $('#searchicon').css('color', 'grey');
+    $('#searchicon').css('color', 'lighten(#1E4363, 70%)');
 
     $('.login').hide();
-    $('#usericon').css('color', 'grey');
+    $('#usericon').css('color', 'lighten(#1E4363, 70%)');
 
 
     $('.desktoputbildningar').hide();
-    $('#menuutb').css('color', 'grey');
+    $('#menuutb').css('color', 'lighten(#1E4363, 70%)');
 
     $('.desktopvagledning').hide();
-    $('#menuvag').css('color', 'grey');
+    $('#menuvag').css('color', 'lighten(#1E4363, 70%)');
 
     $('.desktopkontakt').hide();
-    $('#menukon').css('color', 'grey');
+    $('#menukon').css('color', 'lighten(#1E4363, 70%)');
 
 
     $('.desktopstudent').toggle();
@@ -401,19 +401,19 @@ $('.desktopvagledning').hide();
 $('#menuvag').click(function(){
 
     $('.searchfield').hide();
-    $('#searchicon').css('color', 'grey');
+    $('#searchicon').css('color', 'lighten(#1E4363, 70%)');
 
     $('.login').hide();
-    $('#usericon').css('color', 'grey');
+    $('#usericon').css('color', 'lighten(#1E4363, 70%)');
 
     $('.desktoputbildningar').hide();
-    $('#menuutb').css('color', 'grey');
+    $('#menuutb').css('color', 'lighten(#1E4363, 70%)');
 
     $('.desktopstudent').hide();
-    $('#menustu').css('color', 'grey');
+    $('#menustu').css('color', 'lighten(#1E4363, 70%)');
 
     $('.desktopkontakt').hide();
-    $('#menukon').css('color', 'grey');
+    $('#menukon').css('color', 'lighten(#1E4363, 70%)');
 
 
     $('.desktopvagledning').toggle();
@@ -425,19 +425,19 @@ $('.desktopkontakt').hide();
 $('#menukon').click(function(){
 
     $('.searchfield').hide();
-    $('#searchicon').css('color', 'grey');
+    $('#searchicon').css('color', 'lighten(#1E4363, 70%)');
 
     $('.login').hide();
-    $('#usericon').css('color', 'grey');
+    $('#usericon').css('color', 'lighten(#1E4363, 70%)');
 
     $('.desktoputbildningar').hide();
-    $('#menuutb').css('color', 'grey');
+    $('#menuutb').css('color', 'lighten(#1E4363, 70%)');
 
     $('.desktopstudent').hide();
-    $('#menustu').css('color', 'grey');
+    $('#menustu').css('color', 'lighten(#1E4363, 70%)');
 
     $('.desktopvagledning').hide();
-    $('#menuvag').css('color', 'grey');
+    $('#menuvag').css('color', 'lighten(#1E4363, 70%)');
 
     $('.desktopkontakt').toggle();
 });
@@ -448,6 +448,21 @@ $('#menukon').click(function(){
 
 /*
 //bildspel
+var slideIndex = 0;
+showSlides();
+
+function showSlides(){
+    var i;
+    var slides = document.getElementsByClassName("slide");
+    for(i = 0; i <slides.length; i++){
+        slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if(slideIndex > slides.length){slideIndex = 1}
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 6000);
+}
+
 let sliderImages = document.querySelectorAll('.slide'),
     arrowLeft = document.querySelector('#arrow-left'),
     arrowRight = document.querySelector('#arrow-right'),

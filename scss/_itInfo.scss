@@ -5,7 +5,8 @@
   }
 }
 $desktop : 800px;
-$colorBg: lightgrey;
+$colorBg:lighten(#1E4363, 70%);
+$textAktuellt:black;
 
 .itInfo {
   background-color: $colorBg;
