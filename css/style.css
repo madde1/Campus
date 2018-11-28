@@ -778,6 +778,10 @@ input[type=text], [type=password], [type=email] {
   color: #edf3f9;
 }
 
+#schoolicon {
+  color: #edf3f9 !important;
+}
+
 body {
   width: 100%;
   background-color: #3678b1;
@@ -825,6 +829,7 @@ a, a:visited {
   float: right;
   padding-right: 20px;
   cursor: pointer;
+  color: #edf3f9;
 }
 
 .icons .menu {

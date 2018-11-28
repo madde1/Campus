@@ -102,6 +102,9 @@ input[type=text], [type=password], [type=email] {
 #homeicon{
   color: $textheader;
 }
+#schoolicon{
+  color: $textheader!important;
+}
 body {
   width: 100%;
   background-color: $bg;
@@ -147,6 +150,7 @@ a, a:visited {
   float: right;
   padding-right: 20px;
   cursor: pointer;
+  color:$textheader;
 
 }
 .icons .menu {
