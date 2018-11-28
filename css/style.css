@@ -363,6 +363,140 @@ body, #slider, .wrap, .slide-content {
   opacity: 1;
 }
 
+/*Används för att kunna skriva det som ska vara i desktop läge. */
+.itInfo {
+  background-color: lightgrey;
+}
+.itInfo h2 {
+  margin-top: 20px;
+  padding: 10px;
+  color: black;
+}
+.itInfo .contentit {
+  display: grid;
+  grid-template-rows: auto;
+  grid-gap: 2px;
+  text-align: left;
+  width: 500px;
+}
+@media screen and (min-width: 800px) {
+  .itInfo .contentit {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 10px;
+  }
+}
+.itInfo .contentit h3 {
+  margin: 15px;
+  color: black;
+  font-size: 30px;
+}
+@media screen and (min-width: 800px) {
+  .itInfo .contentit h3 {
+    font-size: 20px;
+  }
+}
+.itInfo .contentit p {
+  font-size: 20px;
+  text-decoration: none;
+  margin: 15px;
+}
+@media screen and (min-width: 800px) {
+  .itInfo .contentit p {
+    font-size: 16px;
+  }
+}
+.itInfo .contentit img {
+  margin: 15px 10px 10px 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 90%;
+  height: auto;
+}
+@media screen and (min-width: 800px) {
+  .itInfo .contentit img {
+    margin: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+  }
+}
+
+.headerIt {
+  background-image: url("../img/headerIt.jpg");
+}
+
+/*Används för att kunna skriva det som ska vara i desktop läge. */
+.javaInfo {
+  background-color: lightgrey;
+}
+.javaInfo h2 {
+  margin-top: 20px;
+  padding: 10px;
+  color: black;
+}
+.javaInfo .contentJava {
+  display: grid;
+  grid-template-rows: auto;
+  grid-gap: 2px;
+  text-align: left;
+  width: 500px;
+}
+@media screen and (min-width: 800px) {
+  .javaInfo .contentJava {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 10px;
+  }
+}
+.javaInfo .contentJava h3 {
+  margin: 15px;
+  color: black;
+  font-size: 30px;
+}
+@media screen and (min-width: 800px) {
+  .javaInfo .contentJava h3 {
+    font-size: 20px;
+  }
+}
+.javaInfo .contentJava p {
+  font-size: 20px;
+  text-decoration: none;
+  margin: 15px;
+}
+@media screen and (min-width: 800px) {
+  .javaInfo .contentJava p {
+    font-size: 16px;
+  }
+}
+.javaInfo .contentJava img {
+  margin: 15px 10px 10px 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 90%;
+  height: auto;
+}
+@media screen and (min-width: 800px) {
+  .javaInfo .contentJava img {
+    margin: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+  }
+}
+
+.headerBild {
+  background-image: url("../img/headerJava.jpg");
+}
+
 @media (max-width: 799px) {
   .desktopbuttons, .desktoputbildningar, .desktopvagledning, .desktopkontakt, .desktopstudent {
     display: none;
