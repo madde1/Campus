@@ -40,6 +40,8 @@ include 'includes/header.php';
                 Alla ansökningar som inkommer behandlas löpande. Är du nyfiken eller inte hör något från oss så hör av
                 dig till oss!
             </p>
+            <button class="applybutton" id="edu" type="button" onclick="addIT()" name="IT" value="1">Ansök</button>
+
         </div>
     </section>
 </main>

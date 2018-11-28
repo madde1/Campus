@@ -4,6 +4,7 @@
 // Kod som döljer och visar meny-val
 $(document.body).click( function(e) {
     closeDropdowns();
+
 });
 
 $('.login').click( function(e) {
@@ -91,6 +92,10 @@ $('#menuvag').click( function(e) {
 });
 
 $('#menukon').click( function(e) {
+    e.stopPropagation();
+});
+
+$('#schoolicon').click( function(e) {
     e.stopPropagation();
 });
 
@@ -441,7 +446,7 @@ $('#menukon').click(function(){
 
 
 
-
+/*
 //bildspel
 let sliderImages = document.querySelectorAll('.slide'),
     arrowLeft = document.querySelector('#arrow-left'),
@@ -499,4 +504,86 @@ startSlide();
 
 
 //Bildspel slut
+
+*/
+
+
+// Ansökningssystem
+
+function addJava(){
+    var input = document.getElementById("edu-java");
+    localStorage.setItem("java", input.value);
+    changecolor();
+}
+
+function addIT(){
+    var input = document.getElementById("edu");
+    localStorage.setItem("IT", input.value);
+    changecolor();
+}
+
+var IT = localStorage.getItem("IT");
+var java = localStorage.getItem("java");
+
+
+if(IT == 1 || java == 1){
+    changecolor();
+}
+
+if(IT == 0 && java == 0){
+    noColor()
+}
+
+function changecolor() {
+    console.log("Kör changecolor!");
+
+    $('#schoolicon').css('color', '#ffb00d');
+}
+
+// Ikon blir grå
+function noColor(){
+    console.log("Kör nocolor!");
+
+    $('#schoolicon').css('color', '#b3b3b3');
+}
+
+function removeIT(){
+    var input = document.getElementById("edu");
+    localStorage.setItem("IT", input.value);
+    if(compare()){
+        noColor();
+    }
+}
+
+function removeJava(){
+    var input = document.getElementById("edu-java");
+    localStorage.setItem("java", input.value);
+    if(compare()){
+        noColor();
+    }
+}
+
+
+
+function compare(){
+    var IT = localStorage.getItem("IT");
+    var java = localStorage.getItem("java");
+
+    if(IT == 0 && java == 0){
+        return true;
+    }
+}
+
+function send(){
+    localStorage.setItem('java', '0');
+    localStorage.setItem('IT', '0');
+    console.log("Inuti send");
+    //window.location.href = "thankyou.php";
+}
+
+
+
+
+
+
 
