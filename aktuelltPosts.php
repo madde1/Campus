@@ -27,8 +27,7 @@ $post3 = mysqli_query($db,$query3);
 
 <?php
 include "includes/header.php"
-?>
-
+?> <div class="aktuelltbild"></div>
             <div class="akutelltWrap">
                 <h2 id="headingAktuellt">Aktuellt</h2>
            <div class="aktuelltText">
@@ -80,13 +79,7 @@ $row3 = mysqli_fetch_array($post3);
                 include "includes/footer.php"
                 ?>
 
-
-
-
-<script type="text/javascript" src="java/jquery-3.2.1.min.js"></script>
-<script src="java/js.js" type="text/javascript"></script>
 <script src="java/aktuellt.js"></script>
-</body>
-</html>
+
 
 

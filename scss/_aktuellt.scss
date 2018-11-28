@@ -137,14 +137,12 @@ $fontText:'Roboto', sans-serif;
   }
   //Css för rubriken på sidan
   #headingAktuellt{
-    border-bottom: 5px solid $btn;
     background-color: $colorBgAktuellt;
     margin-top: 75px;
     @include desktop {
       grid-column: 1 / span 2;
       font-size: 50px;
       margin-top: 75px;
-      border-bottom: 5px solid $btn;
       background-color: $colorBgAktuellt;
     }
   }
@@ -334,4 +332,12 @@ $fontText:'Roboto', sans-serif;
 #createH3{
   color:white;
 }
+}
+.aktuelltbild{
+  width: 100%;
+  height: 500px;
+  margin-top: 75px;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../img/aktuelltBild.jpg");
 }
