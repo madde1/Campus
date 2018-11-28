@@ -12,7 +12,7 @@
     <input type="button" class="btn" value="Läs mer">
     </div>
     <div class="aitem2">
-    <img class ="aBild" id="akutelltBild2" src="../img/aktuellt2.jpg" >
+    <a href="../aktuelltPosts.php"><img class ="aBild" id="akutelltBild2" src="../img/aktuellt2.jpg" ></a>
     <h3>Hur funkar IT-projektledning inom offentliga sektorn?</h3>
     <p>Skiljer sig IT-projektledning inom den offentliga sektor mot den privata sektorn?
         Finns det andra typer av behov? Hör vad Kristian Matic tycker,
@@ -22,7 +22,7 @@
     <input type="button" class="btn" value="Läs mer">
     </div>
     <div class="aitem3">
-    <img class ="aBild"  id="akutelltBild3" src="../img/aktuellt3.jpg" >
+     <a href="../aktuelltPosts.php"><img class ="aBild"  id="akutelltBild3" src="../img/aktuellt3.jpg" ></a>
     <h3>Utbildningen för dig som vill leda projekt och team</h3>
     <p>Vi har pratat med Madeleine Andrén som är lärare på YH-utbildningen IT-projektledare,
         om vad hon tänker om IT-branschen och vad man lär sig på utbildningen.
