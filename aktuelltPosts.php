@@ -69,7 +69,7 @@ $row3 = mysqli_fetch_array($post3);
            </div>
                 <div class="aktuelltSideMenu">
                     <div class="tab">
-                        <h3>NyhetsArkiv</h3>
+                        <h3 id="nyhetsArkiv">NyhetsArkiv</h3>
                         <button class="tablinks" onclick="openCity(event, 'November 2018')">November 2018</button>
                         <button class="tablinks" onclick="openCity(event, 'Oktober 2018')">Oktober 2018</button>
                         <button class="tablinks" onclick="openCity(event, 'September 2018')">September 2018</button>

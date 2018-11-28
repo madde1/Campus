@@ -64,7 +64,7 @@ $fontText:'Roboto', sans-serif;
     //Css för knapparna som syns på mobilläge
     .btn {
       border: 1px solid #303030;
-      background-color: orange;
+      background-color: $btn;
       color: #303030;
       padding: 12px 20px;
       border-radius: 4px;
@@ -130,21 +130,21 @@ $fontText:'Roboto', sans-serif;
   background-color: $colorBgAktuellt;
   color:$textfärg;
   @include desktop{
-    background-color: white;
+    background-color: $colorBgAktuellt;
     display: grid;
     grid-template-columns: auto auto;
     grid-gap: 10px;
   }
   //Css för rubriken på sidan
   #headingAktuellt{
-    border-bottom: 10px solid #FF5B5B;
+    border-bottom: 5px solid $btn;
     background-color: $colorBgAktuellt;
     margin-top: 75px;
     @include desktop {
       grid-column: 1 / span 2;
       font-size: 50px;
       margin-top: 75px;
-      border-bottom: 10px solid #FF5B5B;
+      border-bottom: 5px solid $btn;
       background-color: $colorBgAktuellt;
     }
   }
@@ -154,24 +154,23 @@ $fontText:'Roboto', sans-serif;
   //Wrapen runt knapparna.
   tab {
     display: none;
-    background-color: white;
+    background-color: $colorBgAktuellt;
     @include desktop {
-      background-color: #f1f1f1;
+      background-color: $colorBgAktuellt;
       width: 100%;
       height: 300px;
       margin-right: 10px;
     }
   }
-
   /* Css för knapparna som används för att öppna tab content */
   .tab button {
     display: none;
     @include desktop {
       display: block;
       background-color: inherit;
-      color: black;
+      color: $textfärg;
       padding: 22px 16px;
-      width: 100%;
+      width: 300px;
       outline: none;
       text-align: center;
       cursor: pointer;
@@ -179,21 +178,22 @@ $fontText:'Roboto', sans-serif;
       border-top: none;
       border-left: none;
       border-right: none;
-      border-bottom: 1px solid #FF5B5B;
+      font-size: 18px;
     }
   }
 
   /* Ändrar färg vid hover*/
   .tab button:hover {
     @include desktop {
-      background-color: #ddd;
+      background-color: $btn;
     }
   }
 
   /* Skapar en aktiv/nuvarande tab button klass */
   .tab button.active {
     @include desktop {
-      background-color: #ccc;
+      background-color: $header;
+      color:white;
     }
   }
   //
@@ -210,7 +210,7 @@ $fontText:'Roboto', sans-serif;
   //Css för knapparna
   .btn {
     border: 1px solid #303030;
-    background-color: orange;
+    background-color: $btn;
     color: #303030;
     padding: 12px 20px;
     border-radius: 4px;
