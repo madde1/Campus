@@ -102,7 +102,7 @@ hr {
   border-color: grey!important;
 }
 a, a:visited {
-  color: grey;
+  color: $textheader;
   text-decoration: none;
 }
 
@@ -118,7 +118,7 @@ a, a:visited {
   cursor: pointer;
 }
 .icons .menu {
-  color: white;
+  color: $btn;
   width: 35px;
   height: 35px;
   padding-left: 20px;
@@ -135,7 +135,7 @@ a, a:visited {
 }
 .loginbutton {
   border: 1px solid #303030;
-  background-color: #FFB00D;
+  background-color: $btn;
   color: $textheader;
   padding: 12px 20px;
   border-radius: 4px;
@@ -145,7 +145,7 @@ a, a:visited {
 .registerbutton {
   border: 1px solid #303030;
   background-color: black;
-  color: white;
+  color: $btn;
   padding: 12px 20px;
   border-radius: 4px;
   cursor: pointer;
@@ -299,7 +299,7 @@ a, a:visited {
     position: fixed;
     top: 75px;
     z-index: 10;
-    background-color: #202020;
+    background-color: $header;
     color: $textheader;
     left: 255px;
     right: auto;
@@ -318,7 +318,7 @@ a, a:visited {
     position: fixed;
     top: 75px;
     z-index: 10;
-    background-color: #202020;
+    background-color: $header;
     color: $textheader;
     left: 363px;
     right: auto;
@@ -326,7 +326,7 @@ a, a:visited {
   }
 
   a:hover {
-    color: white;
+    color: $btn;
   }
 
   .searchfield {
@@ -347,7 +347,7 @@ a, a:visited {
     position: fixed;
     top: 75px;
     z-index: 10;
-    background-color: #202020;
+    background-color: $dropdown;
     left: auto;
     right: 0;
   }
