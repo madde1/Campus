@@ -64,9 +64,9 @@ session_start();
             </div>
 
             <div class="desktoputbildningar">
-                <a href="java.php"><p>Java- och webbutvecklare</p></a>
+                <a href="javaStart.php"><p>Java- och webbutvecklare</p></a>
                 <a><p>IT- och virtualiseringsspecialist</p></a>
-                <a href="IT.php"><p>IT-projektledare</p></a>
+                <a href="it.php"><p>IT-projektledare</p></a>
                 <a><p>Aktiveringspedagog inom LSS</p></a>
                 <a><p>Specialiserad studiehandledare</p></a>
                 <a><p>Information</p></a>

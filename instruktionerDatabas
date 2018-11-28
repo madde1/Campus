@@ -1,12 +1,12 @@
 Skapa en databas som heter CampusDB ( med utf8_general_ci)
 
-Skapa tabellen nyheter med SQL:
+Skapa tabellen aktuellt med SQL:
 
-CREATE TABLE nyheter(
-    nyheterId INT NOT NULL AUTO_INCREMENT,
-    nyheterRubrik VARCHAR(50),
-    nyheterStartsida TEXT,
-    nyheterPost TEXT,
-    nyheterDatum, Date,
-    PRIMARY KEY (nyheterId)
+CREATE TABLE aktuellt(
+    aId INT NOT NULL AUTO_INCREMENT,
+    aHeadline VARCHAR(50),
+    aSummation TEXT,
+    aPost TEXT,
+    aDate, Date,
+    PRIMARY KEY (aId)
     );
