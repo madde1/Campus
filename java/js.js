@@ -445,8 +445,8 @@ $('#menukon').click(function(){
 
 
 
-
 /*
+
 //bildspel
 var slideIndex = 0;
 showSlides();
