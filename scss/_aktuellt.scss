@@ -14,7 +14,10 @@
 
 $desktop : 801px;
 $colorBgAktuellt:lighten(#1E4363, 70%);
-$textAktuellt:black;
+$textfärg:black;
+$header: #1E4363;
+$btn:#FFB00D;
+$btnRed:#FF5B5B;
 $fontHeading: 'Roboto Slab', serif;
 $fontText:'Roboto', sans-serif;
 //Css wrapen som finns i index.php filen.
@@ -23,7 +26,7 @@ $fontText:'Roboto', sans-serif;
   h2{
     font-size: 50px;
     padding: 10px;
-    color:$textAktuellt;
+    color:$textfärg;
     font-family: $fontHeading;
   }
   //Wrap runt allt innehåll på aktuellt delen.
@@ -31,7 +34,7 @@ $fontText:'Roboto', sans-serif;
     display: grid;
     grid-template-rows: auto;
     grid-gap: 2px;
-    color:$textAktuellt;
+    color:$textfärg;
     background-color: $colorBgAktuellt;
     @include desktop {
       display: grid;
@@ -79,18 +82,22 @@ $fontText:'Roboto', sans-serif;
       text-decoration: none;
       margin: 15px;
       font-family: $fontText;
+      color: $textfärg;
       @include desktop {
         font-size: 20px;
         font-family: $fontText;
+        color: $textfärg;
       }
     }
     //Css för rubrikerna på aktuellt delen på startsidan
     h3 {
       font-size: 30px;
       font-family: $fontHeading;
+      color: $textfärg;
       @include desktop {
         font-size: 25px;
         font-family: $fontHeading;
+        color: $textfärg;
       }
     }
   }
@@ -121,7 +128,7 @@ $fontText:'Roboto', sans-serif;
 //Wrap runt hela innehållet på aktuelltPostSidan
 .akutelltWrap {
   background-color: $colorBgAktuellt;
-  color:$textAktuellt;
+  color:$textfärg;
   @include desktop{
     background-color: white;
     display: grid;
@@ -235,7 +242,7 @@ $fontText:'Roboto', sans-serif;
   .aktuelltText{
     width: 100%;
     margin: 15px 0 30px 0;
-    color:$textAktuellt;
+    color:$textfärg;
     @include desktop{
       width: 100%;
       margin: 15px 0 30px 60px;
@@ -248,7 +255,9 @@ $fontText:'Roboto', sans-serif;
 //Css för Skapa inlägg
 .CreateAktuellt{
   margin-top: 75px;
-  background-color: white;
+  background-color: $colorBgAktuellt;
+  color:$textfärg;
+  padding: 10px 0 10px 0;
   textarea {
     resize: none;
   }
@@ -260,7 +269,7 @@ $fontText:'Roboto', sans-serif;
   }
   .btn{
     border: 1px solid #303030;
-    background-color: orange;
+    background-color: $btn;
     color: #303030;
     padding: 12px 20px;
     border-radius: 4px;
@@ -268,12 +277,61 @@ $fontText:'Roboto', sans-serif;
     width: 20%;
     height: auto;
     text-align: center;
+    margin-top: 10px;
+    margin-right: 10px;
   }
-  p:hover{
-    color:black!important;
+  #headline{
+    margin-left: 70px;
+  }
+  .btn1{
+    border: 1px solid #303030;
+    background-color: $btnRed;
+    color: #303030;
+    padding: 12px 20px;
+    border-radius: 4px;
+    font-size: 20px;
+    width: 20%;
+    height: auto;
+    text-align: center;
+    margin-right: 10px;
   }
 }
 .DeleteAktuellt{
-  margin-top: 75px;
+  margin-top: 55px;
+  padding-top: 220px;
   text-align: center;
+  height: 600px;
+  background-color: $colorBgAktuellt;
+  color: $textfärg;
+
+  .btn{
+    border: 1px solid #303030;
+    background-color: $btn;
+    color: #303030;
+    padding: 12px 20px;
+    border-radius: 4px;
+    font-size: 20px;
+    width: 20%;
+    height: auto;
+    text-align: center;
+    margin-right: 10px;
+  }
+  .btn1{
+    border: 1px solid #303030;
+    background-color: $btnRed;
+    color: #303030;
+    padding: 12px 20px;
+    border-radius: 4px;
+    font-size: 20px;
+    width: 20%;
+    height: auto;
+    text-align: center;
+    margin-right: 10px;
+  }
+}
+.adminAktuellt{
+  background-color: $header;
+#createH3{
+  color:white;
+}
 }

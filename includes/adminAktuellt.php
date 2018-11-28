@@ -17,13 +17,12 @@ $heading = mysqli_query($db,$query1);
 
 while ($row1 = mysqli_fetch_array($heading)) {
     ?>
-    <h3><?php echo $row1['aHeadline'];?></h3>
-    <p><a href="aktuelltUpdate.php?editid=<?php echo $row1['aId'];?>">Uppdatera</a></p><p><a href="aktuelltDelete.php?deleteid=<?php echo $row1['aId'];?>">Ta bort</a></p>
-
+    <div class="adminAktuellt">
+    <h3 id="createH3"><?php echo $row1['aHeadline'];?></h3>
+    <p id="aText"><a href="aktuelltUpdate.php?editid=<?php echo $row1['aId'];?>">Uppdatera</a></p  class="aText"><p><a href="aktuelltDelete.php?deleteid=<?php echo $row1['aId'];?>">Ta bort</a></p>
+    </div>
     <?php
 }
 ?>
 
 <a href="createBlogPosts.php"><p>Skapa nytt blogg inlägg</p></a>
-<script type="text/javascript" src="/java/jquery-3.2.1.min.js"></script>
-<script src="/java/js.js" type="text/javascript"></script>

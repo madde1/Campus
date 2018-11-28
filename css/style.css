@@ -59,21 +59,25 @@
   text-decoration: none;
   margin: 15px;
   font-family: "Roboto", sans-serif;
+  color: black;
 }
 @media screen and (min-width: 801px) {
   .aktuellt .contentAktuellt p {
     font-size: 20px;
     font-family: "Roboto", sans-serif;
+    color: black;
   }
 }
 .aktuellt .contentAktuellt h3 {
   font-size: 30px;
   font-family: "Roboto Slab", serif;
+  color: black;
 }
 @media screen and (min-width: 801px) {
   .aktuellt .contentAktuellt h3 {
     font-size: 25px;
     font-family: "Roboto Slab", serif;
+    color: black;
   }
 }
 .aktuellt img {
@@ -231,7 +235,9 @@
 
 .CreateAktuellt {
   margin-top: 75px;
-  background-color: white;
+  background-color: #edf3f9;
+  color: black;
+  padding: 10px 0 10px 0;
 }
 .CreateAktuellt textarea {
   resize: none;
@@ -244,7 +250,7 @@
 }
 .CreateAktuellt .btn {
   border: 1px solid #303030;
-  background-color: orange;
+  background-color: #FFB00D;
   color: #303030;
   padding: 12px 20px;
   border-radius: 4px;
@@ -252,14 +258,63 @@
   width: 20%;
   height: auto;
   text-align: center;
+  margin-top: 10px;
+  margin-right: 10px;
 }
-.CreateAktuellt p:hover {
-  color: black !important;
+.CreateAktuellt #headline {
+  margin-left: 70px;
+}
+.CreateAktuellt .btn1 {
+  border: 1px solid #303030;
+  background-color: #FF5B5B;
+  color: #303030;
+  padding: 12px 20px;
+  border-radius: 4px;
+  font-size: 20px;
+  width: 20%;
+  height: auto;
+  text-align: center;
+  margin-right: 10px;
 }
 
 .DeleteAktuellt {
-  margin-top: 75px;
+  margin-top: 55px;
+  padding-top: 220px;
   text-align: center;
+  height: 600px;
+  background-color: #edf3f9;
+  color: black;
+}
+.DeleteAktuellt .btn {
+  border: 1px solid #303030;
+  background-color: #FFB00D;
+  color: #303030;
+  padding: 12px 20px;
+  border-radius: 4px;
+  font-size: 20px;
+  width: 20%;
+  height: auto;
+  text-align: center;
+  margin-right: 10px;
+}
+.DeleteAktuellt .btn1 {
+  border: 1px solid #303030;
+  background-color: #FF5B5B;
+  color: #303030;
+  padding: 12px 20px;
+  border-radius: 4px;
+  font-size: 20px;
+  width: 20%;
+  height: auto;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.adminAktuellt {
+  background-color: #1E4363;
+}
+.adminAktuellt #createH3 {
+  color: white;
 }
 
 body, #slider, .wrap, .slide-content {

@@ -47,15 +47,18 @@ include "header.php"
             <input class="btn" type="submit" value="Skicka">
 
         </form>
+
+</section>
+<section class="adminAktuellt">
         <?php
         include "adminAktuellt.php"
         ?>
 
-
-
 </section>
 
 
+    <script type="text/javascript" src="../java/jquery-3.2.1.min.js"></script>
+    <script src="../java/js.js" type="text/javascript"></script>
 <?php
 include "footer.php"
 ?>

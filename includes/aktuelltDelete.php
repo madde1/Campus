@@ -24,10 +24,11 @@ if(isset($_POST['isdeleteid']) && $_POST['isdeleteid'] > 0 ){
 include "header.php"
 ?>
 
-<form class="CreateAktuellt" action="aktuelltDelete.php" method="post">
+<form class="DeleteAktuellt" action="aktuelltDelete.php" method="post">
     <input type="hidden" name="isdeleteid" value="<?php echo $isDeleteid; ?>">
-    <label>Vill du verkligen radera inlägget?</label>
-    <p><input class="btn" type="submit" value="JA"></p>
+    <h2>Vill du verkligen radera inlägget?</h2>
+    <p><input class="btn" type="submit" value="JA"><a href="aktuelltSkapaPost.php"><input class="btn1" type="button" value="Tillbaka"></a></p>
+
 </form>
 <?php
 include "footer.php"
