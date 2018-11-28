@@ -345,6 +345,7 @@ body, #slider, .wrap, .slide-content {
   left: 0;
   margin-left: 30px;
   opacity: 0.4;
+  z-index: 1;
 }
 
 #arrow-right {
@@ -897,6 +898,30 @@ a, a:visited {
   /*storleken på SM ikonerna*/
   .footerIcons {
     font-size: 50px;
+  }
+
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 3s;
+    animation-name: fade;
+    animation-duration: 3s;
+  }
+
+  @-webkit-keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
   }
 }
 
