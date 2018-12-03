@@ -5,7 +5,7 @@ require "includes/header.php";
     <main>
         <div class="wrapper-main">
             <section class="form-input">
-                <img src="img/campus1.png">
+                <img src="../img/campus1.png">
               <h1>Registrera</h1>
                 <hr>
                 <?php
@@ -35,7 +35,7 @@ require "includes/header.php";
                     }
                 }
                 ?>
-                <form action="includes/signup.inc.php" method="post">
+                <form action="../includes/signup.inc.php" method="post">
                 <input type="text" placeholder="Användarnamn:" name="uid" id="reginput">
                 <input type="text" placeholder="Email:" name="mail" id="reginput">
                 <input type="password" placeholder="Lösenord.." name="pwd" id="reginput">
@@ -48,5 +48,5 @@ require "includes/header.php";
         </div>
     </main>
 <?php
-include 'includes/footer.php';
+include '../includes/footer.php';
 ?>

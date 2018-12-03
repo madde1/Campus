@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /*Används för att kunna skriva det som ska vara i desktop läge. */
 .aktuellt {
+  padding: 5px 0 0 0;
   background-color: #edf3f9;
 }
 .aktuellt h2 {
@@ -21,6 +22,12 @@
     display: grid;
     grid-template-columns: auto auto auto;
     grid-gap: 10px;
+    padding-bottom: 30px;
+  }
+}
+@media screen and (min-width: 801px) {
+  .aktuellt .contentAktuellt #aStartText {
+    margin-top: 50px;
   }
 }
 @media screen and (min-width: 801px) {
@@ -66,6 +73,9 @@
     font-size: 20px;
     font-family: "Roboto", sans-serif;
     color: black;
+    width: 85%;
+    text-align: left;
+    padding-left: 10px;
   }
 }
 .aktuellt .contentAktuellt h3 {
@@ -78,6 +88,8 @@
     font-size: 25px;
     font-family: "Roboto Slab", serif;
     color: black;
+    text-align: left;
+    margin-left: 25px;
   }
 }
 .aktuellt img {
@@ -224,8 +236,10 @@
 }
 @media screen and (min-width: 801px) {
   .akutelltWrap .aktuelltText {
-    width: 100%;
+    width: 60%;
     margin: 15px 0 30px 60px;
+    text-align: left;
+    line-height: 1.5;
   }
 }
 .akutelltWrap .aktuelltText .text {
@@ -325,13 +339,18 @@
   background-image: url("../img/aktuelltBild.jpg");
 }
 
+/*Bildspel*/
 body, #slider, .wrap, .slide-content {
-  margin-top: 0;
-  padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  width: 100%;
-  height: 500px;
-  overflow-x: hidden;
+  height: 200px;
+}
+@media screen and (min-width: 800px) {
+  body, #slider, .wrap, .slide-content {
+    margin-top: 0;
+    padding: 0;
+    width: 100%;
+    height: 500px;
+    overflow-x: hidden;
+  }
 }
 
 .wrap {
@@ -432,6 +451,30 @@ body, #slider, .wrap, .slide-content {
   opacity: 1;
 }
 
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 3s;
+  animation-name: fade;
+  animation-duration: 3s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*Bildspel slut*/
 /*Används för att kunna skriva det som ska vara i desktop läge. */
 .itInfo {
   background-color: #edf3f9;
@@ -685,104 +728,21 @@ body, #slider, .wrap, .slide-content {
     margin-bottom: 30px;
   }
 }
+/*Mixins för desktop och mobil*/
+/*Variabler för färger/fonter*/
 p {
-  font-size: 20px;
   font-family: "Roboto", sans-serif;
+  font-size: 20px;
+}
+@media screen and (min-width: 800px) {
+  p {
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+  }
 }
 
 h1, h2, h3, h4, h4, h6 {
   font-family: "Roboto Slab", serif;
-}
-
-@media (max-width: 799px) {
-  .desktopbuttons, .desktoputbildningar, .desktopvagledning, .desktopkontakt, .desktopstudent {
-    display: none;
-  }
-}
-/*MOBIL*/
-@media (max-width: 400px) {
-  .desktopbuttons {
-    display: none;
-  }
-
-  body, #slider, .wrap, .slide-content {
-    height: 200px;
-  }
-
-  .fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 3s;
-    animation-name: fade;
-    animation-duration: 3s;
-  }
-
-  @-webkit-keyframes fade {
-    from {
-      opacity: 0.4;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  @keyframes fade {
-    from {
-      opacity: 0.4;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  .footer {
-    display: grid;
-    grid-template-columns: auto;
-    grid-gap: 25px;
-    margin-top: 15px;
-    margin-bottom: 0;
-    padding-top: 35px;
-    padding-bottom: 35px;
-    background-color: #1E4363;
-    color: #edf3f9;
-    left: 0;
-    right: 0;
-    text-align: center;
-    justify-content: center;
-    /*använder denna för att länkarna inte ska bli formaterade*/
-    /*flexar content*/
-  }
-  .footer .linkFooter {
-    color: white;
-  }
-  .footer .item1 {
-    padding-left: 40px;
-  }
-  .footerIcons {
-    font-size: 40px;
-  }
-}
-.field {
-  width: 90%;
-  height: 28px;
-  border: 1px solid black;
-  border-radius: 5px;
-  padding: 5px;
-}
-
-input[type=text], [type=password], [type=email] {
-  width: 90%;
-  height: 28px;
-  border: 1px solid black;
-  border-radius: 5px;
-  padding: 5px;
-  box-sizing: unset;
-}
-
-.wrapper-main {
-  width: 90%;
-  margin: 0 auto;
-}
-
-#homeicon {
-  color: #edf3f9;
 }
 
 body {
@@ -794,6 +754,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+/*Headern navigering*/
 header {
   width: 100%;
   height: 75px;
@@ -802,10 +763,44 @@ header {
   background-color: #1E4363;
   z-index: 10;
 }
+@media screen and (min-width: 800px) {
+  header {
+    z-index: 10;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  #menu {
+    display: none;
+  }
+}
 
 hr {
   width: 40%;
   border-color: grey !important;
+}
+
+header-nav {
+  position: fixed;
+  top: 75px;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding: 20px 0 20px 0;
+  background-color: #1E4363;
+  color: #edf3f9;
+  line-height: 25px;
+}
+@media screen and (min-width: 800px) {
+  header-nav {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  a:hover {
+    color: #FFB00D;
+  }
 }
 
 a, a:visited {
@@ -813,10 +808,116 @@ a, a:visited {
   text-decoration: none;
 }
 
+@media screen and (max-width: 799px) {
+  .desktopbuttons {
+    display: none;
+  }
+}
+@media screen and (min-width: 800px) {
+  .desktopbuttons {
+    height: 50px;
+    width: 60%;
+    float: left;
+    margin-top: 12.5px;
+  }
+}
+@media screen and (min-width: 800px) {
+  .desktopbuttons li {
+    display: inline;
+    color: #edf3f9;
+    padding-right: 30px;
+    float: left;
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .desktoputbildningar {
+    width: 350px;
+    position: fixed;
+    top: 75px;
+    z-index: 10;
+    background-color: #1E4363;
+    color: #edf3f9;
+    left: 0;
+    right: auto;
+  }
+}
+@media screen and (min-width: 800px) {
+  .desktoputbildningar p {
+    text-align: left;
+    padding-left: 40px;
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .desktopstudent {
+    width: 300px;
+    position: fixed;
+    top: 75px;
+    z-index: 10;
+    background-color: #1E4363;
+    color: #edf3f9;
+    left: 115px;
+    right: auto;
+  }
+}
+@media screen and (min-width: 800px) {
+  .desktopstudent p {
+    text-align: left;
+    padding-left: 40px;
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .desktopvagledning {
+    width: 300px;
+    position: fixed;
+    top: 75px;
+    z-index: 10;
+    background-color: #1E4363;
+    color: #edf3f9;
+    left: 255px;
+    right: auto;
+  }
+}
+@media screen and (min-width: 800px) {
+  .desktopvagledning p {
+    text-align: left;
+    padding-left: 40px;
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .desktopkontakt {
+    width: 300px;
+    position: fixed;
+    top: 75px;
+    z-index: 10;
+    background-color: #1E4363;
+    color: #edf3f9;
+    left: 363px;
+    right: auto;
+  }
+}
+@media screen and (min-width: 800px) {
+  .desktopkontakt p {
+    text-align: left;
+    padding-left: 40px;
+    cursor: pointer;
+  }
+}
+
+#homeicon {
+  color: #edf3f9;
+}
+
 .icons {
   padding-top: 20px;
 }
-
 .icons .headericon {
   width: 35px;
   height: 35px;
@@ -825,7 +926,6 @@ a, a:visited {
   padding-right: 20px;
   cursor: pointer;
 }
-
 .icons .headericon2 {
   width: 35px;
   height: 35px;
@@ -834,9 +934,8 @@ a, a:visited {
   cursor: pointer;
   color: #edf3f9;
 }
-
 .icons .menu {
-  color: #FFB00D;
+  color: #edf3f9;
   width: 35px;
   height: 35px;
   padding-left: 20px;
@@ -850,6 +949,19 @@ a, a:visited {
   width: 100%;
   height: 170px;
   background-color: #1E4363;
+}
+@media screen and (min-width: 800px) {
+  .login {
+    width: 400px;
+    height: 170px;
+    position: fixed;
+    top: 75px;
+    z-index: 10;
+    background-color: #1E4363;
+    padding-top: 8.5px;
+    left: auto;
+    right: 0;
+  }
 }
 
 .loginbutton {
@@ -877,17 +989,18 @@ a, a:visited {
   top: 75px;
   background-color: #1E4363;
 }
-
-.header-nav {
-  position: fixed;
-  top: 75px;
-  width: 100%;
-  height: auto;
-  text-align: center;
-  padding: 20px 0 20px 0;
-  background-color: #1E4363;
-  color: #edf3f9;
-  line-height: 25px;
+@media screen and (min-width: 800px) {
+  .searchfield {
+    width: 400px;
+    height: 50px;
+    position: fixed;
+    top: 75px;
+    z-index: 10;
+    background-color: #1E4363;
+    padding-top: 8.5px;
+    left: auto;
+    right: 0;
+  }
 }
 
 #utbildningar-click, #studenttjänster-click, #vägledning-click, #kontakt-click {
@@ -910,6 +1023,7 @@ a, a:visited {
   }
 }
 
+/*Sätt desktop om behövs var samma som mobil*/
 .buttonshelper {
   width: -webkit-calc(90% + 11px);
   margin: 0 auto;
@@ -941,112 +1055,7 @@ a, a:visited {
   border-bottom: 1px solid #1E4363;
 }
 
-/*DESKTOP*/
-@media (min-width: 800px) {
-  header {
-    z-index: 10;
-  }
-
-  #menu {
-    display: none;
-  }
-
-  header-nav {
-    display: none;
-  }
-
-  .desktopbuttons {
-    height: 50px;
-    width: 60%;
-    float: left;
-    margin-top: 12.5px;
-  }
-
-  .desktopbuttons li {
-    display: inline;
-    color: #edf3f9;
-    padding-right: 30px;
-    float: left;
-    cursor: pointer;
-  }
-
-  .desktoputbildningar {
-    width: 350px;
-    position: fixed;
-    top: 75px;
-    z-index: 10;
-    background-color: #1E4363;
-    color: #edf3f9;
-    left: 0;
-    right: auto;
-  }
-  .desktoputbildningar p {
-    text-align: left;
-    padding-left: 40px;
-    cursor: pointer;
-  }
-
-  .desktopstudent {
-    width: 300px;
-    position: fixed;
-    top: 75px;
-    z-index: 10;
-    background-color: #1E4363;
-    color: #edf3f9;
-    left: 115px;
-    right: auto;
-  }
-  .desktopstudent p {
-    text-align: left;
-    padding-left: 40px;
-    cursor: pointer;
-  }
-
-  .desktopvagledning {
-    width: 300px;
-    position: fixed;
-    top: 75px;
-    z-index: 10;
-    background-color: #1E4363;
-    color: #edf3f9;
-    left: 255px;
-    right: auto;
-  }
-  .desktopvagledning p {
-    text-align: left;
-    padding-left: 40px;
-    cursor: pointer;
-  }
-
-  .desktopkontakt {
-    text-align: left;
-    padding-left: 40px;
-    cursor: pointer;
-    width: 300px;
-    position: fixed;
-    top: 75px;
-    z-index: 10;
-    background-color: #1E4363;
-    color: #edf3f9;
-    left: 363px;
-    right: auto;
-  }
-  a:hover {
-    color: #FFB00D;
-  }
-
-  .searchfield {
-    width: 400px;
-    height: 50px;
-    position: fixed;
-    top: 75px;
-    z-index: 10;
-    background-color: #1E4363;
-    padding-top: 8.5px;
-    left: auto;
-    right: 0;
-  }
-
+@media screen and (min-width: 800px) {
   .logout {
     width: 400px;
     height: 50px;
@@ -1057,31 +1066,31 @@ a, a:visited {
     left: auto;
     right: 0;
   }
+}
 
-  .login {
-    width: 400px;
-    height: 170px;
-    position: fixed;
-    top: 75px;
-    z-index: 10;
-    background-color: #1E4363;
-    padding-top: 8.5px;
-    left: auto;
-    right: 0;
-  }
-
-  .buttonshelper {
-    width: -webkit-calc(90% + 11px);
-    margin: 0 auto;
-  }
-  .buttonshelper .loginbutton {
-    float: left;
-  }
-  .buttonshelper .registerbutton {
-    float: left;
-    margin-left: 10px;
-  }
-
+/*Header navigering slut*/
+/*Footer Start*/
+.footer {
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 25px;
+  margin-top: 15px;
+  margin-bottom: 0;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  background-color: #1E4363;
+  color: #edf3f9;
+  left: 0;
+  right: 0;
+  text-align: center;
+  justify-content: center;
+  /*använder denna för att länkarna inte ska bli formaterade*/
+  /* campus mölndal ikon*/
+  /*flexar content*/
+  /*kontakt*/
+  /*Sociala medier*/
+}
+@media screen and (min-width: 800px) {
   .footer {
     display: grid;
     grid-template-columns: auto auto auto auto;
@@ -1094,82 +1103,107 @@ a, a:visited {
     left: 0;
     right: 0;
     text-align: center;
-    /*använder denna för att länkarna inte ska bli formaterade*/
-    /* campus mölndal ikon*/
-    /*kontakt*/
-    /*Sociala medier*/
   }
+}
+.footer .linkFooter {
+  color: white;
+}
+@media screen and (min-width: 800px) {
   .footer .linkFooter {
     color: #edf3f9;
   }
-  .footer iframe {
-    margin-right: 100px;
-  }
+}
+.footer .item1 {
+  padding-left: 40px;
+}
+@media screen and (min-width: 800px) {
   .footer .item1 {
     margin-top: 50px;
     margin-left: 125px;
     margin-bottom: 50px;
   }
+}
+@media screen and (min-width: 800px) {
   .footer .item2 {
     margin-top: 50px;
     margin-left: 125px;
     margin-bottom: 50px;
   }
+}
+@media screen and (min-width: 800px) {
   .footer .item3 {
     margin-top: 50px;
     margin-left: 125px;
     margin-bottom: 50px;
     margin-right: 125px;
   }
-
-  /*storleken på SM ikonerna*/
+}
+/*storleken på SM ikonerna*/
+.footerIcons {
+  font-size: 40px;
+}
+@media screen and (min-width: 800px) {
   .footerIcons {
     font-size: 50px;
   }
+}
 
-  .fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 3s;
-    animation-name: fade;
-    animation-duration: 3s;
-  }
-
-  @-webkit-keyframes fade {
-    from {
-      opacity: 0.4;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  @keyframes fade {
-    from {
-      opacity: 0.4;
-    }
-    to {
-      opacity: 1;
-    }
+@media screen and (min-width: 800px) {
+  iframe {
+    margin-right: 100px;
   }
 }
+
+/*Footer slut*/
+/*Inlogg*/
+.field {
+  width: 90%;
+  height: 28px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+input[type=text], [type=password], [type=email] {
+  width: 90%;
+  height: 28px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  box-sizing: unset;
+}
+
+.wrapper-main {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/*Inlogg slutar*/
+/*Mitten delen mellan bildspel och aktuellt.*/
 .contentStart {
   display: grid;
   grid-template-columns: auto;
 }
 @media screen and (min-width: 800px) {
   .contentStart {
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 400px;
+    margin-right: 400px;
   }
 }
 .contentStart .sItem1 h1 {
-  font-size: 50px;
-  padding: 10px;
+  font-size: 55px;
+  padding: 10px 0 2px 0;
   color: white;
   font-family: "Roboto Slab", serif;
 }
+.contentStart .sItem1 p {
+  line-height: 1.5;
+}
+.contentStart .sItem2 {
+  padding-bottom: 20px;
+}
 .contentStart .sItem2 h2 {
-  font-size: 40px;
-  padding: 10px;
+  font-size: 50px;
   color: white;
   font-family: "Roboto Slab", serif;
 }

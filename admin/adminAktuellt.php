@@ -6,8 +6,7 @@
  * Time: 13:43
  */
 session_start();
-$db =mysqli_connect('localhost:3307','root','Melvin2012','CampusDB');
-mysqli_select_db($db, "CampusDB") or die("Could not select database");
+include "connectMaddeServer.php";
 ?>
 <?php
 $query1 = "SELECT * FROM aktuellt ORDER BY aId ASC";
@@ -24,5 +23,3 @@ while ($row1 = mysqli_fetch_array($heading)) {
     <?php
 }
 ?>
-
-<a href="createBlogPosts.php"><p>Skapa nytt blogg inlägg</p></a>

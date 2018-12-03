@@ -8,7 +8,7 @@
 ?>
 
 <?php
-include 'includes/header.php';
+include '../includes/header.php';
 ?>
 
 
@@ -24,7 +24,7 @@ include 'includes/header.php';
     <section class="javaInfo">
         <?php
         /** Inkluderar JavaInfo delen på sidan. /Sofia */
-        include 'includes/javainfo.php';
+        include '../includes/javainfo.php';
         ?>
     </section>
     <section class="AnsokanJava">
@@ -40,5 +40,5 @@ include 'includes/header.php';
 </main>
 
 <?php
-include "includes/footer.php"
+include "../includes/footer.php"
 ?>

@@ -6,8 +6,7 @@
  * Time: 14:25
  */
  session_start();
-$db =mysqli_connect('localhost:3307','root','Melvin2012','CampusDB');
-mysqli_select_db($db, "CampusDB") or die("Could not select database");
+include "connectMaddeServer.php";
 //Kontrollerar om inlägget kan raderas
 if(isset($_GET['deleteid']) && $_GET['deleteid'] > 0 ){
     $isDeleteid = $_GET['deleteid'];
@@ -21,7 +20,7 @@ if(isset($_POST['isdeleteid']) && $_POST['isdeleteid'] > 0 ){
 
     header("Location: aktuelltSkapaPost.php");
 }
-include "header.php"
+include "../includes/header.php"
 ?>
 
 <form class="DeleteAktuellt" action="aktuelltDelete.php" method="post">
@@ -31,7 +30,7 @@ include "header.php"
 
 </form>
 <?php
-include "footer.php"
+include "../includes/footer.php"
 ?>
 <script type="text/javascript" src="/java/jquery-3.2.1.min.js"></script>
 <script src="/java/js.js" type="text/javascript"></script>

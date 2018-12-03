@@ -6,8 +6,7 @@
  * Time: 11:08
  */
 session_start();
-$db = mysqli_connect('localhost:3307', 'root', 'Melvin2012', 'CampusDB');
-mysqli_select_db($db, 'CampusDB') or die ('Could not select database');
+include "../admin/connectMaddeServer.php";
 
 //$query = "SELECT * FROM aktuellt ORDER BY aId ASC";
 
@@ -26,7 +25,7 @@ $post3 = mysqli_query($db,$query3);
  ?>
 
 <?php
-include "includes/header.php"
+include "../includes/header.php"
 ?> <div class="aktuelltbild"></div>
             <div class="akutelltWrap">
                 <h2 id="headingAktuellt">Aktuellt</h2>
@@ -39,7 +38,7 @@ $row3 = mysqli_fetch_array($post3);
 ?>
                 <div id="November 2018" class="tabcontent">
                     <h3><?php echo $row1[1]; ?></h3>
-                    <img class="aktuelltImg" src="img/aktuellt1.jpg" width="500px" height="350px">
+                    <img class="aktuelltImg" src="../img/aktuellt1.jpg" width="500px" height="350px">
                     <p><?php echo $row1[2] ?></p>
                     <p id="text1" class="text"><?php echo $row1[3] ?></p>
                     <p><?php echo $row1[4] ?></p>
@@ -49,7 +48,7 @@ $row3 = mysqli_fetch_array($post3);
                 <div id="Oktober 2018" class="tabcontent">
 
                     <h3><?php echo $row2[1]; ?></h3>
-                    <img class="aktuelltImg" src="img/aktuellt2.jpg" width="500px" height="350px">
+                    <img class="aktuelltImg" src="../img/aktuellt2.jpg" width="500px" height="350px">
                     <p><?php echo $row2[2] ?></p>
                     <p id="text2" class="text"><?php echo $row2[3] ?></p>
                     <p><?php echo $row2[4] ?></p>
@@ -58,7 +57,7 @@ $row3 = mysqli_fetch_array($post3);
 
                 <div id="September 2018" class="tabcontent">
                     <h3><?php echo $row3[1]; ?></h3>
-                    <img class="aktuelltImg" src="img/aktuellt3.jpg" width="500px" height="350px">
+                    <img class="aktuelltImg" src="../img/aktuellt3.jpg" width="500px" height="350px">
                     <p><?php echo $row3[2] ?></p>
                     <p id="text3" class="text"><?php echo $row3[3] ?></p>
                     <p><?php echo $row3[4] ?></p>
@@ -76,10 +75,11 @@ $row3 = mysqli_fetch_array($post3);
                 </div>
             </div>
                 <?php
-                include "includes/footer.php"
+                include "../includes/footer.php"
                 ?>
 
-<script src="java/aktuellt.js"></script>
+<script src="../java/aktuellt.js"></script>
+
 
 
 

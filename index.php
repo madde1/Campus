@@ -36,7 +36,7 @@ include 'includes/header.php';
         <div class="sItem2">
             <h2>Ansök</h2>
             <h4>Yrkeshögskolan - Sen ansökan är öppen nu!</h4>
-            <p>IT-Projektledare - <a href="it.php">Ansök här!</p></a>
+            <p>IT-Projektledare - <a href="undersidor/it.php">Ansök här!</p></a>
         </div>
     </section>
 <section class="aktuellt">

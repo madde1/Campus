@@ -6,8 +6,7 @@
  * Time: 09:05
  */
 session_start();
-$db =mysqli_connect('localhost:3307','root','Melvin2012','CampusDB');
-mysqli_select_db($db, "CampusDB") or die("Could not select database");
+include "connectMaddeServer.php";
 
 
 //Lägg till nytt blogg inlägg
@@ -29,12 +28,12 @@ if(isset($_POST['new']) && $_POST['new'] == 1){
 
     }
 
-    header("Location: /aktuelltPosts.php" );
+    header("Location: ../aktuelltPosts.php" );
 }
 ?>
 
 <?php
-include "header.php"
+include "../includes/header.php"
 ?>
 <section class="CreateAktuellt">
 
@@ -60,5 +59,5 @@ include "header.php"
     <script type="text/javascript" src="../java/jquery-3.2.1.min.js"></script>
     <script src="../java/js.js" type="text/javascript"></script>
 <?php
-include "footer.php"
+include "../includes/footer.php"
 ?>

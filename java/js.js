@@ -43,13 +43,13 @@ function closeDropdowns(){
 
     $('.header-nav').hide();
     $('#utbildningar-dropdown').hide();
-    $('#utbildningar-click').css('color', '#EDF3F9)');
+    $('#utbildningar-click').css('color', '#EDF3F9');
     $('#studenttjänster-dropdown').hide();
     $('#studenttjänster-click').css('color', '#EDF3F9');
     $('#vägledning-dropdown').hide();
     $('#vägledning-click').css('color', '#EDF3F9');
     $('#kontakt-dropdown').hide();
-    $('#kontakt-click').css('color', '#EDF3F9)');
+    $('#kontakt-click').css('color', '#EDF3F9');
 
 
 
@@ -215,10 +215,10 @@ $('#utbildningar-click').click(function(){
 
     $('#studenttjänster-click').css('color', '#EDF3F9');
     $('#vägledning-click').css('color', '#EDF3F9');
-    $('#kontakt-click').css('color', '#EDF3F9)');
+    $('#kontakt-click').css('color', '#EDF3F9');
 
 
-    var color = $('#utbildningar-click').css('#EDF3F9');
+    var color = $('#utbildningar-click').css('color');
     if (color == 'rgb(237, 243, 249)' || color == '#EDF3F9'){
         $('#utbildningar-click').css('color', '#FFB00D');
     }
@@ -234,7 +234,7 @@ $('#studenttjänster-click').click(function(){
     $('#kontakt-click').css('color', '#EDF3F9');
 
     var color = $('#studenttjänster-click').css('color');
-    if (color == 'rgb(237, 243, 249)' || color == '#EDF3F9)'){
+    if (color == 'rgb(237, 243, 249)' || color == '#EDF3F9'){
         $('#studenttjänster-click').css('color', '#FFB00D');
     }
     if (color == 'rgb(255, 176, 13)' || color == '#FFB00D'){
@@ -282,9 +282,9 @@ $('#searchicon').click(function(){
 
     var color = $('#searchicon').css('color');
     if (color == 'rgb(237, 243, 249)' || color == '#EDF3F9'){
-        $('#searchicon').css('color', '#FFB00D');
+        $('#searchicon').css('color', '#EDF3F9');
     }
-    if (color == 'rgb(255, 176, 13)' || color == '#FFB00D'){
+    if (color == 'rgb(237, 243, 249)' || color == '#EDF3F9'){
         $('#searchicon').css('color', '#EDF3F9');
     }
 });

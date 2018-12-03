@@ -45,8 +45,8 @@ session_start();
                 <ion-icon class="menu" id="menu" name="menu"></ion-icon>
                 <ion-icon class="headericon" id="searchicon" name="search"></ion-icon>
                 <ion-icon class="headericon" id="usericon" name="person"></ion-icon>
-                <a href="apply.php"><ion-icon class="headericon2" id="schoolicon" name="school"></ion-icon></a>
-                <a href="index.php"><ion-icon class="headericon" id="homeicon" name="home"></ion-icon></a>
+                <a href="../undersidor/apply.php"><ion-icon class="headericon2" id="schoolicon" name="school"></ion-icon></a>
+                <a href="/index.php"><ion-icon class="headericon" id="homeicon" name="home"></ion-icon></a>
             </div>
             <div class="login">
                 <form action="includes/login.inc.php" method="post" autocomplete="off" >
@@ -64,9 +64,9 @@ session_start();
             </div>
 
             <div class="desktoputbildningar">
-                <a href="javaStart.php"><p>Java- och webbutvecklare</p></a>
+                <a href="../undersidor/javaStart.php"><p>Java- och webbutvecklare</p></a>
                 <a><p>IT- och virtualiseringsspecialist</p></a>
-                <a href="it.php"><p>IT-projektledare</p></a>
+                <a href="../undersidor/it.php"><p>IT-projektledare</p></a>
                 <a><p>Aktiveringspedagog inom LSS</p></a>
                 <a><p>Specialiserad studiehandledare</p></a>
                 <a><p>Information</p></a>
@@ -104,9 +104,9 @@ session_start();
                <p id="utbildningar-click">Utbildningar</p>
 
                 <div id="utbildningar-dropdown">
-                    <a href="javaStart.php"><p>Java- och webbutvecklare</p></a>
+                    <a href="../undersidor/javaStart.php"><p>Java- och webbutvecklare</p></a>
                     <p>IT- och virtualiseringsspecialist</p>
-                    <a href="it.php"><p>IT-projektledare</p></a>
+                    <a href="../undersidor/it.php"><p>IT-projektledare</p></a>
                     <p>Aktiveringspedagog inom LSS</p>
                     <p>Specialiserad studiehandledare</p>
                     <p>Information</p>

@@ -11,7 +11,7 @@
 <body>
 
 <?php
-include 'includes/header.php';
+include '../includes/header.php';
 ?>
 
 
@@ -27,7 +27,7 @@ include 'includes/header.php';
     <section class="itInfo">
         <?php
         /** Inkluderar itInfo delen på sidan. /Sofia */
-        include 'includes/itinfo.php';
+        include '../includes/itinfo.php';
         ?>
     </section>
     <section class="AnsokanIt">
@@ -47,5 +47,5 @@ include 'includes/header.php';
 </main>
 
 <?php
-include "includes/footer.php"
+include "../includes/footer.php"
 ?>
