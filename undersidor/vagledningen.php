@@ -27,19 +27,19 @@ include "../includes/header.php"
     <h2>Drop in-besök</h2>
     <p>Du kan också besöka oss utan att boka en tid innan. Under våra drop in-tider kan studie- och
         yrkesvägledarna exempelvis ge följande stöd:</p>
-    <ol>
+    <ul>
         <li>Svar på frågor kring behörigheter och betyg</li>
         <li>Teknisk hjälp med ansökan till utbildningar</li>
         <li>Information om CSN och stöd i ansökan av studiemedel</li>
         <li>Vidimering av betygsdokument</li>
-    </ol>
+    </ul>
     <p>Observera att ett drop in samtal är mycket kortare än ett bokat vägledningssamtal</p>
     <h2>Tider för Drop-in</h2>
-    <ol>
+    <ul>
         <li>Måndag 13:00 - 15:00</li>
         <li>Tisdag 10:00 - 12:00</li>
         <li>Onsdag 13:00 - 15:00</li>
-    </ol>
+    </ul>
     <p>Du är välkommen till vägledningsexpeditionen om du behöver hjälp med att ansöka om studiemedel</p>
 
     <h2>SlutBetyg</h2>
@@ -53,8 +53,9 @@ include "../includes/header.php"
     <h2>Kontakt studie- och yrkesvägledare</h2>
     <section id="vagRight">
     </section>
-        <section class="vagExp">
         <h2>Kontakt och öppettider Vägledningsexpeditionen</h2>
+        <section class="vagExp">
+
         <h3>Vägledningsexpeditionens telefon- och öppettider</h3>
         <p>Måndag & Onsdag 13:00 - 15:00</p>
         <p>Tisdag,Torsdag & Fredag 10:00 - 12:00</p>

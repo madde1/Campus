@@ -784,14 +784,14 @@ body, #slider, .wrap, .slide-content {
   .vagledningWrap {
     display: grid;
     grid-template-columns: auto auto;
-    grid-gap: 251px;
+    grid-gap: 50px;
     text-align: left;
   }
 }
 @media screen and (min-width: 800px) {
   .vagledningWrap .vagLeft {
     margin-left: 30px;
-    width: 870px;
+    width: 600px;
   }
 }
 .vagledningWrap .vagLeft h1 {
@@ -799,13 +799,13 @@ body, #slider, .wrap, .slide-content {
 }
 @media screen and (min-width: 800px) {
   .vagledningWrap .vagLeft h1 {
-    font-size: 40px;
+    font-size: 35px;
     width: 600px;
   }
 }
 @media screen and (min-width: 800px) {
   .vagledningWrap .vagLeft p {
-    width: 600px;
+    width: 450px;
   }
 }
 .vagledningWrap .vagLeft .btn {
@@ -815,10 +815,24 @@ body, #slider, .wrap, .slide-content {
   padding: 12px 20px;
   border-radius: 4px;
   font-size: 20px;
-  width: 20%;
+  width: 50%;
   height: auto;
   text-align: center;
   margin-right: 10px;
+}
+@media screen and (min-width: 800px) {
+  .vagledningWrap .vagLeft .btn {
+    border: 1px solid #303030;
+    background-color: #FFB00D;
+    color: #303030;
+    padding: 12px 20px;
+    border-radius: 4px;
+    font-size: 20px;
+    width: 20%;
+    height: auto;
+    text-align: center;
+    margin-right: 10px;
+  }
 }
 @media screen and (min-width: 800px) {
   .vagledningWrap .vagLeft .btn:hover {
@@ -829,8 +843,7 @@ body, #slider, .wrap, .slide-content {
 @media screen and (min-width: 800px) {
   .vagledningWrap .vagRight {
     text-align: left;
-    width: 350px;
-    right: 0;
+    width: 400px;
   }
 }
 @media screen and (min-width: 800px) {
@@ -849,7 +862,12 @@ body, #slider, .wrap, .slide-content {
   }
 }
 .vagledningWrap .vagRight h2 {
-  font-size: 25px;
+  font-size: 20px;
+}
+@media screen and (min-width: 800px) {
+  .vagledningWrap .vagRight h2 {
+    width: 500px;
+  }
 }
 @media screen and (min-width: 800px) {
   .vagledningWrap .vagRight .vagExp {
