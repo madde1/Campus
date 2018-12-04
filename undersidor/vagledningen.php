@@ -27,13 +27,44 @@ include "../includes/header.php"
     <h2>Drop in-besök</h2>
     <p>Du kan också besöka oss utan att boka en tid innan. Under våra drop in-tider kan studie- och
         yrkesvägledarna exempelvis ge följande stöd:</p>
+    <ol>
+        <li>Svar på frågor kring behörigheter och betyg</li>
+        <li>Teknisk hjälp med ansökan till utbildningar</li>
+        <li>Information om CSN och stöd i ansökan av studiemedel</li>
+        <li>Vidimering av betygsdokument</li>
+    </ol>
+    <p>Observera att ett drop in samtal är mycket kortare än ett bokat vägledningssamtal</p>
+    <h2>Tider för Drop-in</h2>
+    <ol>
+        <li>Måndag 13:00 - 15:00</li>
+        <li>Tisdag 10:00 - 12:00</li>
+        <li>Onsdag 13:00 - 15:00</li>
+    </ol>
+    <p>Du är välkommen till vägledningsexpeditionen om du behöver hjälp med att ansöka om studiemedel</p>
+
+    <h2>SlutBetyg</h2>
+    <p>SlutBetyg från gymnasial vuxenutbilning får utfärdas fram till den 1 juli 2020.
+    Kontakta en studie-och yrkesvägledare för mer information</p>
+
+    <h3>Boka tid till Studie- & Yrkesvägledare</h3>
+    <button class="btn">Boka tid</button>
 </section>
     <section class="vagRight">
-        <h2>Kontakt Studie- och Yrkesvägledare</h2>
-        <p>Johan RydeStam</p>
-        <p>Studie- och yrkesvägledare</p>
-        <p>031-315 10-13</p>
-        <p>jonas.rydenstam@molndal.se</p>
+    <h2>Kontakt studie- och yrkesvägledare</h2>
+    <section id="vagRight">
+    </section>
+        <section class="vagExp">
+        <h2>Kontakt och öppettider Vägledningsexpeditionen</h2>
+        <h3>Vägledningsexpeditionens telefon- och öppettider</h3>
+        <p>Måndag & Onsdag 13:00 - 15:00</p>
+        <p>Tisdag,Torsdag & Fredag 10:00 - 12:00</p>
+
+        <h3>Vägledning Campus Mölndal</h3>
+        <p>Göteborgsvägen 97, ingång 1</p>
+        <p>431 37 Mölndal</p>
+        <p>031 - 315 10 14</p>
+        <p>vagledning.campus@molndal.se</p>
+        </section>
     </section>
 </section>
 
@@ -41,3 +72,4 @@ include "../includes/header.php"
 <?php
 include "../includes/footer.php"
 ?>
+<script src="../java/vagledning-json.js"></script>

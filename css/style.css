@@ -784,25 +784,105 @@ body, #slider, .wrap, .slide-content {
   .vagledningWrap {
     display: grid;
     grid-template-columns: auto auto;
-    grid-gap: 5px;
+    grid-gap: 251px;
     text-align: left;
   }
 }
-.vagledningWrap .vagLeft {
-  margin-left: 20px;
-  width: 70%;
+@media screen and (min-width: 800px) {
+  .vagledningWrap .vagLeft {
+    margin-left: 30px;
+    width: 870px;
+  }
 }
-.vagledningWrap .vagRight {
-  margin-right: 20px;
+.vagledningWrap .vagLeft h1 {
+  font-size: 30px;
+}
+@media screen and (min-width: 800px) {
+  .vagledningWrap .vagLeft h1 {
+    font-size: 40px;
+    width: 600px;
+  }
+}
+@media screen and (min-width: 800px) {
+  .vagledningWrap .vagLeft p {
+    width: 600px;
+  }
+}
+.vagledningWrap .vagLeft .btn {
+  border: 1px solid #303030;
+  background-color: #FFB00D;
+  color: #303030;
+  padding: 12px 20px;
+  border-radius: 4px;
+  font-size: 20px;
+  width: 20%;
+  height: auto;
+  text-align: center;
+  margin-right: 10px;
+}
+@media screen and (min-width: 800px) {
+  .vagledningWrap .vagLeft .btn:hover {
+    background-color: #1E4363;
+    color: white;
+  }
+}
+@media screen and (min-width: 800px) {
+  .vagledningWrap .vagRight {
+    text-align: left;
+    width: 350px;
+    right: 0;
+  }
+}
+@media screen and (min-width: 800px) {
+  .vagledningWrap .vagRight .vagledningContentData {
+    background-color: #edf3f9;
+    text-align: left;
+    color: black;
+    border-right: 10px solid #1E4363;
+    padding: 3px 3px 3px 10px;
+    margin-bottom: 5px;
+  }
+}
+@media screen and (min-width: 800px) {
+  .vagledningWrap .vagRight .vagledningContentData:hover {
+    background-color: #FFB00D;
+  }
+}
+.vagledningWrap .vagRight h2 {
+  font-size: 25px;
+}
+@media screen and (min-width: 800px) {
+  .vagledningWrap .vagRight .vagExp {
+    background-color: #edf3f9;
+    text-align: left;
+    color: black;
+    border-right: 10px solid #1E4363;
+    padding: 3px 3px 3px 10px;
+    margin-bottom: 5px;
+  }
+}
+@media screen and (min-width: 800px) {
+  .vagledningWrap .vagRight .vagExp:hover {
+    background-color: #FFB00D;
+  }
 }
 
-.vagBild {
-  width: 100%;
-  height: 700px;
-  margin-top: 75px;
-  background-position: center;
-  background-size: cover;
-  background-image: url("../img/vag.jpg");
+@media screen and (max-width: 799px) {
+  .vagBild {
+    margin-top: 75px;
+    width: 100%;
+    height: 200px;
+  }
+}
+@media screen and (min-width: 800px) {
+  .vagBild {
+    width: 100%;
+    height: 700px;
+    margin-top: 75px;
+    background-position: center;
+    background-size: cover;
+    background-image: url("../img/vag.jpg");
+  }
 }
 
 /*Mixins för desktop och mobil*/
@@ -832,15 +912,13 @@ body {
 }
 
 /*Headern navigering*/
-@media screen and (min-width: 300px) and (max-width: 799px) {
-  header {
-    width: 100%;
-    height: 75px;
-    position: fixed;
-    top: 0;
-    background-color: #1E4363;
-    z-index: 10;
-  }
+header {
+  width: 100%;
+  height: 75px;
+  position: fixed;
+  top: 0;
+  background-color: #1E4363;
+  z-index: 10;
 }
 @media screen and (min-width: 800px) {
   header {

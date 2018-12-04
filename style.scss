@@ -46,14 +46,13 @@ body {
 
 }
 /*Headern navigering*/
-header{@include mobile {
+header{
   width: 100%;
   height: 75px;
   position: fixed;
   top: 0;
   background-color: $header;
   z-index: 10;
-}
   @include desktop {
     z-index: 10;
   }
