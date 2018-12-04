@@ -28,8 +28,8 @@
     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2134.459286848991!2d12.0142898!3d57.6576781!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464ff2315c83304b%3A0xcf93cc3fac343baa!2sKulturhuset+M%C3%B6llan!5e0!3m2!1ssv!2sse!4v1542789970452" width="250" height="150" frameborder="0" style="border:0" allowfullscreen></iframe>
 </footer>
 
-<script type="text/javascript" src="/java/jquery-3.2.1.min.js"></script>
-<script src="../java/js.js" type="text/javascript"></script>
+<script type="text/javascript" src="java/jquery-3.2.1.min.js"></script>
+<script src="java/js.js" type="text/javascript"></script>
 </body>
 </html>
 
