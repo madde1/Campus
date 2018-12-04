@@ -134,6 +134,7 @@
 .akutelltWrap #headingAktuellt {
   background-color: #edf3f9;
   margin-top: 75px;
+  padding-top: 10px;
 }
 @media screen and (min-width: 801px) {
   .akutelltWrap #headingAktuellt {
@@ -233,6 +234,7 @@
   width: 100%;
   margin: 15px 0 30px 0;
   color: black;
+  line-height: 1.5;
 }
 @media screen and (min-width: 801px) {
   .akutelltWrap .aktuelltText {
@@ -246,22 +248,34 @@
   display: none;
 }
 
-.CreateAktuellt {
+.aWarp {
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 5px;
+}
+@media screen and (min-width: 801px) {
+  .aWarp {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 5px;
+  }
+}
+.aWarp .CreateAktuellt {
   margin-top: 75px;
   background-color: #edf3f9;
   color: black;
   padding: 10px 0 10px 0;
 }
-.CreateAktuellt textarea {
+.aWarp .CreateAktuellt textarea {
   resize: none;
 }
-.CreateAktuellt .createPost {
+.aWarp .CreateAktuellt .createPost {
   display: grid;
   grid-template-columns: auto;
   grid-gap: 10px;
   margin: 50px;
 }
-.CreateAktuellt .btn {
+.aWarp .CreateAktuellt .btn {
   border: 1px solid #303030;
   background-color: #FFB00D;
   color: #303030;
@@ -274,10 +288,7 @@
   margin-top: 10px;
   margin-right: 10px;
 }
-.CreateAktuellt #headline {
-  margin-left: 70px;
-}
-.CreateAktuellt .btn1 {
+.aWarp .CreateAktuellt .btn1 {
   border: 1px solid #303030;
   background-color: #FF5B5B;
   color: #303030;
@@ -288,6 +299,22 @@
   height: auto;
   text-align: center;
   margin-right: 10px;
+}
+.aWarp .adminAktuellt {
+  margin-top: 75px;
+  background-color: #1E4363;
+}
+.aWarp .adminAktuellt #createH3 {
+  color: white;
+}
+
+.aktuelltbild {
+  width: 100%;
+  height: 500px;
+  margin-top: 75px;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../img/aktuelltBild.jpg");
 }
 
 .DeleteAktuellt {
@@ -323,20 +350,45 @@
   margin-right: 10px;
 }
 
-.adminAktuellt {
-  background-color: #1E4363;
-}
-.adminAktuellt #createH3 {
-  color: white;
-}
-
-.aktuelltbild {
-  width: 100%;
-  height: 500px;
+.UpdateAktuellt {
   margin-top: 75px;
-  background-position: center;
-  background-size: cover;
-  background-image: url("../img/aktuelltBild.jpg");
+  background-color: #edf3f9;
+  color: black;
+  padding: 10px 0 10px 0;
+}
+.UpdateAktuellt textarea {
+  resize: none;
+}
+.UpdateAktuellt .createPost {
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 10px;
+  margin: 50px;
+}
+.UpdateAktuellt .btn {
+  border: 1px solid #303030;
+  background-color: #FFB00D;
+  color: #303030;
+  padding: 12px 20px;
+  border-radius: 4px;
+  font-size: 20px;
+  width: 20%;
+  height: auto;
+  text-align: center;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+.UpdateAktuellt .btn1 {
+  border: 1px solid #303030;
+  background-color: #FF5B5B;
+  color: #303030;
+  padding: 12px 20px;
+  border-radius: 4px;
+  font-size: 20px;
+  width: 20%;
+  height: auto;
+  text-align: center;
+  margin-right: 10px;
 }
 
 /*Bildspel*/
@@ -370,11 +422,11 @@ body, #slider, .wrap, .slide-content {
 }
 
 .slide2 {
-  background-image: url("../bildSpel/bilder/bild2.jpg");
+  background-image: url("../bildSpel/bilder/startbild.jpg");
 }
 
 .slide3 {
-  background-image: url("../bildSpel/bilder/bild3.jpg");
+  background-image: url("../bildSpel/bilder/gruppbildcopy.jpg");
 }
 
 .slide-content {
@@ -728,6 +780,31 @@ body, #slider, .wrap, .slide-content {
     margin-bottom: 30px;
   }
 }
+@media screen and (min-width: 800px) {
+  .vagledningWrap {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 5px;
+    text-align: left;
+  }
+}
+.vagledningWrap .vagLeft {
+  margin-left: 20px;
+  width: 70%;
+}
+.vagledningWrap .vagRight {
+  margin-right: 20px;
+}
+
+.vagBild {
+  width: 100%;
+  height: 700px;
+  margin-top: 75px;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../img/vag.jpg");
+}
+
 /*Mixins för desktop och mobil*/
 /*Variabler för färger/fonter*/
 p {
@@ -755,13 +832,15 @@ body {
 }
 
 /*Headern navigering*/
-header {
-  width: 100%;
-  height: 75px;
-  position: fixed;
-  top: 0;
-  background-color: #1E4363;
-  z-index: 10;
+@media screen and (min-width: 300px) and (max-width: 799px) {
+  header {
+    width: 100%;
+    height: 75px;
+    position: fixed;
+    top: 0;
+    background-color: #1E4363;
+    z-index: 10;
+  }
 }
 @media screen and (min-width: 800px) {
   header {
@@ -780,19 +859,21 @@ hr {
   border-color: grey !important;
 }
 
-header-nav {
-  position: fixed;
-  top: 75px;
-  width: 100%;
-  height: auto;
-  text-align: center;
-  padding: 20px 0 20px 0;
-  background-color: #1E4363;
-  color: #edf3f9;
-  line-height: 25px;
+@media screen and (min-width: 300px) and (max-width: 799px) {
+  .header-nav {
+    position: fixed;
+    top: 75px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 20px 0 20px 0;
+    background-color: #1E4363;
+    color: #edf3f9;
+    line-height: 25px;
+  }
 }
 @media screen and (min-width: 800px) {
-  header-nav {
+  .header-nav {
     display: none;
   }
 }
@@ -808,7 +889,7 @@ a, a:visited {
   text-decoration: none;
 }
 
-@media screen and (max-width: 799px) {
+@media screen and (min-width: 300px) and (max-width: 799px) {
   .desktopbuttons {
     display: none;
   }
@@ -1007,11 +1088,13 @@ a, a:visited {
   cursor: pointer;
 }
 
-#utbildningar-dropdown, #studenttjänster-dropdown, #vägledning-dropdown, #kontakt-dropdown {
-  width: 100%;
-  height: auto;
-  overflow: hidden;
-  padding: 10px 0 10px 0;
+@media screen and (min-width: 300px) and (max-width: 799px) {
+  #utbildningar-dropdown, #studenttjänster-dropdown, #vägledning-dropdown, #kontakt-dropdown {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding: 10px 0 10px 0;
+  }
 }
 @media screen and (min-width: 800px) {
   #utbildningar-dropdown, #studenttjänster-dropdown, #vägledning-dropdown, #kontakt-dropdown {
@@ -1186,8 +1269,8 @@ input[type=text], [type=password], [type=email] {
 }
 @media screen and (min-width: 800px) {
   .contentStart {
-    margin-left: 400px;
-    margin-right: 400px;
+    margin-left: 350px;
+    margin-right: 350px;
   }
 }
 .contentStart .sItem1 h1 {

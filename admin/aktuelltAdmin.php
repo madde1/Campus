@@ -35,10 +35,11 @@ if(isset($_POST['new']) && $_POST['new'] == 1){
 <?php
 include "../includes/header.php"
 ?>
+<section class="aWarp">
 <section class="CreateAktuellt">
 
         <h2>Skapa inlägg</h2>
-        <form class="createPost" action="aktuelltSkapaPost.php" method="post">
+        <form class="createPost" action="aktuelltAdmin.php" method="post">
             <input type ="hidden" name="new" id="new" value="1">
             <input id="headline" type = "text" name="headline" placeholder="Headline"  >
             <textarea name ="summation" maxlength = "1200"  rows="20" cols="50" placeholder="Skriv summering här:"></textarea>
@@ -50,11 +51,11 @@ include "../includes/header.php"
 </section>
 <section class="adminAktuellt">
         <?php
-        include "adminAktuellt.php"
+        include "adminAktuelltFunction.php"
         ?>
 
 </section>
-
+</section>
 
     <script type="text/javascript" src="../java/jquery-3.2.1.min.js"></script>
     <script src="../java/js.js" type="text/javascript"></script>

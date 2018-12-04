@@ -12,9 +12,9 @@ session_start();
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://unpkg.com/ionicons@4.2.2/dist/ionicons.js"></script>
     <link href="https://unpkg.com/ionicons@4.2.2/dist/css/ionicons.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
-    <link rel="stylesheet" type="text/css" href="/css/regform.css">
-    <link rel="stylesheet" href="../css/reg.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/regform.css">
+    <link rel="stylesheet" href="css/reg.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab" rel="stylesheet">
 
     <!--Icon till sidan -->
@@ -83,7 +83,7 @@ session_start();
             </div>
 
             <div class="desktopvagledning">
-                <a href="vagledning.php"><p>För dig som är över 20 år</p></a>
+                <a href="../undersidor/vagledningen.php"><p>För dig som är över 20 år</p></a>
                 <a><p>För dig som är under 20 år</p></a>
                 <a><p>För dig med särskilda behov</p></a>
             </div>
@@ -126,8 +126,8 @@ session_start();
 
                 <p id="vägledning-click">Studie- och yrkesvägledning</p>
                 <div id="vägledning-dropdown">
-                    <a href="vagledning.php"><p>För dig som är över 20 år</p></a>
-                    <p>För dig som är under 20 år</p>
+                    <a href="../undersidor/vagledningen.php"><p>För dig som är över 20 år</p></a>
+                     <p>För dig som är under 20 år</p>
                     <p>För dig med särskilda behov</p>
 
                 </div>

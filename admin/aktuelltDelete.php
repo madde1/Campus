@@ -18,7 +18,7 @@ if(isset($_POST['isdeleteid']) && $_POST['isdeleteid'] > 0 ){
 
     $result = mysqli_query($db, $query);
 
-    header("Location: aktuelltSkapaPost.php");
+    header("Location: aktuelltAdmin.php");
 }
 include "../includes/header.php"
 ?>
@@ -26,7 +26,7 @@ include "../includes/header.php"
 <form class="DeleteAktuellt" action="aktuelltDelete.php" method="post">
     <input type="hidden" name="isdeleteid" value="<?php echo $isDeleteid; ?>">
     <h2>Vill du verkligen radera inlägget?</h2>
-    <p><input class="btn" type="submit" value="JA"><a href="aktuelltSkapaPost.php"><input class="btn1" type="button" value="Tillbaka"></a></p>
+    <p><input class="btn" type="submit" value="JA"><a href="aktuelltAdmin.php"><input class="btn1" type="button" value="Tillbaka"></a></p>
 
 </form>
 <?php
