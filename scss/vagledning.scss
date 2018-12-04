@@ -1,0 +1,29 @@
+@mixin desktop(){
+  @media screen and (min-width: 800px) {
+    @content
+  }
+}
+.vagledningWrap{
+  @include desktop{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 5px;
+    text-align: left;
+
+  }
+  .vagLeft{
+    margin-left: 20px;
+width: 70%;
+  }
+.vagRight{
+margin-right: 20px;
+}
+}
+.vagBild{
+     width: 100%;
+     height: 700px;
+     margin-top: 75px;
+     background-position: center;
+     background-size: cover;
+     background-image: url("../img/vag.jpg");
+   }

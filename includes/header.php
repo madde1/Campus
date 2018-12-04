@@ -83,7 +83,7 @@ session_start();
             </div>
 
             <div class="desktopvagledning">
-                <a href="vagledning.php"><p>För dig som är över 20 år</p></a>
+                <a href="../undersidor/vagledningen.php"><p>För dig som är över 20 år</p></a>
                 <a><p>För dig som är under 20 år</p></a>
                 <a><p>För dig med särskilda behov</p></a>
             </div>
@@ -126,8 +126,8 @@ session_start();
 
                 <p id="vägledning-click">Studie- och yrkesvägledning</p>
                 <div id="vägledning-dropdown">
-                    <a href="vagledning.php"><p>För dig som är över 20 år</p></a>
-                    <p>För dig som är under 20 år</p>
+                    <a href="../undersidor/vagledningen.php"><p>För dig som är över 20 år</p></a>
+                     <p>För dig som är under 20 år</p>
                     <p>För dig med särskilda behov</p>
 
                 </div>
