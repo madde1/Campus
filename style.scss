@@ -4,6 +4,7 @@
 @import "scss/itInfo";
 @import "scss/javainfo";
 @import "scss/apply";
+@import "scss/vagledning";
 /*Mixins för desktop och mobil*/
 @mixin desktop(){
   @media screen and (min-width: 800px) {
@@ -11,7 +12,7 @@
   }
 }
 @mixin mobile(){
-  @media screen and (max-width: 799px) {
+  @media screen and (min-width: 300px) and (max-width: 799px) {
     @content
   }
 }
@@ -45,13 +46,14 @@ body {
 
 }
 /*Headern navigering*/
-header{
+header{@include mobile {
   width: 100%;
   height: 75px;
   position: fixed;
   top: 0;
   background-color: $header;
   z-index: 10;
+}
   @include desktop {
     z-index: 10;
   }
@@ -65,16 +67,18 @@ hr {
   width: 40%;
   border-color: grey!important;
 }
-header-nav{
-  position: fixed;
-  top: 75px;
-  width: 100%;
-  height: auto;
-  text-align: center;
-  padding: 20px 0 20px 0; // center
-  background-color: $header;
-  color: $textheader;
-  line-height: 25px;
+.header-nav{
+  @include mobile {
+    position: fixed;
+    top: 75px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 20px 0 20px 0; // center
+    background-color: $header;
+    color: $textheader;
+    line-height: 25px;
+  }
   @include desktop {
     display: none;
   }
@@ -279,10 +283,12 @@ a, a:visited {
 }
 
 #utbildningar-dropdown, #studenttjänster-dropdown, #vägledning-dropdown, #kontakt-dropdown {
-  width: 100%;
-  height: auto;
-  overflow: hidden;
-  padding: 10px 0 10px 0;
+  @include mobile {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding: 10px 0 10px 0;
+  }
  @include desktop{
     overflow: hidden;
     padding: 10px 0 10px 0; //center
@@ -447,8 +453,8 @@ input[type=text], [type=password], [type=email] {
   display: grid;
   grid-template-columns: auto;
   @include desktop{
-    margin-left: 400px;
-    margin-right: 400px;
+    margin-left: 350px;
+    margin-right: 350px;
   }
 .sItem1 {
   h1 {

@@ -9,7 +9,7 @@
 ?>
 
 <footer class="footer">
-    <img src="img/logga-campus-skarpare.png" class="item1">
+    <img src="/img/logga-campus-skarpare.png" class="item1">
     <p class="item2"> Skolexpedition<br>
         - för dig som är elev<br>
         031-315 10 14
