@@ -127,5 +127,9 @@
             Tfn expedition: 031-315 10 14<br>
             yh.campus@molndal.se
         </p>
+        <p>Tjena</p>
+    <section id="content"></section>
+
+    <script src="../java/json/javaKontakt.js"></script>
     </div>
 </section>
