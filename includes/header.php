@@ -12,9 +12,9 @@ session_start();
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://unpkg.com/ionicons@4.2.2/dist/ionicons.js"></script>
     <link href="https://unpkg.com/ionicons@4.2.2/dist/css/ionicons.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
-    <link rel="stylesheet" type="text/css" href="/css/regform.css">
-    <link rel="stylesheet" href="../css/reg.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/regform.css">
+    <link rel="stylesheet" href="css/reg.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab" rel="stylesheet">
 
     <!--Icon till sidan -->

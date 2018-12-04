@@ -110,22 +110,9 @@
     </div>
     <div class="stycke6">
         <h3>Kontakt</h3>
-        <p>
-            Är du intresserad av mer information kring utbildningen kontakta Rickard Hagerberg på Campus Mölndal.
-        </p>
-        <p>
-            Rickard Hagerberg<br>
-            Verksamhetsutvecklare<br>
-            0700-32 68 52<br>
-            rickard.hagerberg@molndal.se
-        </p>
-        <p>
-            För frågor kring ansökan och antagning kontakta oss nedan.
-        </p>
-        <p>
-            Vägledning Campus Mölndal<br>
-            Tfn expedition: 031-315 10 14<br>
-            yh.campus@molndal.se
-        </p>
+
+    <section id="content"></section>
+
+    <script src="../java/json/javaKontakt.js"></script>
     </div>
 </section>

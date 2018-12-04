@@ -422,11 +422,11 @@ body, #slider, .wrap, .slide-content {
 }
 
 .slide2 {
-  background-image: url("../bildSpel/bilder/bild2.jpg");
+  background-image: url("../bildSpel/bilder/startbild.jpg");
 }
 
 .slide3 {
-  background-image: url("../bildSpel/bilder/bild3.jpg");
+  background-image: url("../bildSpel/bilder/gruppbild.jpg");
 }
 
 .slide-content {
