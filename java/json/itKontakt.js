@@ -12,10 +12,10 @@ xhr.onload = function() {
             newContent += responseObject.events[i].rad2 + '<br>';
         }
         if(responseObject.events[i].rad3) {
-        newContent += responseObject.events[i].rad3 + '<br>';
+            newContent += responseObject.events[i].rad3 + '<br>';
         }
         if(responseObject.events[i].rad4) {
-        newContent += responseObject.events[i].rad4 + '</p> ';
+            newContent += responseObject.events[i].rad4 + '</p> ';
         }
         newContent += '</div>';
     }
@@ -24,5 +24,5 @@ xhr.onload = function() {
 
 };
 
-xhr.open('GET', '../java/json/data/datajavakontakt.json', true);
+xhr.open('GET', '../java/json/data/dataitkontakt.json', true);
 xhr.send(null);

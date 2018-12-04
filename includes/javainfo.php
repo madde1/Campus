@@ -110,7 +110,7 @@
     </div>
     <div class="stycke6">
         <h3>Kontakt</h3>
-        
+
     <section id="content"></section>
 
     <script src="../java/json/javaKontakt.js"></script>

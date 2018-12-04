@@ -133,23 +133,9 @@
     </div>
     <div CLASS="part6">
         <h3>Kontakt</h3>
-        <p>
-            Är du intresserad av mer information kring utbildningen kontakta Sandra Hahn, utbildningsledare samt
-            studie- och yrkesvägledare på Campus Mölndal.
-        </p>
-        <p>
-            Sandra Hahn<br>
-            Utbildningsledare<br>
-            0708 - 39 61 81<br>
-            sandra.hahn@molndal.se
-        </p>
-        <p>
-            För frågor kring ansökan och antagning kontakta oss nedan.
-        </p>
-        <p>
-            Vägledning Campus Mölndal<br>
-            Tfn expedition: 031-315 10 14<br>
-            yh.campus@molndal.se
-        </p>
+
+        <section id="content"></section>
+
+        <script src="../java/json/itKontakt.js"></script>
     </div>
 </section>
