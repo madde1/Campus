@@ -4,7 +4,9 @@
 @import "scss/itInfo";
 @import "scss/javainfo";
 @import "scss/apply";
+@import "scss/header"; // merge conflict 5 dec
 @import "scss/vagledning";
+
 /*Mixins för desktop och mobil*/
 @mixin desktop(){
   @media screen and (min-width: 800px) {
@@ -26,6 +28,18 @@ $btn:#FFB00D;
 $fontHeading: 'Roboto Slab', serif;
 $fontText:'Roboto', sans-serif;
 
+.headerlogo{
+  @include desktop {
+    width: 70px;
+    height: 51px;
+    margin: 12px 0 0 30px;
+    background-position: center;
+    background-size: cover;
+    background-image: url("../img/logga-campus-skarpare.png");
+    float: left;
+  }
+}
+
 p{
     font-family: $fontText;
     font-size: 20px;
@@ -45,6 +59,7 @@ body {
   font-family:$fontText;
 
 }
+
 /*Headern navigering*/
 header{
   width: 100%;
@@ -67,6 +82,18 @@ hr {
   border-color: grey!important;
 }
 .header-nav{
+// Merge conflict 5 dec
+  position: fixed;
+  top: 75px;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding: 20px 0 20px 0; // center
+  background-color: $header;
+  color: $textheader;
+  line-height: 25px;
+  z-index: 10;
+
   @include mobile {
     position: fixed;
     top: 75px;
@@ -78,6 +105,7 @@ hr {
     color: $textheader;
     line-height: 25px;
   }
+
   @include desktop {
     display: none;
   }
@@ -87,7 +115,7 @@ a:hover {
     color: $btn;
   }
 }
-a, a:visited {
+a {                     // tog bort a:visited eftersom den orangea färgen inte fungerade vid :hover efter besök på undersidor
   color: $textheader;
   text-decoration: none;
 }
@@ -119,7 +147,7 @@ a, a:visited {
   z-index: 10;
   background-color: $dropdown;
   color: $textheader;
-  left: 0;
+  left: 100px;
   right: auto;
 }
   p{
@@ -139,7 +167,7 @@ a, a:visited {
     z-index: 10;
     background-color: $dropdown;
     color: $textheader;
-    left: 115px;
+    left: 215px;
     right: auto;
   }
   p{
@@ -159,7 +187,7 @@ a, a:visited {
     z-index: 10;
     background-color: $header;
     color: $textheader;
-    left: 255px;
+    left: 355px;
     right: auto;
   }
   p{
@@ -179,7 +207,7 @@ a, a:visited {
     z-index: 10;
     background-color: $header;
     color: $textheader;
-    left: 363px;
+    left: 463px;
     right: auto;
   }
   p {
@@ -192,6 +220,11 @@ a, a:visited {
 }
 #homeicon{
   color: $textheader;
+}
+
+#usericonactive{
+  color: $btn;
+
 }
 .icons {
   padding-top: 20px;
@@ -259,15 +292,24 @@ a, a:visited {
   cursor: pointer;
 }
 
+#loggedintext{
+  padding-left: 20px;
+}
+
+#logoutbutton{
+  margin: 0 0 20px 20px;
+}
+
 .searchfield {
   width: 100%;
-  height: 50px;
+  height: 110px;
   position: fixed;
   top: 75px;
   background-color: $header;
+  z-index: 10;
   @include desktop{
       width: 400px;
-      height: 50px;
+      height: 110px;
       position: fixed;
       top: 75px;
       z-index: 10;
@@ -277,6 +319,43 @@ a, a:visited {
       right: 0;
   }
 }
+
+.logout{
+  text-align: left;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 75px;
+  background-color: $header;
+  z-index: 10;
+  line-height: 10px;
+  @include desktop{
+    width: 300px;
+    height: auto;
+    position: fixed;
+    top: 75px;
+    z-index: 10;
+    background-color: $header;
+    padding-top: 8.5px;
+    left: auto;
+    right: 0;
+  }
+
+}
+
+.logouttext{
+  padding-left: 20px;
+  cursor: pointer;
+}
+
+.logouticon{
+  padding-right: 10px;
+}
+
+.logout p:hover{
+  color: $btn;
+}
+
 #utbildningar-click, #studenttjänster-click, #vägledning-click, #kontakt-click {
   cursor: pointer;
 }
@@ -329,6 +408,7 @@ a, a:visited {
   border-top: 1px solid $header;
   border-bottom: 1px solid $header;
 }
+/*
 .logout {
   @include desktop {
     width: 400px;
@@ -341,6 +421,7 @@ a, a:visited {
     right: 0;
   }
 }
+*/
   /*Header navigering slut*/
 
 
