@@ -1,6 +1,6 @@
 <?php
 
-include 'includes/header.php';
+include '../includes/header.php';
 
 ?>
     <div class="search-header">
@@ -9,7 +9,6 @@ include 'includes/header.php';
 
     <div class="article-container">
         <?php
-
         $title = mysqli_real_escape_string($conn, $_GET['title']);
         $date = mysqli_real_escape_string($conn, $_GET['date']);
 
@@ -37,5 +36,5 @@ include 'includes/header.php';
     </div>
 
 <?php
-include 'includes/footer.php';
+include '../includes/footer.php';
 ?>

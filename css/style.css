@@ -905,6 +905,18 @@ body, #slider, .wrap, .slide-content {
 
 /*Mixins för desktop och mobil*/
 /*Variabler för färger/fonter*/
+@media screen and (min-width: 800px) {
+  .headerlogo {
+    width: 70px;
+    height: 51px;
+    margin: 12px 0 0 30px;
+    background-position: center;
+    background-size: cover;
+    background-image: url("../img/logga-campus-skarpare.png");
+    float: left;
+  }
+}
+
 p {
   font-family: "Roboto", sans-serif;
   font-size: 20px;
@@ -955,6 +967,18 @@ hr {
   border-color: grey !important;
 }
 
+.header-nav {
+  position: fixed;
+  top: 75px;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding: 20px 0 20px 0;
+  background-color: #1E4363;
+  color: #edf3f9;
+  line-height: 25px;
+  z-index: 10;
+}
 @media screen and (min-width: 300px) and (max-width: 799px) {
   .header-nav {
     position: fixed;
@@ -980,7 +1004,7 @@ hr {
   }
 }
 
-a, a:visited {
+a {
   color: #edf3f9;
   text-decoration: none;
 }
@@ -1016,7 +1040,7 @@ a, a:visited {
     z-index: 10;
     background-color: #1E4363;
     color: #edf3f9;
-    left: 0;
+    left: 100px;
     right: auto;
   }
 }
@@ -1036,7 +1060,7 @@ a, a:visited {
     z-index: 10;
     background-color: #1E4363;
     color: #edf3f9;
-    left: 115px;
+    left: 215px;
     right: auto;
   }
 }
@@ -1056,7 +1080,7 @@ a, a:visited {
     z-index: 10;
     background-color: #1E4363;
     color: #edf3f9;
-    left: 255px;
+    left: 355px;
     right: auto;
   }
 }
@@ -1076,7 +1100,7 @@ a, a:visited {
     z-index: 10;
     background-color: #1E4363;
     color: #edf3f9;
-    left: 363px;
+    left: 463px;
     right: auto;
   }
 }
@@ -1090,6 +1114,10 @@ a, a:visited {
 
 #homeicon {
   color: #edf3f9;
+}
+
+#usericonactive {
+  color: #FFB00D;
 }
 
 .icons {
@@ -1159,17 +1187,26 @@ a, a:visited {
   cursor: pointer;
 }
 
+#loggedintext {
+  padding-left: 20px;
+}
+
+#logoutbutton {
+  margin: 0 0 20px 20px;
+}
+
 .searchfield {
   width: 100%;
-  height: 50px;
+  height: 110px;
   position: fixed;
   top: 75px;
   background-color: #1E4363;
+  z-index: 10;
 }
 @media screen and (min-width: 800px) {
   .searchfield {
     width: 400px;
-    height: 50px;
+    height: 110px;
     position: fixed;
     top: 75px;
     z-index: 10;
@@ -1178,6 +1215,43 @@ a, a:visited {
     left: auto;
     right: 0;
   }
+}
+
+.logout {
+  text-align: left;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 75px;
+  background-color: #1E4363;
+  z-index: 10;
+  line-height: 10px;
+}
+@media screen and (min-width: 800px) {
+  .logout {
+    width: 300px;
+    height: auto;
+    position: fixed;
+    top: 75px;
+    z-index: 10;
+    background-color: #1E4363;
+    padding-top: 8.5px;
+    left: auto;
+    right: 0;
+  }
+}
+
+.logouttext {
+  padding-left: 20px;
+  cursor: pointer;
+}
+
+.logouticon {
+  padding-right: 10px;
+}
+
+.logout p:hover {
+  color: #FFB00D;
 }
 
 #utbildningar-click, #studenttjänster-click, #vägledning-click, #kontakt-click {
@@ -1205,7 +1279,7 @@ a, a:visited {
 /*Sätt desktop om behövs var samma som mobil*/
 .buttonshelper {
   width: -webkit-calc(90% + 11px);
-  margin: 0 auto;
+  margin: 10px auto;
 }
 .buttonshelper .loginbutton {
   float: left;
@@ -1234,19 +1308,20 @@ a, a:visited {
   border-bottom: 1px solid #1E4363;
 }
 
-@media screen and (min-width: 800px) {
-  .logout {
+/*
+.logout {
+  @include desktop {
     width: 400px;
     height: 50px;
     position: fixed;
     top: 75px;
     z-index: 10;
-    background-color: #1E4363;
+    background-color: $dropdown;
     left: auto;
     right: 0;
   }
 }
-
+*/
 /*Header navigering slut*/
 /*Footer Start*/
 .footer {

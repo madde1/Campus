@@ -4,7 +4,6 @@
 @import "scss/itInfo";
 @import "scss/javainfo";
 @import "scss/apply";
-@import "scss/header"; // merge conflict 5 dec
 @import "scss/vagledning";
 
 /*Mixins för desktop och mobil*/
@@ -61,6 +60,7 @@ body {
 }
 
 /*Headern navigering*/
+
 header{
   width: 100%;
   height: 75px;
@@ -378,7 +378,7 @@ a {                     // tog bort a:visited eftersom den orangea färgen inte 
 /*Sätt desktop om behövs var samma som mobil*/
 .buttonshelper{
   width: -webkit-calc(90% + 11px);
-  margin: 0 auto;
+  margin: 10px auto;
   .loginbutton{
     float: left;
   }

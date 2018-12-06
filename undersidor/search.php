@@ -1,6 +1,6 @@
 <?php
 
-include 'includes/header.php';
+include '../includes/header.php';
 
 ?>
     <div class="search-header">
@@ -9,6 +9,7 @@ include 'includes/header.php';
 
 <div class="article-container">
     <?php
+
         if (isset($_POST['submit-search'])){
             $search = mysqli_real_escape_string($conn, $_POST['submit-search']);
             $sql = "SELECT * FROM article WHERE a_title LIKE '%$search%' OR a_text LIKE '%$search%' 
@@ -46,5 +47,5 @@ include 'includes/header.php';
 </div>
 
 <?php
-include 'includes/footer.php';
+include '../includes/footer.php';
 ?>

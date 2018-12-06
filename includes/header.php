@@ -1,5 +1,5 @@
 <?php
-
+include "dbh.inc.php";
 session_start();
 
 ?>
@@ -102,10 +102,11 @@ session_start();
                 <a><p>Hitta hit</p></a>
             </div>
 
-            <div class="searchfield"><input type="text" name="submit-search" placeholder="Sök..." autocomplete="off">
-                <div class="buttonshelper">
-                <form class="searchform" action="search.php">
-                    <button type="submit" class="loginbutton">Sök...</button>
+            <div class="searchfield">
+                <form class="searchform" action="../undersidor/search.php" method="post">
+                    <input type="text" name="submit-search" placeholder="Sök..." autocomplete="off">
+                    <div class="buttonshelper">
+                    <button type="submit" name="submit-search" class="loginbutton">Sök</button>
                 </form>
                 </div>
 
