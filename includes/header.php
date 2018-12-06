@@ -18,11 +18,11 @@ session_start();
     <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab" rel="stylesheet">
 
     <!--Icon till sidan -->
-    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
-    <link rel="manifest" href="../favicon/site.webmanifest">
-    <link rel="mask-icon" href="../favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
@@ -33,6 +33,7 @@ session_start();
 <header>
     <div class="headersticky">
         <div class="header">
+            <div class="headerlogo"></div>
             <div class="desktopbuttons">
                 <ul>
                     <li id="menuutb">Utbildningar</li>
@@ -44,15 +45,24 @@ session_start();
             <div class="icons">
                 <ion-icon class="menu" id="menu" name="menu"></ion-icon>
                 <ion-icon class="headericon" id="searchicon" name="search"></ion-icon>
-                <ion-icon class="headericon" id="usericon" name="person"></ion-icon>
+               <!-- <ion-icon class="headericon" id="usericon" name="person"></ion-icon> -->
+                <?php
+                if (!isset($_SESSION['loggedin'])){
+                    echo '<ion-icon class="headericon" id="usericon" name="person"></ion-icon>';
+                }
+
+                if (isset($_SESSION['loggedin'])){
+                    echo "<ion-icon class='headericon' id='usericonactive' name='person'></ion-icon>";
+                }
+                ?>
                 <a href="../undersidor/apply.php"><ion-icon class="headericon2" id="schoolicon" name="school"></ion-icon></a>
                 <a href="/index.php"><ion-icon class="headericon" id="homeicon" name="home"></ion-icon></a>
             </div>
             <div class="login">
                 <form action="../includes/login.inc.php" method="post" autocomplete="off" >
                     <!--<input type="hidden" name="isnew" id="isnew" value="1">-->
-                    <input class="field" type="text" name="mailuid" placeholder="E-mail/Username...">
-                    <p><input class="field"  type="password" name="pwd" placeholder="Password"></p>
+                    <input class="field" type="text" name="mailuid" placeholder="Användarnamn / E-mail...">
+                    <p><input class="field"  type="password" name="pwd" placeholder="Lösenord..."></p>
                     <span>
 
                     <div class="buttonshelper">
@@ -61,21 +71,19 @@ session_start();
                     </span>
             </div>
                 </form>
+
             </div>
 
             <div class="desktoputbildningar">
-                <a href="../undersidor/javaStart.php"><p>Java- och webbutvecklare</p></a>
+                <a href="undersidor/javaStart.php"><p>Java- och webbutvecklare</p></a>
                 <a><p>IT- och virtualiseringsspecialist</p></a>
-                <a href="../undersidor/it.php"><p>IT-projektledare</p></a>
+                <a href="undersidor/it.php"><p>IT-projektledare</p></a>
                 <a><p>Aktiveringspedagog inom LSS</p></a>
                 <a><p>Specialiserad studiehandledare</p></a>
                 <a><p>Information</p></a>
             </div>
 
             <div class="desktopstudent">
-                <a><p>Lärplattform Itslearning</p></a>
-                <a><p>Studentmail</p></a>
-                <a><p>Schema</p></a>
                 <a href="intyg.php"><p>Intyg, betyg och slutbetyg</p></a>
                 <a><p>Prövning och validering</p></a>
                 <a><p>Studiemedel</p></a>
@@ -92,16 +100,30 @@ session_start();
                 <a><p>Studie- och yrkesvägledning</p></a>
                 <a><p>Administration</p></a>
                 <a><p>Hitta hit</p></a>
+            </div>
+
+            <div class="searchfield"><input type="text" name="submit-search" placeholder="Sök..." autocomplete="off">
+                <div class="buttonshelper">
+                <form class="searchform" action="search.php">
+                    <button type="submit" class="loginbutton">Sök...</button>
+                </form>
+                </div>
 
             </div>
 
-            <div class="searchfield"><input type="text" placeholder="Sök..."></div>
+        <div class="logout">
+            <p class="logouttext"><ion-icon name="person" class="logouticon" id="logoutusericon"></ion-icon>Inloggad som: <?php if(isset($_SESSION['loggedin'])){echo $_SESSION['userUid'];}?> </p>
+            <p class="logouttext"><ion-icon name="book" class="logouticon" id="itslearningicon"></ion-icon>Itslearning</p>
+            <p class="logouttext"><ion-icon class="logouticon" id="mailicon" name="mail"></ion-icon>Studentmail</p>
+            <p class="logouttext"><ion-icon name="clipboard" class="logouticon" id="schemaicon"></ion-icon>Schema</p>
+            <a href='includes/logout.inc.php'><input type='button' value='Logga ut' class='registerbutton' id='logoutbutton'></a>
+        </div>
+        </div>
 
             <div class="header-nav">
-
-
                 <hr>
-               <p id="utbildningar-click">Utbildningar</p>
+
+                <p id="utbildningar-click">Utbildningar</p>
 
                 <div id="utbildningar-dropdown">
                     <a href="../undersidor/javaStart.php"><p>Java- och webbutvecklare</p></a>
@@ -121,7 +143,6 @@ session_start();
                     <a href="intyg.php"><p>Intyg, betyg och slutbetyg</p></a>
                     <p>Prövning och validering</p>
                     <p>Studiemedel</p>
-
                 </div>
 
                 <p id="vägledning-click">Studie- och yrkesvägledning</p>
@@ -129,9 +150,7 @@ session_start();
                     <a href="../undersidor/vagledningen.php"><p>För dig som är över 20 år</p></a>
                      <p>För dig som är under 20 år</p>
                     <p>För dig med särskilda behov</p>
-
                 </div>
-
 
              <p id="kontakt-click">Kontakta oss</p>
                 <div id="kontakt-dropdown">
@@ -139,56 +158,11 @@ session_start();
                     <p>Studie- och yrkesvägledning</p>
                     <p>Administration</p>
                     <p>Hitta hit</p>
-
                 </div>
 
                 <hr>
-
-
-
-
-
-<!--
-                <div class="mobmenu1"><p id="utbildningar-click">Utbildningar</p></div>
-
-                <div id="utbildningar-dropdown">
-                    <a href="java.php"><p>Java- och webbutvecklare</p></a>
-                    <p>IT- och virtualiseringsspecialist</p>
-                    <a href="IT.php"><p>IT-projektledare</p></a>
-                    <p>Aktiveringspedagog inom LSS</p>
-                    <p>Specialiserad studiehandledare</p>
-                    <p>Information</p>
-                </div>
-                <div class="mobmenu2"><p id="studenttjänster-click">Studenttjänster</p></div>
-
-                <div id="studenttjänster-dropdown">
-                    <a href="intyg.php"><p>Intyg, betyg och slutbetyg</p></a>
-                    <p>Prövning och validering</p>
-                    <p>Studiemedel</p>
-                    <p>Schema</p>
-                    <p>Studentmail</p>
-                    <p>Lärplattform Itslearning</p>
-                </div>
-                <div class="mobmenu2"><p id="vägledning-click">Studie- och yrkesvägledning</p></div>
-                <div id="vägledning-dropdown">
-                    <a href="vagledning.php"><p>För dig som är över 20 år</p></a>
-                    <p>För dig som är under 20 år</p>
-                    <p>För dig med särskilda behov</p>
-                </div>
-                <div class="mobmenu3"> <p id="kontakt-click">Kontakta oss</p></div>
-                <div id="kontakt-dropdown">
-                    <a href="kontakt.php"><p>Ledning</p></a>
-                    <p>Studie- och yrkesvägledning</p>
-                    <p>Administration</p>
-                    <p>Hitta hit</p>
-                </div>
             </div>
-        -->
-
-
-
         </div>
-
     </div>
 
 </header>
