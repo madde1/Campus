@@ -426,7 +426,7 @@ body, #slider, .wrap, .slide-content {
 }
 
 .slide3 {
-  background-image: url("../bildSpel/bilder/gruppbild.jpg");
+  background-image: url("../bildSpel/bilder/gruppbildcopy.jpg");
 }
 
 .slide-content {
@@ -542,13 +542,13 @@ body, #slider, .wrap, .slide-content {
   grid-template-rows: auto;
   grid-gap: 2px;
   text-align: left;
-  width: 500px;
 }
 @media screen and (min-width: 800px) {
   .itInfo .contentit {
     display: grid;
     grid-template-columns: auto;
     grid-gap: 10px;
+    width: 500px;
   }
 }
 .itInfo .contentit h3 {
@@ -611,13 +611,13 @@ body, #slider, .wrap, .slide-content {
   grid-template-rows: auto;
   grid-gap: 2px;
   text-align: left;
-  width: 500px;
 }
 @media screen and (min-width: 800px) {
   .javaInfo .contentJava {
     display: grid;
     grid-template-columns: auto;
     grid-gap: 10px;
+    width: 500px;
   }
 }
 .javaInfo .contentJava h3 {

@@ -12,9 +12,9 @@ session_start();
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://unpkg.com/ionicons@4.2.2/dist/ionicons.js"></script>
     <link href="https://unpkg.com/ionicons@4.2.2/dist/css/ionicons.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/regform.css">
-    <link rel="stylesheet" href="css/reg.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/regform.css">
+    <link rel="stylesheet" href="/css/reg.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab" rel="stylesheet">
 
     <!--Icon till sidan -->
@@ -49,7 +49,7 @@ session_start();
                 <a href="/index.php"><ion-icon class="headericon" id="homeicon" name="home"></ion-icon></a>
             </div>
             <div class="login">
-                <form action="includes/login.inc.php" method="post" autocomplete="off" >
+                <form action="../includes/login.inc.php" method="post" autocomplete="off" >
                     <!--<input type="hidden" name="isnew" id="isnew" value="1">-->
                     <input class="field" type="text" name="mailuid" placeholder="E-mail/Username...">
                     <p><input class="field"  type="password" name="pwd" placeholder="Password"></p>
@@ -57,7 +57,7 @@ session_start();
 
                     <div class="buttonshelper">
                         <input type="submit" name="login-submit" value="Logga in" class="loginbutton">
-                        <a href="signup.php"><input type="button" value="Registrera" class="registerbutton"></a>
+                        <a href="/undersidor/signup.php"><input type="button" value="Registrera" class="registerbutton"></a>
                     </span>
             </div>
                 </form>

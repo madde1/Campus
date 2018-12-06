@@ -1,4 +1,5 @@
 <?php
+
 if (isset($_POST['signup-submit'])) {
 
     require 'dbh.inc.php';
@@ -12,18 +13,18 @@ if (isset($_POST['signup-submit'])) {
 
     //Error-Handlers om användare glömt att fylla i input-fält
     if (empty($username) || empty($email) || empty($password) || empty($passwordRepeat)) {
-        header("Location: ../signup.php?error=emptyfields&uid=".$username."&mail=".$email);
+        header("Location: ../undersidor/signup.php?error=emptyfields&uid=".$username."&mail=".$email);
         exit();
     }
     else if (!filter_var($email, FILTER_VALIDATE_EMAIL) && !preg_match("/^[a-zA-Z0-9]*$/", $username)) {
-        header("Location: ../signup.php?error=invalidmailuid");
+        header("Location: ../undersidor/signup.php?error=invalidmailuid");
     }
     else if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        header("Location: ../signup.php?error=invalidmail&uid=".$username);
+        header("Location: .../undersidor/signup.php?error=invalidmail&uid=".$username);
         exit();
     }
     else if (!preg_match("/^[a-zA-Z0-9]*$/", $username)) {
-        header("Location: ../signup.php?error=invaliduid&mail=".$email);
+        header("Location: ../undersidor/signup.php?error=invaliduid&mail=".$email);
         exit();
     }
     //Errorhandler för lösenord om inte password & password-repeat är samma
@@ -37,7 +38,7 @@ if (isset($_POST['signup-submit'])) {
         $sql = "SELECT uidUsers FROM users WHERE uidUsers=?;";
         $stmt = mysqli_stmt_init($conn);
         if (!mysqli_stmt_prepare($stmt, $sql)) {
-            header("Location: ../signup.php?error=sqlerror");
+            header("Location: ../undersidor/signup.php?error=sqlerror");
             exit();
         }
         else {
@@ -46,7 +47,7 @@ if (isset($_POST['signup-submit'])) {
             mysqli_stmt_store_result($stmt);
             $resultCheck = mysqli_stmt_num_rows($stmt);
             if ($resultCheck > 0) {
-                header("Location: ../signup.php?error=usertaken&mail=".$email);
+                header("Location: ../undersidor/signup.php?error=usertaken&mail=".$email);
                 exit();
             }
             else {
@@ -54,7 +55,7 @@ if (isset($_POST['signup-submit'])) {
                 $sql = "INSERT INTO users (uidUsers, emailUsers, pwdUsers) VALUES (?, ?, ?)";
                 $stmt = mysqli_stmt_init($conn);
                 if (!mysqli_stmt_prepare($stmt, $sql)) {
-                    header("Location: ../signup.php?error=sqlerror");
+                    header("Location: ../undersidor/signup.php?error=sqlerror");
                     exit();
                 }
                 else {
@@ -62,7 +63,7 @@ if (isset($_POST['signup-submit'])) {
 
                     mysqli_stmt_bind_param($stmt, "sss", $username, $email, $hashedPwd);
                     mysqli_stmt_execute($stmt);
-                    header("Location: ../signup.php?signup=success");
+                    header("Location: ../undersidor/signup.php?signup=success");
                     exit();
                 }
             }
@@ -74,6 +75,6 @@ if (isset($_POST['signup-submit'])) {
 
 }
 else {
-    header("Location: ../signup.php");
+    header("Location: ../undersidor/signup.php");
     exit();
 }

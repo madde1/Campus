@@ -21,12 +21,13 @@ $textfärg:black;
     grid-template-rows: auto;
     grid-gap: 2px;
     text-align: left;
-    width: 500px;
+
 
     @include desktop {
       display: grid;
       grid-template-columns: auto;
       grid-gap: 10px;
+      width: 500px;
     }
 
     h3 {

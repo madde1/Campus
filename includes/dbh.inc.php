@@ -2,9 +2,9 @@
 
 
 
-$servername = "localhost";
+$servername = "localhost:3307";
 $dBUsername = "root";
-$dBPassword = "";
+$dBPassword = "Melvin2012";
 $dBName = "CampusDB";
 
 
