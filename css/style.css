@@ -23,6 +23,7 @@
     grid-template-columns: auto auto auto;
     grid-gap: 10px;
     padding-bottom: 30px;
+    background-color: #edf3f9;
   }
 }
 @media screen and (min-width: 801px) {
@@ -116,8 +117,7 @@
 }
 
 .akutelltWrap {
-  background-color: #edf3f9;
-  color: black;
+  color: white;
   /* Css för knapparna som används för att öppna tab content */
   /* Ändrar färg vid hover*/
   /* Skapar en aktiv/nuvarande tab button klass */
@@ -125,14 +125,12 @@
 }
 @media screen and (min-width: 801px) {
   .akutelltWrap {
-    background-color: #edf3f9;
     display: grid;
     grid-template-columns: auto auto;
     grid-gap: 10px;
   }
 }
 .akutelltWrap #headingAktuellt {
-  background-color: #edf3f9;
   margin-top: 75px;
   padding-top: 10px;
 }
@@ -141,7 +139,6 @@
     grid-column: 1/span 2;
     font-size: 50px;
     margin-top: 75px;
-    background-color: #edf3f9;
   }
 }
 @media screen and (max-width: 799px) {
@@ -151,11 +148,11 @@
 }
 .akutelltWrap tab {
   display: none;
-  background-color: #edf3f9;
+  background-color: #1E4363;
 }
 @media screen and (min-width: 801px) {
   .akutelltWrap tab {
-    background-color: #edf3f9;
+    background-color: #1E4363;
     width: 100%;
     height: 300px;
     margin-right: 10px;
@@ -168,7 +165,7 @@
   .akutelltWrap .tab button {
     display: block;
     background-color: inherit;
-    color: black;
+    color: white;
     padding: 22px 16px;
     width: 300px;
     outline: none;
@@ -233,7 +230,7 @@
 .akutelltWrap .aktuelltText {
   width: 100%;
   margin: 15px 0 30px 0;
-  color: black;
+  color: white;
   line-height: 1.5;
 }
 @media screen and (min-width: 801px) {
@@ -262,8 +259,8 @@
 }
 .aWarp .CreateAktuellt {
   margin-top: 75px;
-  background-color: #edf3f9;
-  color: black;
+  background-color: #1E4363;
+  color: white;
   padding: 10px 0 10px 0;
 }
 .aWarp .CreateAktuellt textarea {
@@ -322,8 +319,8 @@
   padding-top: 220px;
   text-align: center;
   height: 600px;
-  background-color: #edf3f9;
-  color: black;
+  background-color: #1E4363;
+  color: white;
 }
 .DeleteAktuellt .btn {
   border: 1px solid #303030;
@@ -352,8 +349,8 @@
 
 .UpdateAktuellt {
   margin-top: 75px;
-  background-color: #edf3f9;
-  color: black;
+  background-color: #1E4363;
+  color: white;
   padding: 10px 0 10px 0;
 }
 .UpdateAktuellt textarea {
@@ -529,19 +526,19 @@ body, #slider, .wrap, .slide-content {
 /*Bildspel slut*/
 /*Används för att kunna skriva det som ska vara i desktop läge. */
 .itInfo {
-  background-color: #edf3f9;
-  color: black;
+  color: white;
 }
 .itInfo h2 {
   margin-top: 20px;
   padding: 10px;
-  color: black;
+  color: white;
 }
 .itInfo .contentit {
   display: grid;
   grid-template-rows: auto;
   grid-gap: 2px;
   text-align: left;
+  margin: 0 auto;
 }
 @media screen and (min-width: 800px) {
   .itInfo .contentit {
@@ -553,7 +550,7 @@ body, #slider, .wrap, .slide-content {
 }
 .itInfo .contentit h3 {
   margin: 15px;
-  color: black;
+  color: white;
   font-size: 30px;
 }
 @media screen and (min-width: 800px) {
@@ -569,7 +566,7 @@ body, #slider, .wrap, .slide-content {
 @media screen and (min-width: 800px) {
   .itInfo .contentit p {
     font-size: 16px;
-    color: black;
+    color: white;
   }
 }
 .itInfo .contentit img {
@@ -598,19 +595,19 @@ body, #slider, .wrap, .slide-content {
 
 /*Används för att kunna skriva det som ska vara i desktop läge. */
 .javaInfo {
-  background-color: #edf3f9;
-  color: black;
+  color: white;
 }
 .javaInfo h2 {
   margin-top: 20px;
   padding: 10px;
-  color: black;
+  color: white;
 }
 .javaInfo .contentJava {
   display: grid;
   grid-template-rows: auto;
   grid-gap: 2px;
   text-align: left;
+  margin: 0 auto;
 }
 @media screen and (min-width: 800px) {
   .javaInfo .contentJava {
@@ -622,7 +619,7 @@ body, #slider, .wrap, .slide-content {
 }
 .javaInfo .contentJava h3 {
   margin: 15px;
-  color: black;
+  color: whitek;
   font-size: 30px;
 }
 @media screen and (min-width: 800px) {
@@ -634,12 +631,12 @@ body, #slider, .wrap, .slide-content {
   font-size: 20px;
   text-decoration: none;
   margin: 15px;
-  color: black;
+  color: white;
 }
 @media screen and (min-width: 800px) {
   .javaInfo .contentJava p {
     font-size: 16px;
-    colort: black;
+    colort: white;
   }
 }
 .javaInfo .contentJava img {
@@ -719,6 +716,10 @@ body, #slider, .wrap, .slide-content {
   padding: 12px 20px;
   border-radius: 4px;
   cursor: pointer;
+}
+
+.btnJava {
+  margin-left: 11px;
 }
 
 .sendsection {
@@ -848,7 +849,7 @@ body, #slider, .wrap, .slide-content {
 }
 @media screen and (min-width: 800px) {
   .vagledningWrap .vagRight .vagledningContentData {
-    background-color: #edf3f9;
+    background-color: #1E4363;
     text-align: left;
     color: black;
     border-right: 10px solid #1E4363;
@@ -871,7 +872,7 @@ body, #slider, .wrap, .slide-content {
 }
 @media screen and (min-width: 800px) {
   .vagledningWrap .vagRight .vagExp {
-    background-color: #edf3f9;
+    background-color: #1E4363;
     text-align: left;
     color: black;
     border-right: 10px solid #1E4363;

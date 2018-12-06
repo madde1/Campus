@@ -13,8 +13,9 @@
 }
 
 $desktop : 801px;
-$colorBgAktuellt:lighten(#1E4363, 70%);
-$textfärg:black;
+$colorBgAktuellt:#1E4363;
+$colorBgAktuellt1:lighten(#1E4363, 70%);
+$textfärg:white;
 $header: #1E4363;
 $btn:#FFB00D;
 $btnRed:#FF5B5B;
@@ -23,11 +24,11 @@ $fontText:'Roboto', sans-serif;
 //Css wrapen som finns i index.php filen.
 .aktuellt{
   padding: 5px 0 0 0;
-  background-color: $colorBgAktuellt;
+  background-color: $colorBgAktuellt1;
   h2{
     font-size: 50px;
     padding: 10px;
-    color:$textfärg;
+    color:black;
     font-family: $fontHeading;
   }
   //Wrap runt allt innehåll på aktuellt delen.
@@ -35,13 +36,14 @@ $fontText:'Roboto', sans-serif;
     display: grid;
     grid-template-rows: auto;
     grid-gap: 2px;
-    color:$textfärg;
-    background-color: $colorBgAktuellt;
+    color:black;
+    background-color: $colorBgAktuellt1;
     @include desktop {
       display: grid;
       grid-template-columns: auto auto auto;
       grid-gap: 10px;
       padding-bottom: 30px;
+      background-color: $colorBgAktuellt1;
 
     }
     #aStartText{
@@ -90,11 +92,11 @@ $fontText:'Roboto', sans-serif;
       text-decoration: none;
       margin: 15px;
       font-family: $fontText;
-      color: $textfärg;
+      color: black;
       @include desktop {
         font-size: 20px;
         font-family: $fontText;
-        color: $textfärg;
+        color: black;
         width: 85%;
         text-align: left;
         padding-left: 10px;
@@ -104,11 +106,11 @@ $fontText:'Roboto', sans-serif;
     h3 {
       font-size: 30px;
       font-family: $fontHeading;
-      color: $textfärg;
+      color: black;
       @include desktop {
         font-size: 25px;
         font-family: $fontHeading;
-        color: $textfärg;
+        color: black;
         text-align: left;
         margin-left: 25px;
       }
@@ -140,24 +142,22 @@ $fontText:'Roboto', sans-serif;
 }
 //Wrap runt hela innehållet på aktuelltPostSidan
 .akutelltWrap {
-  background-color: $colorBgAktuellt;
   color:$textfärg;
   @include desktop{
-    background-color: $colorBgAktuellt;
     display: grid;
     grid-template-columns: auto auto;
     grid-gap: 10px;
   }
   //Css för rubriken på sidan
   #headingAktuellt{
-    background-color: $colorBgAktuellt;
+
     margin-top: 75px;
     padding-top: 10px;
     @include desktop {
       grid-column: 1 / span 2;
       font-size: 50px;
       margin-top: 75px;
-      background-color: $colorBgAktuellt;
+
     }
   }
   //Wrap för att kunna få bort knapparna vid mobilläge.

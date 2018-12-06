@@ -26,16 +26,18 @@ include '../includes/header.php';
         /** Inkluderar JavaInfo delen på sidan. /Sofia */
         include '../includes/javainfo.php';
         ?>
-    </section>
-    <section class="AnsokanJava">
+
+    <section class="contentJava">
         <div class="ansokanKontaktJava">
             <h3>Ansökan</h3>
+            <div class="btnJava">
             <button class="applybutton" id="edu-java" type="button" onclick="addJava()" name="java" value="1">Ansök</button>
-
+            </div>
             <p>
                 Ansökan för start HT2018 är stängd.
             </p>
         </div>
+    </section>
     </section>
 </main>
 

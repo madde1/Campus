@@ -75,16 +75,16 @@ session_start();
             </div>
 
             <div class="desktoputbildningar">
-                <a href="undersidor/javaStart.php"><p>Java- och webbutvecklare</p></a>
+                <a href="../undersidor/javaStart.php"><p>Java- och webbutvecklare</p></a>
                 <a><p>IT- och virtualiseringsspecialist</p></a>
-                <a href="undersidor/it.php"><p>IT-projektledare</p></a>
+                <a href="../undersidor/it.php"><p>IT-projektledare</p></a>
                 <a><p>Aktiveringspedagog inom LSS</p></a>
                 <a><p>Specialiserad studiehandledare</p></a>
                 <a><p>Information</p></a>
             </div>
 
             <div class="desktopstudent">
-                <a href="intyg.php"><p>Intyg, betyg och slutbetyg</p></a>
+                <a href="#"><p>Intyg, betyg och slutbetyg</p></a>
                 <a><p>Prövning och validering</p></a>
                 <a><p>Studiemedel</p></a>
 
@@ -96,7 +96,7 @@ session_start();
                 <a><p>För dig med särskilda behov</p></a>
             </div>
             <div class="desktopkontakt">
-                <a href="kontakt.php"><p>Ledning</p></a>
+                <a href="#"><p>Ledning</p></a>
                 <a><p>Studie- och yrkesvägledning</p></a>
                 <a><p>Administration</p></a>
                 <a><p>Hitta hit</p></a>
@@ -117,7 +117,7 @@ session_start();
             <p class="logouttext"><ion-icon name="book" class="logouticon" id="itslearningicon"></ion-icon>Itslearning</p>
             <p class="logouttext"><ion-icon class="logouticon" id="mailicon" name="mail"></ion-icon>Studentmail</p>
             <p class="logouttext"><ion-icon name="clipboard" class="logouticon" id="schemaicon"></ion-icon>Schema</p>
-            <a href='includes/logout.inc.php'><input type='button' value='Logga ut' class='registerbutton' id='logoutbutton'></a>
+            <a href='../includes/logout.inc.php'><input type='button' value='Logga ut' class='registerbutton' id='logoutbutton'></a>
         </div>
         </div>
 
@@ -141,7 +141,7 @@ session_start();
                     <p>Lärplattform Itslearning</p>
                     <p>Studentmail</p>
                     <p>Schema</p>
-                    <a href="intyg.php"><p>Intyg, betyg och slutbetyg</p></a>
+                    <a href="#"><p>Intyg, betyg och slutbetyg</p></a>
                     <p>Prövning och validering</p>
                     <p>Studiemedel</p>
                 </div>
@@ -155,7 +155,7 @@ session_start();
 
              <p id="kontakt-click">Kontakta oss</p>
                 <div id="kontakt-dropdown">
-                    <a href="kontakt.php"><p>Ledning</p></a>
+                    <a href="#"><p>Ledning</p></a>
                     <p>Studie- och yrkesvägledning</p>
                     <p>Administration</p>
                     <p>Hitta hit</p>

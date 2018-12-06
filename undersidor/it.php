@@ -29,8 +29,8 @@ include '../includes/header.php';
         /** Inkluderar itInfo delen på sidan. /Sofia */
         include '../includes/itinfo.php';
         ?>
-    </section>
-    <section class="AnsokanIt">
+
+    <section class="contentit">
         <div class="ansokanKontaktIt">
             <h3>Ansökan</h3>
             <p>
@@ -40,9 +40,11 @@ include '../includes/header.php';
                 Alla ansökningar som inkommer behandlas löpande. Är du nyfiken eller inte hör något från oss så hör av
                 dig till oss!
             </p>
+            <div class="btnJava">
             <button class="applybutton" id="edu" type="button" onclick="addIT()" name="IT" value="1">Ansök</button>
-
+            </div>
         </div>
+    </section>
     </section>
 </main>
 

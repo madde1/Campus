@@ -1,5 +1,5 @@
 <?php
-include 'includes/header.php';
+include '../includes/header.php';
 ?>
 <div class="applybild"></div>
 <h2>Tack för din ansökan!</h2>
@@ -20,6 +20,6 @@ include 'includes/header.php';
 
 
 <?php
-include 'includes/footer.php';
+include '../includes/footer.php';
 ?>
 
