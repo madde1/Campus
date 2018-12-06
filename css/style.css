@@ -590,7 +590,7 @@ body, #slider, .wrap, .slide-content {
 }
 
 .headerIt {
-  background-image: url("../img/headerIt.jpg");
+  background-image: url("../img/it.jpeg");
 }
 
 /*Används för att kunna skriva det som ska vara i desktop läge. */
@@ -619,7 +619,7 @@ body, #slider, .wrap, .slide-content {
 }
 .javaInfo .contentJava h3 {
   margin: 15px;
-  color: whitek;
+  color: white;
   font-size: 30px;
 }
 @media screen and (min-width: 800px) {
@@ -660,7 +660,7 @@ body, #slider, .wrap, .slide-content {
 }
 
 .headerBild {
-  background-image: url("../img/headerJava.jpg");
+  background-image: url("../img/programmering.png");
 }
 
 .applybild {
@@ -849,7 +849,7 @@ body, #slider, .wrap, .slide-content {
 }
 @media screen and (min-width: 800px) {
   .vagledningWrap .vagRight .vagledningContentData {
-    background-color: #1E4363;
+    background-color: #edf3f9;
     text-align: left;
     color: black;
     border-right: 10px solid #1E4363;
@@ -872,7 +872,7 @@ body, #slider, .wrap, .slide-content {
 }
 @media screen and (min-width: 800px) {
   .vagledningWrap .vagRight .vagExp {
-    background-color: #1E4363;
+    background-color: #edf3f9;
     text-align: left;
     color: black;
     border-right: 10px solid #1E4363;

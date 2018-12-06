@@ -66,7 +66,7 @@
   }
   .vagledningContentData{
     @include desktop {
-      background-color: $colorBgAktuellt;
+      background-color: $colorBgAktuellt1;
       text-align: left;
       color: black;
       border-right: 10px solid #1E4363;
@@ -87,7 +87,7 @@
   }
   .vagExp{
     @include desktop{
-      background-color: $colorBgAktuellt;
+      background-color: $colorBgAktuellt1;
       text-align: left;
       color: black;
       border-right: 10px solid #1E4363;

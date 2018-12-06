@@ -31,7 +31,7 @@ $textfärg:white;
 
     h3 {
       margin: 15px;
-      color: whitek;
+      color: white;
       font-size: 30px;
       @include desktop {font-size: 20px;}
     }
@@ -71,5 +71,5 @@ $textfärg:white;
   }
 }
 .headerBild{
-  background-image: url("../img/headerJava.jpg");
+  background-image: url("../img/programmering.png");
 }

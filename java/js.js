@@ -1,5 +1,5 @@
 
-
+var url = document.URL;
 
 // Kod som döljer och visar meny-val
 $(document.body).click( function(e) {
@@ -347,6 +347,9 @@ $('#menuutb').click(function(){
     if (color == 'rgb(255, 176, 13)' || color == '#FFB00D'){
         $('#menuutb').css('color', '#EDF3F9');
     }
+    if (url == "http://maedz.win/undersidor/javaStart.php" || url == "http://maedz.win/undersidor/it.php" ){
+        $('#menuutb').css('color', '#FFB00D');
+    }
 });
 
 $('#menustu').click(function(){
@@ -367,7 +370,9 @@ $('#menuvag').click(function(){
     if (color == 'rgb(255, 176, 13)' || color == '#FFB00D'){
         $('#menuvag').css('color', '#EDF3F9');
     }
-
+    if (url == "http://maedz.win/undersidor/vagledningen.php"){
+        $('#menuvag').css('color', '#FFB00D');
+    }
 });
 
 $('#menukon').click(function(){
@@ -637,21 +642,15 @@ function send(){
 
 var url = document.URL;
 
-if (url == "... /javaStart.php" || url == "../undersidor/it.php" ){
+if (url == "http://maedz.win/undersidor/javaStart.php" || url == "http://maedz.win/undersidor/it.php" ){
     $('#menuutb').css('color', '#FFB00D');
 }
 
-if (url == "../undersidor/intyg.php"){
-    $('#menustu').css('color', '#FFB00D');
-}
 
-if (url == "../undersidor/vagledning.php"){
+if (url == "http://maedz.win/undersidor/vagledningen.php"){
     $('#menuvag').css('color', '#FFB00D');
 }
 
-if (url == "../undersidor/kontakt.php"){
-    $('#menukon').css('color', '#FFB00D');
-}
 
 
 
