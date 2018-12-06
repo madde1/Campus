@@ -2,6 +2,8 @@
 * {box-sizing: border-box}
 */
 
+
+
 .wrapper-main {
     margin: 75px auto;
     padding: 5px;
@@ -64,10 +66,37 @@ hr {
     font-size: 20px;
 }
 
+.search-header{
+    padding-top: 110px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.article-container{
+    width: 80%;
+    margin: 0 auto;
+}
+.article-container a{
+    text-decoration: none;
+    color: white;
+}
+
+.article-box{
+    padding-bottom: 30px;
+    width: 100%;
+}
+.article-text{
+    text-align: left;
+}
 
 @media (min-width: 800px) {
     .wrapper-main {
         width: 30%;
+    }
+    .article-box{
+        padding-bottom: 30px;
+        width: 50%;
+        margin: 0 auto;
     }
 }
 
